@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="alu32bit.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="incrementer32bit.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="incrementer32bit.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="incrementer32bit.ngc"/>
