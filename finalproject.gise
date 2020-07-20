@@ -45,6 +45,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux32bit2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux32bit2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux32bit2to1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sign_extend.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="sign_extend.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="sign_extend.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
