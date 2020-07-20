@@ -42,6 +42,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instruction_memory.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="instruction_memory.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="instruction_memory.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="latch.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="latch.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="latch.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux32bit2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux32bit2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux32bit2to1.xst"/>
