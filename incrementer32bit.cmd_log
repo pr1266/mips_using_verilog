@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/pr1266/finalproject/incrementer32bit.xst" -ofn "C:/Users/pr1266/finalproject/incrementer32bit.syr" 
