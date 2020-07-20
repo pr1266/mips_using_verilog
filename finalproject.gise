@@ -39,6 +39,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="incrementer32bit.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="incrementer32bit_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="incrementer32bit_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instruction_memory.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="instruction_memory.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="instruction_memory.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux32bit2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux32bit2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux32bit2to1.xst"/>
