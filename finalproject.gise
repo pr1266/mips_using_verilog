@@ -33,6 +33,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="incrementer32bit.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="incrementer32bit_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="incrementer32bit_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux32bit2to1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux32bit2to1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="mux32bit2to1.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -69,7 +72,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="incrementer32bit.lso"/>
       <outfile xil_pn:name="incrementer32bit.ngc"/>
