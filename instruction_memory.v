@@ -14,7 +14,7 @@ initial
                 mem[3] = 32'b100011_00010_00001_0000000000001010;
                 mem[4] = 32'b000100_00001_00010_0000000000010100;
 					 // inja az file mikhoonim vase ghesmat e 3vom soal :
-					 $readmemh("instruction.mem", mem);
+					 //$readmemh("instruction.mem", mem);
       end  
 
 always @(posedge clk)

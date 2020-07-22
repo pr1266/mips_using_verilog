@@ -1,0 +1,3 @@
+verilog work "instruction_memory.v"
+verilog work "Control.v"
+verilog work "mips.v"

@@ -45,6 +45,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="latch.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="latch.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="latch.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mips.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mips.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mips.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mips.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mips.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mips_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux32bit2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux32bit2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux32bit2to1.xst"/>
@@ -63,11 +69,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595282483" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-884455949255762955" xil_pn:start_ts="1595282483">
+    <transform xil_pn:end_ts="1595390653" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3083755636328485294" xil_pn:start_ts="1595390653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595282483" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7399986783961416539" xil_pn:start_ts="1595282483">
+    <transform xil_pn:end_ts="1595390653" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2741032113507398338" xil_pn:start_ts="1595390653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -75,7 +81,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595282483" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1918185460505190409" xil_pn:start_ts="1595282483">
+    <transform xil_pn:end_ts="1595390653" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-108373080525765968" xil_pn:start_ts="1595390653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -83,29 +89,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595282483" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1824216459251206767" xil_pn:start_ts="1595282483">
+    <transform xil_pn:end_ts="1595390653" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1934991210347013112" xil_pn:start_ts="1595390653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595282495" xil_pn:in_ck="6783156679905065732" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4098698267187531028" xil_pn:start_ts="1595282483">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1595390660" xil_pn:in_ck="-5582421945879166778" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5472732909748108659" xil_pn:start_ts="1595390653">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="incrementer32bit.lso"/>
-      <outfile xil_pn:name="incrementer32bit.ngc"/>
-      <outfile xil_pn:name="incrementer32bit.ngr"/>
-      <outfile xil_pn:name="incrementer32bit.prj"/>
-      <outfile xil_pn:name="incrementer32bit.stx"/>
-      <outfile xil_pn:name="incrementer32bit.syr"/>
-      <outfile xil_pn:name="incrementer32bit.xst"/>
-      <outfile xil_pn:name="incrementer32bit_xst.xrpt"/>
+      <outfile xil_pn:name="mips.lso"/>
+      <outfile xil_pn:name="mips.prj"/>
+      <outfile xil_pn:name="mips.syr"/>
+      <outfile xil_pn:name="mips.xst"/>
+      <outfile xil_pn:name="mips_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1595390660" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435936603" xil_pn:start_ts="1595390660">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 
