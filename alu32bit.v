@@ -18,9 +18,18 @@ begin
 	// subtract operation
 	4'b0110 : out = first - second;
 	// set on less than (SLT) : 
-	/**/
+	4'b0111:
+		begin
+			out = first < second ? 32'b1 : 32'b0;
+		end
 	// nor
-	/**/
+	4'b1100:
+		begin
+		end
+	
 	endcase
 end
+
+assign zero = (first == second) ? 1'b1: 1'b0;
+
 endmodule
