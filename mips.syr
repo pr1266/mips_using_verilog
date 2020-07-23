@@ -121,46 +121,14 @@ Analyzing Verilog file "C:\Users\pr1266\finalproject\alu32bit.v" into library wo
 Parsing module <alu32bit>.
 Analyzing Verilog file "C:\Users\pr1266\finalproject\mips.v" into library work
 Parsing module <mips>.
-
-=========================================================================
-*                            HDL Elaboration                            *
-=========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 79: Port Branch is not connected to this instance
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 149: Module <data_memory> does not have a port named <mem_access_addr>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 150: Module <data_memory> does not have a port named <mem_write_data>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 151: Module <data_memory> does not have a port named <mem_read_data>.
-WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 149: Port addr is not connected to this instance
-
-Elaborating module <mips>.
-
-Elaborating module <instruction_memory>.
-
-Elaborating module <Control>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 79: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 80: Size mismatch in connection of port <MemtoReg>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 87: Result of 5-bit expression is truncated to fit in 1-bit target.
-
-Elaborating module <register_file>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 97: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
-
-Elaborating module <sign_extend>.
-
-Elaborating module <ALU_control>.
-
-Elaborating module <alu32bit>.
-WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 129: Assignment to alu_out ignored, since the identifier is never used
-
-Elaborating module <data_memory>.
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 149: Cannot find port mem_access_addr on this module
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 150: Cannot find port mem_write_data on this module
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 151: Cannot find port mem_read_data on this module
-Module mips remains a blackbox, due to errors in its contents
-WARNING:HDLCompiler:1499 - "C:\Users\pr1266\finalproject\mips.v" Line 3: Empty module <mips> remains a black box.
+ERROR:HDLCompiler:718 - "C:\Users\pr1266\finalproject\mips.v" Line 79: Port connections cannot be mixed ordered and named
+ERROR:HDLCompiler:598 - "C:\Users\pr1266\finalproject\mips.v" Line 3: Module <mips> ignored due to previous errors.
+Verilog file C:\Users\pr1266\finalproject\mips.v ignored due to errors
 --> 
 
-Total memory usage is 4457536 kilobytes
+Total memory usage is 4455104 kilobytes
 
-Number of errors   :    3 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

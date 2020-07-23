@@ -126,25 +126,7 @@ ALU_control alu_control_unit(alu_op, instr[5:0], alu_control);
 // age 0 bashe data marboot be register e dovom :
 assign read_data2 = (alu_src == 1'b1) ? sign_ext_im : reg_read_data_2;  
 // hala ALU ro misazim :
-alu32bit alu_unit(reg_read_data_1, read_data2, alu_control, alu_out, zero_flag);
-// immediate shift 1  
-assign im_shift_1 = {imm_ext[14:0],1'b0};  
- //  
-assign no_sign_ext = ~(im_shift_1) + 1'b1;  
- // PC beq add  
-assign PC_beq = (im_shift_1[15] == 1'b1) ? (pc2 - no_sign_ext): (pc2 +im_shift_1);  
- // beq control  
-assign beq_control = branch & zero_flag;  
- // PC_beq  
-assign PC_4beq = (beq_control==1'b1) ? PC_beq : pc2;  
- // PC_j  
-assign PC_j = {pc2[15],jump_shift_1};  
- // PC_4beqj  
-assign PC_4beqj = (jump == 1'b1) ? PC_j : PC_4beq;  
- // PC_jr  
-assign PC_jr = reg_read_data_1;  
- // PC_next  
-assign pc_next = (JRControl==1'b1) ? PC_jr : PC_4beqj;  
+alu32bit alu_unit(reg_read_data_1, read_data2, alu_control, alu_out, zero_flag); 
 
 // inja baraye data memory :
 // morajee be memory va Read-Write :
@@ -159,7 +141,14 @@ assign reg_write_data = (mem_to_reg == 1'b0) ? alu_out : mem_read_data;
 // address e pc counter ba oon meghdar e constant e
 // sign extend shode jam mishe va oon dar pc gharar migire :
 assign branch_controller = branch & zero_flag;
-assign pc_next = (branch_controller) ? current_pc + sign_extend : pc2;  
+
+wire [31:0] address_alu_out;
+wire address_alu_zero;
+alu32bit ADDRESS_ALU(current_pc, sign_extend, address_alu_out, address_alu_zero);
+
+
+assign pc_next = (branch_controller) ? address_alu_out : pc2;
+
 // output
 assign pc_out = pc_current;  
 assign alu_result = alu_out;
