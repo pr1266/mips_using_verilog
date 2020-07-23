@@ -127,7 +127,7 @@ ALU_control alu_control_unit(alu_op, instr[5:0], alu_control);
 assign read_data2 = (alu_src == 1'b1) ? sign_ext_im : reg_read_data_2;  
 // hala ALU ro misazim :
 alu32bit alu_unit(reg_read_data_1, read_data2, alu_control, alu_out, zero_flag);
- // immediate shift 1  
+// immediate shift 1  
 assign im_shift_1 = {imm_ext[14:0],1'b0};  
  //  
 assign no_sign_ext = ~(im_shift_1) + 1'b1;  
@@ -145,10 +145,9 @@ assign PC_4beqj = (jump == 1'b1) ? PC_j : PC_4beq;
 assign PC_jr = reg_read_data_1;  
  // PC_next  
 assign pc_next = (JRControl==1'b1) ? PC_jr : PC_4beqj;  
- // data memory  
-data_memory datamem(.clk(clk),.mem_access_addr(ALU_out),
- .mem_write_data(reg_read_data_2),.mem_write_en(mem_write),.mem_read(mem_read),  
- .mem_read_data(mem_read_data));  
+ // data memory
+ 
+data_memory datamem(clk, alu_out, reg_read_data_2, mem_write, mem_read, mem_read_data);  
  // write back
  assign reg_write_data = (mem_to_reg == 2'b10) ? pc2:((mem_to_reg == 2'b01)? mem_read_data: ALU_out);  
  // output

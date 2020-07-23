@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-module data_memory(input clk, 
-						input [6:0] addr, 
+module data_memory(input clk,
+						input [31:0] addr, 
 						input [31:0] write_data, 
 						input memWrite, 
 						input memRead, 
