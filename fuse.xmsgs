@@ -5,16 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 144: Port <arg fmt="%s" index="1">zero</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 83: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 144: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">first</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 98: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 79: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 148: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">first</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 94: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="error" file="Simulator" num="904" delta="unknown" >Unable to remove previous simulation file <arg fmt="%s" index="1">isim/mips_test_bench_isim_beh.exe.sim/mips_test_bench_isim_beh.exe</arg>. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: <arg fmt="%s" index="2">boost::filesystem::remove: Access is denied: &quot;isim\mips_test_bench_isim_beh.exe.sim\mips_test_bench_isim_beh.exe&quot;</arg>
+</msg>
+
+<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
 </msg>
 
 </messages>

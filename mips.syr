@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: mips.prj
 
@@ -119,38 +119,38 @@ Analyzing Verilog file "C:\Users\pr1266\finalproject\ALU_control.v" into library
 Parsing module <ALU_control>.
 Analyzing Verilog file "C:\Users\pr1266\finalproject\alu32bit.v" into library work
 Parsing module <alu32bit>.
+Analyzing Verilog file "C:\Users\pr1266\finalproject\address_alu.v" into library work
+Parsing module <address_alu>.
 Analyzing Verilog file "C:\Users\pr1266\finalproject\mips.v" into library work
 Parsing module <mips>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 144: Port zero is not connected to this instance
 
 Elaborating module <mips>.
 
 Elaborating module <instruction_memory>.
 
 Elaborating module <Control>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 79: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 84: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 83: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 88: Result of 5-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <register_file>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 94: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 98: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
 
 Elaborating module <sign_extend>.
-WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 108: Assignment to imm_ext ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 112: Assignment to imm_ext ignored, since the identifier is never used
 
 Elaborating module <ALU_control>.
 
 Elaborating module <alu32bit>.
 
 Elaborating module <data_memory>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 144: Size mismatch in connection of port <first>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 144: Assignment to address_alu_zero ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 142: Net <address_alu_out[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 144: Net <current_pc> does not have a driver.
-WARNING:Xst:2972 - "C:\Users\pr1266\finalproject\mips.v" line 144. All outputs of instance <ADDRESS_ALU> of block <alu32bit> are unconnected in block <mips>. Underlying logic will be removed.
+
+Elaborating module <address_alu>.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 148: Size mismatch in connection of port <first>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 148: Net <current_pc> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -158,17 +158,14 @@ WARNING:Xst:2972 - "C:\Users\pr1266\finalproject\mips.v" line 144. All outputs o
 
 Synthesizing Unit <mips>.
     Related source file is "C:\Users\pr1266\finalproject\mips.v".
-INFO:Xst:3210 - "C:\Users\pr1266\finalproject\mips.v" line 144: Output port <out> of the instance <ADDRESS_ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\pr1266\finalproject\mips.v" line 144: Output port <zero> of the instance <ADDRESS_ALU> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <address_alu_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <current_pc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <sign_extend> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 32-bit register for signal <pc_out>.
-    Found 32-bit adder for signal <pc2> created at line 63.
+    Found 32-bit adder for signal <pc2> created at line 67.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
-	inferred   3 Multiplexer(s).
+	inferred   4 Multiplexer(s).
 Unit <mips> synthesized.
 
 Synthesizing Unit <instruction_memory>.
@@ -276,6 +273,12 @@ WARNING:Xst:647 - Input <addr<31:7>> is never used. This port will be preserved 
 	inferred  32 D-type flip-flop(s).
 Unit <data_memory> synthesized.
 
+Synthesizing Unit <address_alu>.
+    Related source file is "C:\Users\pr1266\finalproject\address_alu.v".
+    Summary:
+	no macro.
+Unit <address_alu> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -294,10 +297,10 @@ Macro Statistics
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 185
+# Multiplexers                                         : 186
  1-bit 2-to-1 multiplexer                              : 180
  1-bit 5-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 4
  5-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -324,7 +327,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs eit
 Unit <data_memory> synthesized (advanced).
 
 Synthesizing (advanced) Unit <instruction_memory>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -336,10 +339,6 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs eit
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <instruction_memory> synthesized (advanced).
-
-Synthesizing (advanced) Unit <mips>.
-The following registers are absorbed into accumulator <pc_current>: 1 register on signal <pc_current>.
-Unit <mips> synthesized (advanced).
 
 Synthesizing (advanced) Unit <register_file>.
 INFO:Xst:3226 - The RAM <Mram_regFile> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_out_1>
@@ -400,20 +399,18 @@ Macro Statistics
  128x32-bit single-port distributed RAM                : 1
  32x32-bit dual-port block RAM                         : 2
  32x32-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 2
- 32-bit adder                                          : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 1
-# Accumulators                                         : 1
- 32-bit up accumulator                                 : 1
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Registers                                            : 64
+ Flip-Flops                                            : 64
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 185
+# Multiplexers                                         : 186
  1-bit 2-to-1 multiplexer                              : 180
  1-bit 5-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 4
  5-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -422,8 +419,8 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <op_3> (without init value) has a constant value of 0 in block <ALU_control>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <pc_current_0> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_current_1> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pc_current_0> has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pc_current_1> has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
    either a register or latch described with both an asynchronous set and
@@ -599,15 +596,15 @@ Top Level Output File Name         : mips.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 405
+# BELS                             : 406
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 30
-#      LUT2                        : 27
+#      LUT2                        : 29
 #      LUT3                        : 120
-#      LUT4                        : 2
-#      LUT5                        : 6
-#      LUT6                        : 17
+#      LUT4                        : 1
+#      LUT5                        : 5
+#      LUT6                        : 18
 #      MUXCY                       : 104
 #      VCC                         : 1
 #      XORCY                       : 94
@@ -629,14 +626,14 @@ Selected Device : 6slx9tqg144-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              36  out of  11440     0%  
- Number of Slice LUTs:                  205  out of   5720     3%  
-    Number used as Logic:               205  out of   5720     3%  
+ Number of Slice LUTs:                  206  out of   5720     3%  
+    Number used as Logic:               206  out of   5720     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    206
-   Number with an unused Flip Flop:     170  out of    206    82%  
-   Number with an unused LUT:             1  out of    206     0%  
-   Number of fully used LUT-FF pairs:    35  out of    206    16%  
+ Number of LUT Flip Flop pairs used:    207
+   Number with an unused Flip Flop:     171  out of    207    82%  
+   Number with an unused LUT:             1  out of    207     0%  
+   Number of fully used LUT-FF pairs:    35  out of    207    16%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -699,20 +696,20 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 5.652ns (frequency: 176.933MHz)
-  Total number of paths / destination ports: 10481 / 99
+  Total number of paths / destination ports: 10428 / 99
 -------------------------------------------------------------------------
 Delay:               5.652ns (Levels of Logic = 14)
   Source:            reg_file/Mram_regFile1 (RAM)
-  Destination:       pc_current_3 (FF)
+  Destination:       pc_current_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: reg_file/Mram_regFile1 to pc_current_3
+  Data Path: reg_file/Mram_regFile1 to pc_current_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAMB8BWER:CLKAWRCLK->DOADO2    3   1.850   0.651  reg_file/Mram_regFile1 (reg_read_data_2<2>)
-     LUT5:I4->O            1   0.205   0.808  read_data2<2>1 (read_data2<2>)
+     LUT5:I4->O            1   0.205   0.808  Mmux_read_data2231 (read_data2<2>)
      LUT6:I3->O            1   0.205   0.000  alu_unit/Mcompar_zero_lut<0> (alu_unit/Mcompar_zero_lut<0>)
      MUXCY:S->O            1   0.172   0.000  alu_unit/Mcompar_zero_cy<0> (alu_unit/Mcompar_zero_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<1> (alu_unit/Mcompar_zero_cy<1>)
@@ -725,8 +722,8 @@ Delay:               5.652ns (Levels of Logic = 14)
      MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<8> (alu_unit/Mcompar_zero_cy<8>)
      MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<9> (alu_unit/Mcompar_zero_cy<9>)
      MUXCY:CI->O          30   0.019   1.264  alu_unit/Mcompar_zero_cy<10> (zero_flag)
-     LUT3:I2->O            1   0.205   0.000  pc_current_3_rstpot (pc_current_3_rstpot)
-     FD:D                      0.102          pc_current_3
+     LUT3:I2->O            1   0.205   0.000  Mmux_pc_next311 (pc_next<8>)
+     FD:D                      0.102          pc_current_8
     ----------------------------------------
     Total                      5.652ns (2.929ns logic, 2.723ns route)
                                        (51.8% logic, 48.2% route)
@@ -830,14 +827,14 @@ clk            |         |         |    1.863|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.78 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.40 secs
  
 --> 
 
-Total memory usage is 4509252 kilobytes
+Total memory usage is 4509892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  162 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  157 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

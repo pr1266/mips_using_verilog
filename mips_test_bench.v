@@ -19,6 +19,7 @@ module mips_test_bench;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
+		
 
 		// Wait 100 ns for global reset to finish
 		#100;

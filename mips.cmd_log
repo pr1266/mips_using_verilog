@@ -29,3 +29,13 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 mips.ngc mi
 map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mips_map.ncd mips.ngd mips.pcf 
 par -w -intstyle ise -ol high -mt off mips_map.ncd mips.ncd mips.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mips.twx mips.ncd -o mips.twr mips.pcf 
+xst -intstyle ise -ifn "C:/Users/pr1266/finalproject/mips.xst" -ofn "C:/Users/pr1266/finalproject/mips.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 mips.ngc mips.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mips_map.ncd mips.ngd mips.pcf 
+par -w -intstyle ise -ol high -mt off mips_map.ncd mips.ncd mips.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mips.twx mips.ncd -o mips.twr mips.pcf 
+xst -intstyle ise -ifn "C:/Users/pr1266/finalproject/mips.xst" -ofn "C:/Users/pr1266/finalproject/mips.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 mips.ngc mips.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mips_map.ncd mips.ngd mips.pcf 
+par -w -intstyle ise -ol high -mt off mips_map.ncd mips.ncd mips.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mips.twx mips.ncd -o mips.twr mips.pcf 

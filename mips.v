@@ -5,6 +5,10 @@ module mips(input clk, output [31:0] pc_out, alu_result);
 // address e feli program counter :
 reg [31:0] pc_current;
 
+initial
+begin
+	pc_current = 32'b00000000000000000000000000000000;
+end
 // meghdar e baddi pc :
 wire signed[31:0] pc_next,pc2;
 //check kon bbin in chie
@@ -141,15 +145,12 @@ assign branch_controller = branch & zero_flag;
 
 wire [31:0] address_alu_out;
 wire address_alu_zero;
-alu32bit ADDRESS_ALU(current_pc, sign_extend, address_alu_out, address_alu_zero);
-
+address_alu ADDRESS_ALU(current_pc, sign_extend, address_alu_out);
 
 assign pc_next = (branch_controller) ? address_alu_out : pc2;
 
 // output
-assign pc_out = pc_current;  
+assign pc_out = pc_current;
 assign alu_result = alu_out;
-
-
 
 endmodule 

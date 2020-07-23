@@ -1,2 +1,17 @@
 ISim log file
-Running: C:\Users\pr1266\finalproject\mips_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/pr1266/finalproject/mips_isim_beh.wdb 
+Running: C:\Users\pr1266\finalproject\mips_test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/pr1266/finalproject/mips_test_bench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 17.  For instance uut/control_unit/, width 1 of formal port RegDst is not equal to width 2 of actual signal reg_dst.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 17.  For instance uut/control_unit/, width 1 of formal port MemtoReg is not equal to width 2 of actual signal mem_to_reg.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 88.  For instance uut/reg_file/, width 5 of formal port write_addr is not equal to width 1 of actual signal reg_write_dest.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 148.  For instance uut/ADDRESS_ALU/, width 32 of formal port first is not equal to width 1 of actual signal current_pc.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 148.  For instance uut/ADDRESS_ALU/, width 32 of formal port second is not equal to width 1 of actual signal sign_extend.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 146.  For instance uut/ADDRESS_ALU/, width 4 of formal port select is not equal to width 32 of actual signal address_alu_out.
+WARNING: File "C:/Users/pr1266/finalproject/mips.v" Line 147.  For instance uut/ADDRESS_ALU/, width 32 of formal port out is not equal to width 1 of actual signal address_alu_zero.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
