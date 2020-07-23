@@ -5,61 +5,46 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 61: Port <arg fmt="%s" index="1">Branch</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 79: Port <arg fmt="%s" index="1">Branch</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="25" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 91: Module &lt;<arg fmt="%s" index="1">ALU_control</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">Function</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="25" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 149: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_access_addr</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 91: Port <arg fmt="%s" index="1">inst</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="25" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 150: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_write_data</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="25" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 96: Module &lt;<arg fmt="%s" index="1">alu32bit</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">a</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="25" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 151: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_read_data</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 96: Port <arg fmt="%s" index="1">first</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 149: Port <arg fmt="%s" index="1">addr</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="25" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 116: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_access_addr</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 79: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="25" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 117: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_write_data</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 80: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">MemtoReg</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="25" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 118: Module &lt;<arg fmt="%s" index="1">data_memory</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">mem_read_data</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 87: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 116: Port <arg fmt="%s" index="1">addr</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 97: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 41: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 129: Assignment to <arg fmt="%s" index="1">alu_out</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="error" file="HDLCompiler" num="990" delta="new" >"C:\Users\pr1266\finalproject\instruction_memory.v" Line 16: Cannot open file <arg fmt="%s" index="1">instruction.mem</arg>
+<msg type="error" file="HDLCompiler" num="267" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 149: Cannot find port <arg fmt="%s" index="1">mem_access_addr</arg> on this module
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\pr1266\finalproject\instruction_memory.v" Line 3: Empty module &lt;<arg fmt="%s" index="1">instruction_memory</arg>&gt; remains a black box.
+<msg type="error" file="HDLCompiler" num="267" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 150: Cannot find port <arg fmt="%s" index="1">mem_write_data</arg> on this module
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 61: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+<msg type="error" file="HDLCompiler" num="267" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 151: Cannot find port <arg fmt="%s" index="1">mem_read_data</arg> on this module
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 62: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">MemtoReg</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 67: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 73: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="267" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 91: Cannot find port <arg fmt="%s" index="1">Function</arg> on this module
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 91: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">op</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\pr1266\finalproject\mips.v" Line 3: Empty module &lt;<arg fmt="%s" index="1">mips</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 3: Empty module &lt;<arg fmt="%s" index="1">mips</arg>&gt; remains a black box.
 </msg>
 
 </messages>

@@ -1,3 +1,4 @@
+verilog work "sign_extend.v"
 verilog work "register_file.v"
 verilog work "instruction_memory.v"
 verilog work "data_memory.v"

@@ -106,10 +106,9 @@ register_file reg_file(.clk(clk) ,.RegWrite(reg_write),
 // 16 bit aval e instruction ro midim be sign extend
 // meghdar e khoroojish ro mirizim too sign_ext_im
 sign_extend SignExtend(instr[15:0], sign_ext_im);
-
-//assign sign_ext_im = {{9{instr[6]}},instr[6:0]};  
-//assign zero_ext_im = {{9{1'b0}},instr[6:0]};
-//assign imm_ext = (sign_or_zero==1'b1) ? sign_ext_im : zero_ext_im;
+ 
+assign zero_ext_im = {{16{1'b0}}, instr[15:0]};
+assign imm_ext = (sign_or_zero == 1'b1) ? sign_ext_im : zero_ext_im;
 
 
 // JR control  
@@ -120,14 +119,14 @@ sign_extend SignExtend(instr[15:0], sign_ext_im);
 // 6 bit e aval e instruction : intr[5:0]
 // 4 bit ham operation dare ke outpute :
 ALU_control alu_control_unit(alu_op, instr[5:0], alu_control);
- 
+
 // multiplexer alu_src
 // age 1 bashe oon meghdar e sign extend shode ke too
 // module sign extend dorostesh kardim va 32 bit e mire too alu
 // age 0 bashe data marboot be register e dovom :
 assign read_data2 = (alu_src == 1'b1) ? sign_ext_im : reg_read_data_2;  
-// ALU
-alu32bit alu_unit(.a(reg_read_data_1),.b(read_data2),.alu_control(ALU_Control),.result(ALU_out),.zero(zero_flag));  
+// hala ALU ro misazim :
+alu32bit alu_unit(reg_read_data_1, read_data2, alu_control, alu_out, zero_flag);
  // immediate shift 1  
 assign im_shift_1 = {imm_ext[14:0],1'b0};  
  //  
@@ -154,6 +153,6 @@ data_memory datamem(.clk(clk),.mem_access_addr(ALU_out),
  assign reg_write_data = (mem_to_reg == 2'b10) ? pc2:((mem_to_reg == 2'b01)? mem_read_data: ALU_out);  
  // output
  assign pc_out = pc_current;  
- assign alu_result = ALU_out;
+ assign alu_result = alu_out;
 
-endmodule
+endmodule 
