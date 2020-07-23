@@ -1,3 +1,5 @@
+verilog work "register_file.v"
 verilog work "instruction_memory.v"
+verilog work "data_memory.v"
 verilog work "Control.v"
 verilog work "mips.v"

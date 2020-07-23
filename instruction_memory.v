@@ -1,8 +1,7 @@
 `timescale 1ns / 1ps
 
-module instruction_memory(input clk, 
-								input [4:0] addr, 
-								output reg [31:0] instruction);
+module instruction_memory(input [31:0] addr,
+								output [31:0] instruction);
 
 reg [31:0] mem [31:0];
 
@@ -17,9 +16,8 @@ initial
 					 //$readmemh("instruction.mem", mem);
       end  
 
-always @(posedge clk)
-begin
-	instruction <= mem[addr];
-end
+
+assign instruction = mem[addr];
+
 
 endmodule

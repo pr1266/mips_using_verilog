@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
-module alu32bit(input clk, 
-					input [31:0] first, 
+module alu32bit(input [31:0] first, 
 					input [31:0] second, 
 					input [3:0] select, 
 					output reg [31:0] out, 
 					output reg zero);
 
-always @(posedge clk)
+// chon madar combinational darim hame parametr ha 
+always @(*)
 begin
 	case(select)
 	// and operation
@@ -18,18 +18,12 @@ begin
 	// subtract operation
 	4'b0110 : out = first - second;
 	// set on less than (SLT) : 
-	4'b0111:
-		begin
-			out = first < second ? 32'b1 : 32'b0;
-		end
+	4'b0111: out = first < second ? first : second;
 	// nor
-	4'b1100:
-		begin
-		end
+	4'b1100: out = first ~| second;
 	
 	endcase
 end
-
 assign zero = (first == second) ? 1'b1: 1'b0;
 
 endmodule

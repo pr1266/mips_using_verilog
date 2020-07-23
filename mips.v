@@ -39,14 +39,14 @@ end
 // address pc ro 4 byte (32 bit ya 1 word) ezafe mikonim :
 assign pc2 = pc_current + 32'd4;
 // inja instruction memory :
-instruction_memory instr_mem(.clk(clk),.pc(pc_current),.instruction(instr));
+instruction_memory instr_mem(.addr(pc_current),.instruction(instr));
 
 
 // jump shift left 1  
 assign jump_shift_1 = {instr[13:0],1'b0};
 
 
-Control control_unit(.reset(reset),.opcode(instr[31:26]),.reg_dst(reg_dst)  
+Control control_unit(.opcode(instr[31:26]),.reg_dst(reg_dst)  
                 ,.mem_to_reg(mem_to_reg),.alu_op(alu_op),.jump(jump),.branch(branch),.mem_read(mem_read),  
                 .mem_write(mem_write),.alu_src(alu_src),.reg_write(reg_write),.sign_or_zero(sign_or_zero));  
 
@@ -98,7 +98,7 @@ assign imm_ext = (sign_or_zero==1'b1) ? sign_ext_im : zero_ext_im;
  // PC_next  
  assign pc_next = (JRControl==1'b1) ? PC_jr : PC_4beqj;  
  // data memory  
- data_memory datamem(.clk(clk),.mem_access_addr(ALU_out),  
+ data_memory datamem(.clk(clk),.mem_access_addr(ALU_out),
  .mem_write_data(reg_read_data_2),.mem_write_en(mem_write),.mem_read(mem_read),  
  .mem_read_data(mem_read_data));  
  // write back
