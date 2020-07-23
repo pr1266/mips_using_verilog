@@ -82,7 +82,8 @@ Control control_unit(.inst_in(instr[31:26]),.RegDst(reg_dst)
 
 
 // regWrite Destination :
-// ino nafahmidam :
+// RegDst signal e controli mux e 2 be 1 voroodi write register address e
+// ke bbinim toye register jadid bayad benevisim ya rooye register 2 neveshte beshe :
 assign reg_write_dest = (reg_dst == 1'b1) ? instr[15:11] : instr[20:16];
 
 // inja oon busi ke be Register file mire va khat e
@@ -100,21 +101,32 @@ register_file reg_file(.clk(clk) ,.RegWrite(reg_write),
  .read_addr_2(reg_read_addr_2),  
  .data_out_2(reg_read_data_2)); 
 
-// injasho nafahmidam :
-assign sign_ext_im = {{9{instr[6]}},instr[6:0]};  
-assign zero_ext_im = {{9{1'b0}},instr[6:0]};  
-assign imm_ext = (sign_or_zero==1'b1) ? sign_ext_im : zero_ext_im;
+
+// inja sign extend mikonim :
+// 16 bit aval e instruction ro midim be sign extend
+// meghdar e khoroojish ro mirizim too sign_ext_im
+sign_extend SignExtend(instr[15:0], sign_ext_im);
+
+//assign sign_ext_im = {{9{instr[6]}},instr[6:0]};  
+//assign zero_ext_im = {{9{1'b0}},instr[6:0]};
+//assign imm_ext = (sign_or_zero==1'b1) ? sign_ext_im : zero_ext_im;
 
 
 // JR control  
 //JR_Control JRControl_unit(.alu_op(alu_op),.funct(instr[3:0]),.JRControl(JRControl));       
 // ALU control unit
  
-ALU_control alu_control_unit(.ALU_op(alu_op),.Function(instr[3:0]),.op(ALU_Control));  
+// 2 bit alu_op ke az control unit miad :
+// 6 bit e aval e instruction : intr[5:0]
+// 4 bit ham operation dare ke outpute :
+ALU_control alu_control_unit(alu_op, instr[5:0], alu_control);
  
- // multiplexer alu_src 
-assign read_data2 = (alu_src==1'b1) ? imm_ext : reg_read_data_2;  
- // ALU   
+// multiplexer alu_src
+// age 1 bashe oon meghdar e sign extend shode ke too
+// module sign extend dorostesh kardim va 32 bit e mire too alu
+// age 0 bashe data marboot be register e dovom :
+assign read_data2 = (alu_src == 1'b1) ? sign_ext_im : reg_read_data_2;  
+// ALU
 alu32bit alu_unit(.a(reg_read_data_1),.b(read_data2),.alu_control(ALU_Control),.result(ALU_out),.zero(zero_flag));  
  // immediate shift 1  
 assign im_shift_1 = {imm_ext[14:0],1'b0};  
