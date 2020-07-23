@@ -3,7 +3,7 @@ module alu32bit(input [31:0] first,
 					input [31:0] second, 
 					input [3:0] select, 
 					output reg [31:0] out, 
-					output reg zero);
+					output zero);
 
 // chon madar combinational darim hame parametr ha 
 always @(*)
@@ -18,9 +18,9 @@ begin
 	// subtract operation
 	4'b0110 : out = first - second;
 	// set on less than (SLT) : 
-	4'b0111: out = first < second ? first : second;
+	4'b0111 : out = first < second ? first : second;
 	// nor
-	4'b1100: out = first ~| second;
+	//4'b1100 : out = first ~| second;
 	
 	endcase
 end

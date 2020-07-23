@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: mips.prj
 
@@ -113,38 +113,52 @@ Analyzing Verilog file "C:\Users\pr1266\finalproject\data_memory.v" into library
 Parsing module <data_memory>.
 Analyzing Verilog file "C:\Users\pr1266\finalproject\Control.v" into library work
 Parsing module <Control>.
+Analyzing Verilog file "C:\Users\pr1266\finalproject\ALU_control.v" into library work
+Parsing module <ALU_control>.
+Analyzing Verilog file "C:\Users\pr1266\finalproject\alu32bit.v" into library work
+Parsing module <alu32bit>.
 Analyzing Verilog file "C:\Users\pr1266\finalproject\mips.v" into library work
 Parsing module <mips>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 49: Module <Control> does not have a port named <opcode>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 50: Module <Control> does not have a port named <mem_to_reg>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 51: Module <Control> does not have a port named <mem_write>.
-WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 49: Port inst_in is not connected to this instance
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 101: Module <data_memory> does not have a port named <mem_access_addr>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 102: Module <data_memory> does not have a port named <mem_write_data>.
-WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 103: Module <data_memory> does not have a port named <mem_read_data>.
-WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 101: Port addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 61: Port Branch is not connected to this instance
+WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 91: Module <ALU_control> does not have a port named <Function>.
+WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 91: Port inst is not connected to this instance
+WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 96: Module <alu32bit> does not have a port named <a>.
+WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 96: Port first is not connected to this instance
+WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 116: Module <data_memory> does not have a port named <mem_access_addr>.
+WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 117: Module <data_memory> does not have a port named <mem_write_data>.
+WARNING:HDLCompiler:25 - "C:\Users\pr1266\finalproject\mips.v" Line 118: Module <data_memory> does not have a port named <mem_read_data>.
+WARNING:HDLCompiler:1016 - "C:\Users\pr1266\finalproject\mips.v" Line 116: Port addr is not connected to this instance
 
 Elaborating module <mips>.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 40: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 41: Result of 32-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <instruction_memory>.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 46: Result of 15-bit expression is truncated to fit in 1-bit target.
+ERROR:HDLCompiler:990 - "C:\Users\pr1266\finalproject\instruction_memory.v" Line 16: Cannot open file instruction.mem
+Module instruction_memory remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "C:\Users\pr1266\finalproject\instruction_memory.v" Line 3: Empty module <instruction_memory> remains a black box.
 
 Elaborating module <Control>.
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 49: Cannot find port opcode on this module
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 50: Cannot find port mem_to_reg on this module
-ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 51: Cannot find port mem_write on this module
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 61: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 62: Size mismatch in connection of port <MemtoReg>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 67: Result of 3-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <register_file>.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 73: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
+
+Elaborating module <ALU_control>.
+ERROR:HDLCompiler:267 - "C:\Users\pr1266\finalproject\mips.v" Line 91: Cannot find port Function on this module
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 91: Size mismatch in connection of port <op>. Formal port size is 4-bit while actual signal size is 1-bit.
 Module mips remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "C:\Users\pr1266\finalproject\mips.v" Line 3: Empty module <mips> remains a black box.
 --> 
 
-Total memory usage is 4455680 kilobytes
+Total memory usage is 4456192 kilobytes
 
-Number of errors   :    3 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
