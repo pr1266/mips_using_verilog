@@ -76,10 +76,7 @@ instruction_memory instr_mem(.addr(pc_current),.instruction(instr));
 // RegWrite
 // be onvan e output e control unit meghdar dade mishan :
 
-Control control_unit(.inst_in(instr[31:26]),.RegDst(reg_dst), .Branch(branch),
-                ,.MemtoReg(mem_to_reg),.ALUop(alu_op),.MemRead(mem_read),
-                .MemWrite(mem_write),.ALUsrc(alu_src),.RegWrite(reg_write));  
-
+Control control_unit(instr[31:26], reg_dst, branch, mem_read, mem_to_reg, alu_op, mem_write, alu_src, reg_write);  
 
 // regWrite Destination :
 // RegDst signal e controli mux e 2 be 1 voroodi write register address e
