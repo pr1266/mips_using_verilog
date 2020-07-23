@@ -50,7 +50,7 @@ wire [31:0] mem_read_data;
 
 wire [31:0] no_sign_ext;
 wire sign_or_zero;
-
+wire branch_controler;
 
 
 always @(posedge clk)
@@ -76,8 +76,8 @@ instruction_memory instr_mem(.addr(pc_current),.instruction(instr));
 // RegWrite
 // be onvan e output e control unit meghdar dade mishan :
 
-Control control_unit(.inst_in(instr[31:26]),.RegDst(reg_dst)  
-                ,.MemtoReg(mem_to_reg),.ALUop(alu_op),.MemRead(mem_read),  
+Control control_unit(.inst_in(instr[31:26]),.RegDst(reg_dst), .Branch(branch),
+                ,.MemtoReg(mem_to_reg),.ALUop(alu_op),.MemRead(mem_read),
                 .MemWrite(mem_write),.ALUsrc(alu_src),.RegWrite(reg_write));  
 
 
@@ -145,13 +145,25 @@ assign PC_4beqj = (jump == 1'b1) ? PC_j : PC_4beq;
 assign PC_jr = reg_read_data_1;  
  // PC_next  
 assign pc_next = (JRControl==1'b1) ? PC_jr : PC_4beqj;  
- // data memory
- 
+
+// inja baraye data memory :
+// morajee be memory va Read-Write :
+// data memory
 data_memory datamem(clk, alu_out, reg_read_data_2, mem_write, mem_read, mem_read_data);  
- // write back
- assign reg_write_data = (mem_to_reg == 2'b10) ? pc2:((mem_to_reg == 2'b01)? mem_read_data: ALU_out);  
- // output
- assign pc_out = pc_current;  
- assign alu_result = alu_out;
+// inja baraye write be register file :
+assign reg_write_data = (mem_to_reg == 1'b0) ? alu_out : mem_read_data;  
+
+// inja baraye branch equal :
+// bala toye block e always pc ro 4 vahed (1 word)
+// ezafe kardim raft . hala age branch dashte bashim 
+// address e pc counter ba oon meghdar e constant e
+// sign extend shode jam mishe va oon dar pc gharar migire :
+assign branch_controller = branch & zero_flag;
+assign pc_next = (branch_controller) ? current_pc + sign_extend : pc2;  
+// output
+assign pc_out = pc_current;  
+assign alu_result = alu_out;
+
+
 
 endmodule 
