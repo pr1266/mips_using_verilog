@@ -10,10 +10,12 @@ module register_file(input clk,
 
 
 reg [31:0] regFile [31:0];
+
+
 integer i;
 initial 
 	begin
-		for(i = 0; i < 32; i = i + 1) regFile[i] <= 32'b0;
+		regFile[0] <= 32'b0;
 end
 
 

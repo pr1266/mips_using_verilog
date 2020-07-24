@@ -7,16 +7,26 @@ module mips(input clk, output [31:0] pc_out, alu_result);
 always @(posedge clk)
 begin
 
-	$display("pc current : %d", pc_current);
+	//$display("pc current : %d", pc_current);
 	$display("pc out : %d", pc_out);
-	$display("instruction : %b", instr);
+	//$display("instruction : %b", instr);
 	$display("alu result : %d", alu_result);
-	$display("pc next : %d", pc_next);
-	$display("zero flag : %b", zero_flag);
-	//$display("first input alu : %b", reg_read_data_1);
-	//$display("second input alu : %b", read_data2);
-	$display("branch signal : %b", branch_controller);
-	
+	//$display("pc next : %d", pc_next);
+	//$display("zero flag : %b", zero_flag);
+	$display("first input alu : %b", reg_read_data_1);
+	$display("second input alu : %b", read_data2);
+	//$display("branch signal : %b", branch_controller);
+	//$display("alu control : %b", alu_control);
+	$display("reg write : %b", reg_write);
+	$display("reg write data : %d", reg_write_data);
+	$display("reg write destination : %d", reg_write_dest);
+	$display("mem to reg : %b", mem_to_reg);
+	$display("reg_read_address_1 : %b", reg_read_addr_1);
+	$display("reg_read_address_2 : %b", reg_read_addr_2);
+	$display("reg_write_dst : %d", reg_write_dst);
+	$display("");
+	$display("");
+	$display("");
 end
 
 wire [31:0] pc_current;
@@ -29,7 +39,8 @@ PC CLOCK(clk, pc_current, pc_out);
 //check kon bbin in chie
 //instruction 32 bit :
 wire [31:0] instr;
-wire [1:0] reg_dst, mem_to_reg, alu_op;
+wire [1:0] alu_op;
+wire mem_to_reg, reg_dst;
 wire jump, branch, mem_read, mem_write, alu_src, reg_write;
 // 5 bit baraye RegDst :
 wire [4:0] reg_write_dst;
@@ -100,12 +111,13 @@ Control control_unit(instr[31:26], reg_dst, branch, mem_read, mem_to_reg, alu_op
 // regWrite Destination :
 // RegDst signal e controli mux e 2 be 1 voroodi write register address e
 // ke bbinim toye register jadid bayad benevisim ya rooye register 2 neveshte beshe :
-assign reg_write_dest = (reg_dst == 1'b1) ? instr[15:11] : instr[20:16];
+assign reg_write_dst = (reg_dst == 1'b1) ? instr[15:11] : instr[20:16];
 
 // inja oon busi ke be Register file mire va khat e
 // address e register e 1 o 2 hast ro meghdar midim :
-assign reg_read_addr_1 = instr[25:21];  
+assign reg_read_addr_1 = instr[25:21];
 assign reg_read_addr_2 = instr[20:16];
+
 
 register_file reg_file(.clk(clk) ,.RegWrite(reg_write),  
  .write_addr(reg_write_dest),  
@@ -114,8 +126,6 @@ register_file reg_file(.clk(clk) ,.RegWrite(reg_write),
  .data_out_1(reg_read_data_1),  
  .read_addr_2(reg_read_addr_2),  
  .data_out_2(reg_read_data_2)); 
-
-
 // inja sign extend mikonim :
 // 16 bit aval e instruction ro midim be sign extend
 // meghdar e khoroojish ro mirizim too sign_ext_im

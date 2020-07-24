@@ -37,6 +37,7 @@ module mips_test_bench;
 		#5
 		clk = 0;
 		
+		
 	end
       
 endmodule
