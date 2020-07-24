@@ -4,13 +4,18 @@ module mips(input clk, output [31:0] pc_out, alu_result);
 
 // address e feli program counter :
 
-
 always @(posedge clk)
 begin
 
 	$display("pc current : %d", pc_current);
-	$display("instruction : %d", instr);
-
+	$display("pc out : %d", pc_out);
+	$display("instruction : %b", instr);
+	$display("alu result : %d", alu_result);
+	$display("pc next : %d", pc_next);
+	
+	$display("first input alu : %b", reg_read_data_1);
+	$display("second input alu : %b", read_data2);
+	
 end
 
 wire [31:0] pc_current;

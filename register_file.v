@@ -10,14 +10,21 @@ module register_file(input clk,
 
 
 reg [31:0] regFile [31:0];
+integer i;
+initial 
+	begin
+		for(i = 0; i < 32; i = i + 1) regFile[i] = 32'b0;
+end
+
 
 always @(posedge clk)
 begin
-regFile[0] <= 0;
+$display("zero register : %b", regFile[0]);
+
+regFile[0] = 32'b0;
 if(RegWrite)
 	regFile[write_addr] <= write_data;
 end
-
 		// data aval :
 		assign data_out_1 = regFile[read_addr_1];
 		// data dovom :

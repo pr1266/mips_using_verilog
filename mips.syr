@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.45 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.45 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: mips.prj
 
@@ -132,7 +132,10 @@ Parsing module <mips>.
 
 Elaborating module <mips>.
 "C:\Users\pr1266\finalproject\mips.v" Line 11. $display pc current : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 12. $display instruction : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 12. $display pc out : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 13. $display instruction : 32'b................................
+"C:\Users\pr1266\finalproject\mips.v" Line 14. $display alu out : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 15. $display pc next : 0
 
 Elaborating module <PC>.
 
@@ -141,22 +144,22 @@ Elaborating module <instruction_memory>.
 Elaborating module <address_alu>.
 
 Elaborating module <Control>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 93: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 98: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 96: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 101: Result of 5-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <register_file>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 108: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 111: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
 
 Elaborating module <sign_extend>.
-WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 122: Assignment to imm_ext ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 125: Assignment to imm_ext ignored, since the identifier is never used
 
 Elaborating module <ALU_control>.
 
 Elaborating module <alu32bit>.
 
 Elaborating module <data_memory>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 158: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 158: Net <sign_extend> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 161: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 161: Net <sign_extend> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -1904,12 +1907,12 @@ clk            |         |         |    2.491|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.01 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.11 secs
  
 --> 
 
-Total memory usage is 4519364 kilobytes
+Total memory usage is 4519748 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  188 (   0 filtered)

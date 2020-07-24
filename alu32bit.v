@@ -10,9 +10,9 @@ always @(*)
 begin
 	case(select)
 	// and operation
-	4'b0000 : out = first && second;
+	4'b0000 : out = first & second;
 	// or operation
-	4'b0001 : out = first || second;
+	4'b0001 : out = first | second;
 	// add operation
 	4'b0010 : out = first + second;
 	// subtract operation
@@ -21,9 +21,9 @@ begin
 	4'b0111 : out = first < second ? first : second;
 	// nor
 	//4'b1100 : out = first ~| second;
-	
 	endcase
 end
+
 
 assign zero = (first == second) ? 1'b1: 1'b0;
 
