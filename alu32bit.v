@@ -24,6 +24,7 @@ begin
 	
 	endcase
 end
+
 assign zero = (first == second) ? 1'b1: 1'b0;
 
 endmodule

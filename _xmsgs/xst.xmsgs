@@ -5,25 +5,22 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 83: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 93: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegDst</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 98: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 98: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 108: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 112: Assignment to <arg fmt="%s" index="1">imm_ext</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 122: Assignment to <arg fmt="%s" index="1">imm_ext</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 148: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">first</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 158: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">second</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 148: Net &lt;<arg fmt="%s" index="1">current_pc</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">current_pc</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 158: Net &lt;<arg fmt="%s" index="1">sign_extend</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">sign_extend</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -164,7 +161,199 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">addr&lt;31:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_91&gt; &lt;regFile_92&gt; &lt;regFile_93&gt; &lt;regFile_94&gt; &lt;regFile_95&gt; &lt;regFile_96&gt; &lt;regFile_97&gt; &lt;regFile_98&gt; &lt;regFile_99&gt; &lt;regFile_910&gt; &lt;regFile_911&gt; &lt;regFile_912&gt; &lt;regFile_913&gt; &lt;regFile_914&gt; &lt;regFile_915&gt; &lt;regFile_916&gt; &lt;regFile_917&gt; &lt;regFile_918&gt; &lt;regFile_919&gt; &lt;regFile_920&gt; &lt;regFile_921&gt; &lt;regFile_922&gt; &lt;regFile_923&gt; &lt;regFile_924&gt; &lt;regFile_925&gt; &lt;regFile_926&gt; &lt;regFile_927&gt; &lt;regFile_928&gt; &lt;regFile_929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_101&gt; &lt;regFile_102&gt; &lt;regFile_103&gt; &lt;regFile_104&gt; &lt;regFile_105&gt; &lt;regFile_106&gt; &lt;regFile_107&gt; &lt;regFile_108&gt; &lt;regFile_109&gt; &lt;regFile_1010&gt; &lt;regFile_1011&gt; &lt;regFile_1012&gt; &lt;regFile_1013&gt; &lt;regFile_1014&gt; &lt;regFile_1015&gt; &lt;regFile_1016&gt; &lt;regFile_1017&gt; &lt;regFile_1018&gt; &lt;regFile_1019&gt; &lt;regFile_1020&gt; &lt;regFile_1021&gt; &lt;regFile_1022&gt; &lt;regFile_1023&gt; &lt;regFile_1024&gt; &lt;regFile_1025&gt; &lt;regFile_1026&gt; &lt;regFile_1027&gt; &lt;regFile_1028&gt; &lt;regFile_1029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_111&gt; &lt;regFile_113&gt; &lt;regFile_115&gt; &lt;regFile_117&gt; &lt;regFile_119&gt; &lt;regFile_1110&gt; &lt;regFile_1111&gt; &lt;regFile_1112&gt; &lt;regFile_1113&gt; &lt;regFile_1114&gt; &lt;regFile_1115&gt; &lt;regFile_1116&gt; &lt;regFile_1117&gt; &lt;regFile_1118&gt; &lt;regFile_1119&gt; &lt;regFile_1120&gt; &lt;regFile_1121&gt; &lt;regFile_1122&gt; &lt;regFile_1123&gt; &lt;regFile_1124&gt; &lt;regFile_1125&gt; &lt;regFile_1126&gt; &lt;regFile_1127&gt; &lt;regFile_1128&gt; &lt;regFile_1129&gt; &lt;regFile_1131&gt; &lt;regFile_1133&gt; &lt;regFile_1135&gt; &lt;regFile_1137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_121&gt; &lt;regFile_122&gt; &lt;regFile_123&gt; &lt;regFile_124&gt; &lt;regFile_125&gt; &lt;regFile_126&gt; &lt;regFile_128&gt; &lt;regFile_1210&gt; &lt;regFile_1211&gt; &lt;regFile_1212&gt; &lt;regFile_1213&gt; &lt;regFile_1214&gt; &lt;regFile_1215&gt; &lt;regFile_1216&gt; &lt;regFile_1217&gt; &lt;regFile_1218&gt; &lt;regFile_1219&gt; &lt;regFile_1220&gt; &lt;regFile_1221&gt; &lt;regFile_1222&gt; &lt;regFile_1223&gt; &lt;regFile_1224&gt; &lt;regFile_1225&gt; &lt;regFile_1226&gt; &lt;regFile_1227&gt; &lt;regFile_1228&gt; &lt;regFile_1229&gt; &lt;regFile_1230&gt; &lt;regFile_1231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_131&gt; &lt;regFile_132&gt; &lt;regFile_133&gt; &lt;regFile_134&gt; &lt;regFile_135&gt; &lt;regFile_136&gt; &lt;regFile_137&gt; &lt;regFile_138&gt; &lt;regFile_139&gt; &lt;regFile_1310&gt; &lt;regFile_1311&gt; &lt;regFile_1312&gt; &lt;regFile_1313&gt; &lt;regFile_1314&gt; &lt;regFile_1315&gt; &lt;regFile_1316&gt; &lt;regFile_1317&gt; &lt;regFile_1318&gt; &lt;regFile_1319&gt; &lt;regFile_1320&gt; &lt;regFile_1321&gt; &lt;regFile_1322&gt; &lt;regFile_1323&gt; &lt;regFile_1324&gt; &lt;regFile_1325&gt; &lt;regFile_1326&gt; &lt;regFile_1327&gt; &lt;regFile_1328&gt; &lt;regFile_1329&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_141&gt; &lt;regFile_142&gt; &lt;regFile_143&gt; &lt;regFile_144&gt; &lt;regFile_145&gt; &lt;regFile_146&gt; &lt;regFile_147&gt; &lt;regFile_148&gt; &lt;regFile_149&gt; &lt;regFile_1410&gt; &lt;regFile_1411&gt; &lt;regFile_1412&gt; &lt;regFile_1413&gt; &lt;regFile_1414&gt; &lt;regFile_1415&gt; &lt;regFile_1416&gt; &lt;regFile_1417&gt; &lt;regFile_1418&gt; &lt;regFile_1419&gt; &lt;regFile_1420&gt; &lt;regFile_1421&gt; &lt;regFile_1422&gt; &lt;regFile_1423&gt; &lt;regFile_1424&gt; &lt;regFile_1425&gt; &lt;regFile_1426&gt; &lt;regFile_1427&gt; &lt;regFile_1428&gt; &lt;regFile_1429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_151&gt; &lt;regFile_152&gt; &lt;regFile_153&gt; &lt;regFile_154&gt; &lt;regFile_155&gt; &lt;regFile_156&gt; &lt;regFile_157&gt; &lt;regFile_158&gt; &lt;regFile_159&gt; &lt;regFile_1510&gt; &lt;regFile_1511&gt; &lt;regFile_1512&gt; &lt;regFile_1513&gt; &lt;regFile_1514&gt; &lt;regFile_1515&gt; &lt;regFile_1516&gt; &lt;regFile_1517&gt; &lt;regFile_1518&gt; &lt;regFile_1519&gt; &lt;regFile_1520&gt; &lt;regFile_1521&gt; &lt;regFile_1522&gt; &lt;regFile_1523&gt; &lt;regFile_1524&gt; &lt;regFile_1525&gt; &lt;regFile_1526&gt; &lt;regFile_1527&gt; &lt;regFile_1528&gt; &lt;regFile_1529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_201&gt; &lt;regFile_202&gt; &lt;regFile_203&gt; &lt;regFile_204&gt; &lt;regFile_205&gt; &lt;regFile_206&gt; &lt;regFile_207&gt; &lt;regFile_208&gt; &lt;regFile_209&gt; &lt;regFile_2010&gt; &lt;regFile_2011&gt; &lt;regFile_2012&gt; &lt;regFile_2013&gt; &lt;regFile_2014&gt; &lt;regFile_2015&gt; &lt;regFile_2016&gt; &lt;regFile_2017&gt; &lt;regFile_2018&gt; &lt;regFile_2019&gt; &lt;regFile_2020&gt; &lt;regFile_2021&gt; &lt;regFile_2022&gt; &lt;regFile_2023&gt; &lt;regFile_2024&gt; &lt;regFile_2025&gt; &lt;regFile_2026&gt; &lt;regFile_2027&gt; &lt;regFile_2028&gt; &lt;regFile_2029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_161&gt; &lt;regFile_162&gt; &lt;regFile_163&gt; &lt;regFile_164&gt; &lt;regFile_165&gt; &lt;regFile_166&gt; &lt;regFile_167&gt; &lt;regFile_168&gt; &lt;regFile_169&gt; &lt;regFile_1610&gt; &lt;regFile_1611&gt; &lt;regFile_1612&gt; &lt;regFile_1613&gt; &lt;regFile_1614&gt; &lt;regFile_1615&gt; &lt;regFile_1616&gt; &lt;regFile_1617&gt; &lt;regFile_1618&gt; &lt;regFile_1619&gt; &lt;regFile_1620&gt; &lt;regFile_1621&gt; &lt;regFile_1622&gt; &lt;regFile_1623&gt; &lt;regFile_1624&gt; &lt;regFile_1625&gt; &lt;regFile_1626&gt; &lt;regFile_1627&gt; &lt;regFile_1628&gt; &lt;regFile_1629&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_211&gt; &lt;regFile_213&gt; &lt;regFile_215&gt; &lt;regFile_217&gt; &lt;regFile_219&gt; &lt;regFile_2110&gt; &lt;regFile_2111&gt; &lt;regFile_2112&gt; &lt;regFile_2113&gt; &lt;regFile_2114&gt; &lt;regFile_2115&gt; &lt;regFile_2116&gt; &lt;regFile_2117&gt; &lt;regFile_2118&gt; &lt;regFile_2119&gt; &lt;regFile_2120&gt; &lt;regFile_2121&gt; &lt;regFile_2122&gt; &lt;regFile_2123&gt; &lt;regFile_2124&gt; &lt;regFile_2125&gt; &lt;regFile_2126&gt; &lt;regFile_2127&gt; &lt;regFile_2128&gt; &lt;regFile_2129&gt; &lt;regFile_2131&gt; &lt;regFile_2133&gt; &lt;regFile_2135&gt; &lt;regFile_2137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_171&gt; &lt;regFile_172&gt; &lt;regFile_173&gt; &lt;regFile_174&gt; &lt;regFile_175&gt; &lt;regFile_176&gt; &lt;regFile_177&gt; &lt;regFile_178&gt; &lt;regFile_179&gt; &lt;regFile_1710&gt; &lt;regFile_1711&gt; &lt;regFile_1712&gt; &lt;regFile_1713&gt; &lt;regFile_1714&gt; &lt;regFile_1715&gt; &lt;regFile_1716&gt; &lt;regFile_1717&gt; &lt;regFile_1718&gt; &lt;regFile_1719&gt; &lt;regFile_1720&gt; &lt;regFile_1721&gt; &lt;regFile_1722&gt; &lt;regFile_1723&gt; &lt;regFile_1724&gt; &lt;regFile_1725&gt; &lt;regFile_1726&gt; &lt;regFile_1727&gt; &lt;regFile_1728&gt; &lt;regFile_1729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_221&gt; &lt;regFile_222&gt; &lt;regFile_223&gt; &lt;regFile_224&gt; &lt;regFile_225&gt; &lt;regFile_226&gt; &lt;regFile_228&gt; &lt;regFile_2210&gt; &lt;regFile_2211&gt; &lt;regFile_2212&gt; &lt;regFile_2213&gt; &lt;regFile_2214&gt; &lt;regFile_2215&gt; &lt;regFile_2216&gt; &lt;regFile_2217&gt; &lt;regFile_2218&gt; &lt;regFile_2219&gt; &lt;regFile_2220&gt; &lt;regFile_2221&gt; &lt;regFile_2222&gt; &lt;regFile_2223&gt; &lt;regFile_2224&gt; &lt;regFile_2225&gt; &lt;regFile_2226&gt; &lt;regFile_2227&gt; &lt;regFile_2228&gt; &lt;regFile_2229&gt; &lt;regFile_2230&gt; &lt;regFile_2231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_181&gt; &lt;regFile_182&gt; &lt;regFile_183&gt; &lt;regFile_184&gt; &lt;regFile_185&gt; &lt;regFile_186&gt; &lt;regFile_187&gt; &lt;regFile_188&gt; &lt;regFile_189&gt; &lt;regFile_1810&gt; &lt;regFile_1811&gt; &lt;regFile_1812&gt; &lt;regFile_1813&gt; &lt;regFile_1814&gt; &lt;regFile_1815&gt; &lt;regFile_1816&gt; &lt;regFile_1817&gt; &lt;regFile_1818&gt; &lt;regFile_1819&gt; &lt;regFile_1820&gt; &lt;regFile_1821&gt; &lt;regFile_1822&gt; &lt;regFile_1823&gt; &lt;regFile_1824&gt; &lt;regFile_1825&gt; &lt;regFile_1826&gt; &lt;regFile_1827&gt; &lt;regFile_1828&gt; &lt;regFile_1829&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_231&gt; &lt;regFile_232&gt; &lt;regFile_233&gt; &lt;regFile_234&gt; &lt;regFile_235&gt; &lt;regFile_236&gt; &lt;regFile_237&gt; &lt;regFile_238&gt; &lt;regFile_239&gt; &lt;regFile_2310&gt; &lt;regFile_2311&gt; &lt;regFile_2312&gt; &lt;regFile_2313&gt; &lt;regFile_2314&gt; &lt;regFile_2315&gt; &lt;regFile_2316&gt; &lt;regFile_2317&gt; &lt;regFile_2318&gt; &lt;regFile_2319&gt; &lt;regFile_2320&gt; &lt;regFile_2321&gt; &lt;regFile_2322&gt; &lt;regFile_2323&gt; &lt;regFile_2324&gt; &lt;regFile_2325&gt; &lt;regFile_2326&gt; &lt;regFile_2327&gt; &lt;regFile_2328&gt; &lt;regFile_2329&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_191&gt; &lt;regFile_192&gt; &lt;regFile_193&gt; &lt;regFile_194&gt; &lt;regFile_195&gt; &lt;regFile_196&gt; &lt;regFile_197&gt; &lt;regFile_198&gt; &lt;regFile_199&gt; &lt;regFile_1910&gt; &lt;regFile_1911&gt; &lt;regFile_1912&gt; &lt;regFile_1913&gt; &lt;regFile_1914&gt; &lt;regFile_1915&gt; &lt;regFile_1916&gt; &lt;regFile_1917&gt; &lt;regFile_1918&gt; &lt;regFile_1919&gt; &lt;regFile_1920&gt; &lt;regFile_1921&gt; &lt;regFile_1922&gt; &lt;regFile_1923&gt; &lt;regFile_1924&gt; &lt;regFile_1925&gt; &lt;regFile_1926&gt; &lt;regFile_1927&gt; &lt;regFile_1928&gt; &lt;regFile_1929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_241&gt; &lt;regFile_242&gt; &lt;regFile_243&gt; &lt;regFile_244&gt; &lt;regFile_245&gt; &lt;regFile_246&gt; &lt;regFile_247&gt; &lt;regFile_248&gt; &lt;regFile_249&gt; &lt;regFile_2410&gt; &lt;regFile_2411&gt; &lt;regFile_2412&gt; &lt;regFile_2413&gt; &lt;regFile_2414&gt; &lt;regFile_2415&gt; &lt;regFile_2416&gt; &lt;regFile_2417&gt; &lt;regFile_2418&gt; &lt;regFile_2419&gt; &lt;regFile_2420&gt; &lt;regFile_2421&gt; &lt;regFile_2422&gt; &lt;regFile_2423&gt; &lt;regFile_2424&gt; &lt;regFile_2425&gt; &lt;regFile_2426&gt; &lt;regFile_2427&gt; &lt;regFile_2428&gt; &lt;regFile_2429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_251&gt; &lt;regFile_252&gt; &lt;regFile_253&gt; &lt;regFile_254&gt; &lt;regFile_255&gt; &lt;regFile_256&gt; &lt;regFile_257&gt; &lt;regFile_258&gt; &lt;regFile_259&gt; &lt;regFile_2510&gt; &lt;regFile_2511&gt; &lt;regFile_2512&gt; &lt;regFile_2513&gt; &lt;regFile_2514&gt; &lt;regFile_2515&gt; &lt;regFile_2516&gt; &lt;regFile_2517&gt; &lt;regFile_2518&gt; &lt;regFile_2519&gt; &lt;regFile_2520&gt; &lt;regFile_2521&gt; &lt;regFile_2522&gt; &lt;regFile_2523&gt; &lt;regFile_2524&gt; &lt;regFile_2525&gt; &lt;regFile_2526&gt; &lt;regFile_2527&gt; &lt;regFile_2528&gt; &lt;regFile_2529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_301&gt; &lt;regFile_302&gt; &lt;regFile_303&gt; &lt;regFile_304&gt; &lt;regFile_305&gt; &lt;regFile_306&gt; &lt;regFile_307&gt; &lt;regFile_308&gt; &lt;regFile_309&gt; &lt;regFile_3010&gt; &lt;regFile_3011&gt; &lt;regFile_3012&gt; &lt;regFile_3013&gt; &lt;regFile_3014&gt; &lt;regFile_3015&gt; &lt;regFile_3016&gt; &lt;regFile_3017&gt; &lt;regFile_3018&gt; &lt;regFile_3019&gt; &lt;regFile_3020&gt; &lt;regFile_3021&gt; &lt;regFile_3022&gt; &lt;regFile_3023&gt; &lt;regFile_3024&gt; &lt;regFile_3025&gt; &lt;regFile_3026&gt; &lt;regFile_3027&gt; &lt;regFile_3028&gt; &lt;regFile_3029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_261&gt; &lt;regFile_262&gt; &lt;regFile_263&gt; &lt;regFile_264&gt; &lt;regFile_265&gt; &lt;regFile_266&gt; &lt;regFile_267&gt; &lt;regFile_268&gt; &lt;regFile_269&gt; &lt;regFile_2610&gt; &lt;regFile_2611&gt; &lt;regFile_2612&gt; &lt;regFile_2613&gt; &lt;regFile_2614&gt; &lt;regFile_2615&gt; &lt;regFile_2616&gt; &lt;regFile_2617&gt; &lt;regFile_2618&gt; &lt;regFile_2619&gt; &lt;regFile_2620&gt; &lt;regFile_2621&gt; &lt;regFile_2622&gt; &lt;regFile_2623&gt; &lt;regFile_2624&gt; &lt;regFile_2625&gt; &lt;regFile_2626&gt; &lt;regFile_2627&gt; &lt;regFile_2628&gt; &lt;regFile_2629&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_311&gt; &lt;regFile_312&gt; &lt;regFile_313&gt; &lt;regFile_314&gt; &lt;regFile_315&gt; &lt;regFile_316&gt; &lt;regFile_317&gt; &lt;regFile_318&gt; &lt;regFile_319&gt; &lt;regFile_3110&gt; &lt;regFile_3111&gt; &lt;regFile_3112&gt; &lt;regFile_3113&gt; &lt;regFile_3114&gt; &lt;regFile_3115&gt; &lt;regFile_3116&gt; &lt;regFile_3117&gt; &lt;regFile_3118&gt; &lt;regFile_3119&gt; &lt;regFile_3120&gt; &lt;regFile_3121&gt; &lt;regFile_3122&gt; &lt;regFile_3123&gt; &lt;regFile_3124&gt; &lt;regFile_3125&gt; &lt;regFile_3126&gt; &lt;regFile_3127&gt; &lt;regFile_3128&gt; &lt;regFile_3129&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_271&gt; &lt;regFile_272&gt; &lt;regFile_273&gt; &lt;regFile_274&gt; &lt;regFile_275&gt; &lt;regFile_276&gt; &lt;regFile_277&gt; &lt;regFile_278&gt; &lt;regFile_279&gt; &lt;regFile_2710&gt; &lt;regFile_2711&gt; &lt;regFile_2712&gt; &lt;regFile_2713&gt; &lt;regFile_2714&gt; &lt;regFile_2715&gt; &lt;regFile_2716&gt; &lt;regFile_2717&gt; &lt;regFile_2718&gt; &lt;regFile_2719&gt; &lt;regFile_2720&gt; &lt;regFile_2721&gt; &lt;regFile_2722&gt; &lt;regFile_2723&gt; &lt;regFile_2724&gt; &lt;regFile_2725&gt; &lt;regFile_2726&gt; &lt;regFile_2727&gt; &lt;regFile_2728&gt; &lt;regFile_2729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_281&gt; &lt;regFile_282&gt; &lt;regFile_283&gt; &lt;regFile_284&gt; &lt;regFile_285&gt; &lt;regFile_286&gt; &lt;regFile_287&gt; &lt;regFile_288&gt; &lt;regFile_289&gt; &lt;regFile_2810&gt; &lt;regFile_2811&gt; &lt;regFile_2812&gt; &lt;regFile_2813&gt; &lt;regFile_2814&gt; &lt;regFile_2815&gt; &lt;regFile_2816&gt; &lt;regFile_2817&gt; &lt;regFile_2818&gt; &lt;regFile_2819&gt; &lt;regFile_2820&gt; &lt;regFile_2821&gt; &lt;regFile_2822&gt; &lt;regFile_2823&gt; &lt;regFile_2824&gt; &lt;regFile_2825&gt; &lt;regFile_2826&gt; &lt;regFile_2827&gt; &lt;regFile_2828&gt; &lt;regFile_2829&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_291&gt; &lt;regFile_292&gt; &lt;regFile_293&gt; &lt;regFile_294&gt; &lt;regFile_295&gt; &lt;regFile_296&gt; &lt;regFile_297&gt; &lt;regFile_298&gt; &lt;regFile_299&gt; &lt;regFile_2910&gt; &lt;regFile_2911&gt; &lt;regFile_2912&gt; &lt;regFile_2913&gt; &lt;regFile_2914&gt; &lt;regFile_2915&gt; &lt;regFile_2916&gt; &lt;regFile_2917&gt; &lt;regFile_2918&gt; &lt;regFile_2919&gt; &lt;regFile_2920&gt; &lt;regFile_2921&gt; &lt;regFile_2922&gt; &lt;regFile_2923&gt; &lt;regFile_2924&gt; &lt;regFile_2925&gt; &lt;regFile_2926&gt; &lt;regFile_2927&gt; &lt;regFile_2928&gt; &lt;regFile_2929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_01&gt; &lt;regFile_02&gt; &lt;regFile_03&gt; &lt;regFile_04&gt; &lt;regFile_05&gt; &lt;regFile_06&gt; &lt;regFile_07&gt; &lt;regFile_08&gt; &lt;regFile_09&gt; &lt;regFile_010&gt; &lt;regFile_011&gt; &lt;regFile_012&gt; &lt;regFile_013&gt; &lt;regFile_014&gt; &lt;regFile_015&gt; &lt;regFile_016&gt; &lt;regFile_017&gt; &lt;regFile_018&gt; &lt;regFile_019&gt; &lt;regFile_020&gt; &lt;regFile_021&gt; &lt;regFile_022&gt; &lt;regFile_023&gt; &lt;regFile_024&gt; &lt;regFile_025&gt; &lt;regFile_026&gt; &lt;regFile_027&gt; &lt;regFile_028&gt; &lt;regFile_029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_110&gt; &lt;regFile_112&gt; &lt;regFile_114&gt; &lt;regFile_116&gt; &lt;regFile_118&gt; &lt;regFile_120&gt; &lt;regFile_127&gt; &lt;regFile_129&gt; &lt;regFile_130&gt; &lt;regFile_140&gt; &lt;regFile_150&gt; &lt;regFile_160&gt; &lt;regFile_170&gt; &lt;regFile_180&gt; &lt;regFile_190&gt; &lt;regFile_1100&gt; &lt;regFile_1101&gt; &lt;regFile_1102&gt; &lt;regFile_1103&gt; &lt;regFile_1104&gt; &lt;regFile_1105&gt; &lt;regFile_1106&gt; &lt;regFile_1107&gt; &lt;regFile_1108&gt; &lt;regFile_1109&gt; &lt;regFile_1130&gt; &lt;regFile_1132&gt; &lt;regFile_1134&gt; &lt;regFile_1136&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_210&gt; &lt;regFile_212&gt; &lt;regFile_214&gt; &lt;regFile_216&gt; &lt;regFile_218&gt; &lt;regFile_220&gt; &lt;regFile_227&gt; &lt;regFile_229&gt; &lt;regFile_230&gt; &lt;regFile_240&gt; &lt;regFile_250&gt; &lt;regFile_260&gt; &lt;regFile_270&gt; &lt;regFile_280&gt; &lt;regFile_290&gt; &lt;regFile_2100&gt; &lt;regFile_2101&gt; &lt;regFile_2102&gt; &lt;regFile_2103&gt; &lt;regFile_2104&gt; &lt;regFile_2105&gt; &lt;regFile_2106&gt; &lt;regFile_2107&gt; &lt;regFile_2108&gt; &lt;regFile_2109&gt; &lt;regFile_2130&gt; &lt;regFile_2132&gt; &lt;regFile_2134&gt; &lt;regFile_2136&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_32&gt; &lt;regFile_33&gt; &lt;regFile_34&gt; &lt;regFile_35&gt; &lt;regFile_36&gt; &lt;regFile_37&gt; &lt;regFile_38&gt; &lt;regFile_39&gt; &lt;regFile_310&gt; &lt;regFile_320&gt; &lt;regFile_321&gt; &lt;regFile_322&gt; &lt;regFile_323&gt; &lt;regFile_324&gt; &lt;regFile_325&gt; &lt;regFile_326&gt; &lt;regFile_327&gt; &lt;regFile_328&gt; &lt;regFile_329&gt; &lt;regFile_330&gt; &lt;regFile_331&gt; &lt;regFile_332&gt; &lt;regFile_333&gt; &lt;regFile_334&gt; &lt;regFile_335&gt; &lt;regFile_336&gt; &lt;regFile_337&gt; &lt;regFile_338&gt; &lt;regFile_339&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_41&gt; &lt;regFile_42&gt; &lt;regFile_43&gt; &lt;regFile_44&gt; &lt;regFile_45&gt; &lt;regFile_46&gt; &lt;regFile_47&gt; &lt;regFile_48&gt; &lt;regFile_49&gt; &lt;regFile_410&gt; &lt;regFile_411&gt; &lt;regFile_412&gt; &lt;regFile_413&gt; &lt;regFile_414&gt; &lt;regFile_415&gt; &lt;regFile_416&gt; &lt;regFile_417&gt; &lt;regFile_418&gt; &lt;regFile_419&gt; &lt;regFile_420&gt; &lt;regFile_421&gt; &lt;regFile_422&gt; &lt;regFile_423&gt; &lt;regFile_424&gt; &lt;regFile_425&gt; &lt;regFile_426&gt; &lt;regFile_427&gt; &lt;regFile_428&gt; &lt;regFile_429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_51&gt; &lt;regFile_52&gt; &lt;regFile_53&gt; &lt;regFile_54&gt; &lt;regFile_55&gt; &lt;regFile_56&gt; &lt;regFile_57&gt; &lt;regFile_58&gt; &lt;regFile_59&gt; &lt;regFile_510&gt; &lt;regFile_511&gt; &lt;regFile_512&gt; &lt;regFile_513&gt; &lt;regFile_514&gt; &lt;regFile_515&gt; &lt;regFile_516&gt; &lt;regFile_517&gt; &lt;regFile_518&gt; &lt;regFile_519&gt; &lt;regFile_520&gt; &lt;regFile_521&gt; &lt;regFile_522&gt; &lt;regFile_523&gt; &lt;regFile_524&gt; &lt;regFile_525&gt; &lt;regFile_526&gt; &lt;regFile_527&gt; &lt;regFile_528&gt; &lt;regFile_529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_61&gt; &lt;regFile_62&gt; &lt;regFile_63&gt; &lt;regFile_64&gt; &lt;regFile_65&gt; &lt;regFile_66&gt; &lt;regFile_67&gt; &lt;regFile_68&gt; &lt;regFile_69&gt; &lt;regFile_610&gt; &lt;regFile_611&gt; &lt;regFile_612&gt; &lt;regFile_613&gt; &lt;regFile_614&gt; &lt;regFile_615&gt; &lt;regFile_616&gt; &lt;regFile_617&gt; &lt;regFile_618&gt; &lt;regFile_619&gt; &lt;regFile_620&gt; &lt;regFile_621&gt; &lt;regFile_622&gt; &lt;regFile_623&gt; &lt;regFile_624&gt; &lt;regFile_625&gt; &lt;regFile_626&gt; &lt;regFile_627&gt; &lt;regFile_628&gt; &lt;regFile_629&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_71&gt; &lt;regFile_72&gt; &lt;regFile_73&gt; &lt;regFile_74&gt; &lt;regFile_75&gt; &lt;regFile_76&gt; &lt;regFile_77&gt; &lt;regFile_78&gt; &lt;regFile_79&gt; &lt;regFile_710&gt; &lt;regFile_711&gt; &lt;regFile_712&gt; &lt;regFile_713&gt; &lt;regFile_714&gt; &lt;regFile_715&gt; &lt;regFile_716&gt; &lt;regFile_717&gt; &lt;regFile_718&gt; &lt;regFile_719&gt; &lt;regFile_720&gt; &lt;regFile_721&gt; &lt;regFile_722&gt; &lt;regFile_723&gt; &lt;regFile_724&gt; &lt;regFile_725&gt; &lt;regFile_726&gt; &lt;regFile_727&gt; &lt;regFile_728&gt; &lt;regFile_729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_81&gt; &lt;regFile_82&gt; &lt;regFile_83&gt; &lt;regFile_84&gt; &lt;regFile_85&gt; &lt;regFile_86&gt; &lt;regFile_87&gt; &lt;regFile_88&gt; &lt;regFile_89&gt; &lt;regFile_810&gt; &lt;regFile_811&gt; &lt;regFile_812&gt; &lt;regFile_813&gt; &lt;regFile_814&gt; &lt;regFile_815&gt; &lt;regFile_816&gt; &lt;regFile_817&gt; &lt;regFile_818&gt; &lt;regFile_819&gt; &lt;regFile_820&gt; &lt;regFile_821&gt; &lt;regFile_822&gt; &lt;regFile_823&gt; &lt;regFile_824&gt; &lt;regFile_825&gt; &lt;regFile_826&gt; &lt;regFile_827&gt; &lt;regFile_828&gt; &lt;regFile_829&gt; </arg>
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">op_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">alu_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -173,17 +362,205 @@
 <msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_regFile</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
-<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_regFile1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">op_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ALU_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pc_current_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_261&gt; &lt;regFile_262&gt; &lt;regFile_263&gt; &lt;regFile_264&gt; &lt;regFile_265&gt; &lt;regFile_266&gt; &lt;regFile_267&gt; &lt;regFile_268&gt; &lt;regFile_269&gt; &lt;regFile_2610&gt; &lt;regFile_2611&gt; &lt;regFile_2612&gt; &lt;regFile_2613&gt; &lt;regFile_2614&gt; &lt;regFile_2615&gt; &lt;regFile_2616&gt; &lt;regFile_2617&gt; &lt;regFile_2618&gt; &lt;regFile_2619&gt; &lt;regFile_2620&gt; &lt;regFile_2621&gt; &lt;regFile_2622&gt; &lt;regFile_2623&gt; &lt;regFile_2624&gt; &lt;regFile_2625&gt; &lt;regFile_2626&gt; &lt;regFile_2627&gt; &lt;regFile_2628&gt; &lt;regFile_2629&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">pc_current_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_311&gt; &lt;regFile_312&gt; &lt;regFile_313&gt; &lt;regFile_314&gt; &lt;regFile_315&gt; &lt;regFile_316&gt; &lt;regFile_317&gt; &lt;regFile_318&gt; &lt;regFile_319&gt; &lt;regFile_3110&gt; &lt;regFile_3111&gt; &lt;regFile_3112&gt; &lt;regFile_3113&gt; &lt;regFile_3114&gt; &lt;regFile_3115&gt; &lt;regFile_3116&gt; &lt;regFile_3117&gt; &lt;regFile_3118&gt; &lt;regFile_3119&gt; &lt;regFile_3120&gt; &lt;regFile_3121&gt; &lt;regFile_3122&gt; &lt;regFile_3123&gt; &lt;regFile_3124&gt; &lt;regFile_3125&gt; &lt;regFile_3126&gt; &lt;regFile_3127&gt; &lt;regFile_3128&gt; &lt;regFile_3129&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_271&gt; &lt;regFile_272&gt; &lt;regFile_273&gt; &lt;regFile_274&gt; &lt;regFile_275&gt; &lt;regFile_276&gt; &lt;regFile_277&gt; &lt;regFile_278&gt; &lt;regFile_279&gt; &lt;regFile_2710&gt; &lt;regFile_2711&gt; &lt;regFile_2712&gt; &lt;regFile_2713&gt; &lt;regFile_2714&gt; &lt;regFile_2715&gt; &lt;regFile_2716&gt; &lt;regFile_2717&gt; &lt;regFile_2718&gt; &lt;regFile_2719&gt; &lt;regFile_2720&gt; &lt;regFile_2721&gt; &lt;regFile_2722&gt; &lt;regFile_2723&gt; &lt;regFile_2724&gt; &lt;regFile_2725&gt; &lt;regFile_2726&gt; &lt;regFile_2727&gt; &lt;regFile_2728&gt; &lt;regFile_2729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_281&gt; &lt;regFile_282&gt; &lt;regFile_283&gt; &lt;regFile_284&gt; &lt;regFile_285&gt; &lt;regFile_286&gt; &lt;regFile_287&gt; &lt;regFile_288&gt; &lt;regFile_289&gt; &lt;regFile_2810&gt; &lt;regFile_2811&gt; &lt;regFile_2812&gt; &lt;regFile_2813&gt; &lt;regFile_2814&gt; &lt;regFile_2815&gt; &lt;regFile_2816&gt; &lt;regFile_2817&gt; &lt;regFile_2818&gt; &lt;regFile_2819&gt; &lt;regFile_2820&gt; &lt;regFile_2821&gt; &lt;regFile_2822&gt; &lt;regFile_2823&gt; &lt;regFile_2824&gt; &lt;regFile_2825&gt; &lt;regFile_2826&gt; &lt;regFile_2827&gt; &lt;regFile_2828&gt; &lt;regFile_2829&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_291&gt; &lt;regFile_292&gt; &lt;regFile_293&gt; &lt;regFile_294&gt; &lt;regFile_295&gt; &lt;regFile_296&gt; &lt;regFile_297&gt; &lt;regFile_298&gt; &lt;regFile_299&gt; &lt;regFile_2910&gt; &lt;regFile_2911&gt; &lt;regFile_2912&gt; &lt;regFile_2913&gt; &lt;regFile_2914&gt; &lt;regFile_2915&gt; &lt;regFile_2916&gt; &lt;regFile_2917&gt; &lt;regFile_2918&gt; &lt;regFile_2919&gt; &lt;regFile_2920&gt; &lt;regFile_2921&gt; &lt;regFile_2922&gt; &lt;regFile_2923&gt; &lt;regFile_2924&gt; &lt;regFile_2925&gt; &lt;regFile_2926&gt; &lt;regFile_2927&gt; &lt;regFile_2928&gt; &lt;regFile_2929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_01&gt; &lt;regFile_02&gt; &lt;regFile_03&gt; &lt;regFile_04&gt; &lt;regFile_05&gt; &lt;regFile_06&gt; &lt;regFile_07&gt; &lt;regFile_08&gt; &lt;regFile_09&gt; &lt;regFile_010&gt; &lt;regFile_011&gt; &lt;regFile_012&gt; &lt;regFile_013&gt; &lt;regFile_014&gt; &lt;regFile_015&gt; &lt;regFile_016&gt; &lt;regFile_017&gt; &lt;regFile_018&gt; &lt;regFile_019&gt; &lt;regFile_020&gt; &lt;regFile_021&gt; &lt;regFile_022&gt; &lt;regFile_023&gt; &lt;regFile_024&gt; &lt;regFile_025&gt; &lt;regFile_026&gt; &lt;regFile_027&gt; &lt;regFile_028&gt; &lt;regFile_029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_110&gt; &lt;regFile_112&gt; &lt;regFile_114&gt; &lt;regFile_116&gt; &lt;regFile_118&gt; &lt;regFile_120&gt; &lt;regFile_127&gt; &lt;regFile_129&gt; &lt;regFile_130&gt; &lt;regFile_140&gt; &lt;regFile_150&gt; &lt;regFile_160&gt; &lt;regFile_170&gt; &lt;regFile_180&gt; &lt;regFile_190&gt; &lt;regFile_1100&gt; &lt;regFile_1101&gt; &lt;regFile_1102&gt; &lt;regFile_1103&gt; &lt;regFile_1104&gt; &lt;regFile_1105&gt; &lt;regFile_1106&gt; &lt;regFile_1107&gt; &lt;regFile_1108&gt; &lt;regFile_1109&gt; &lt;regFile_1130&gt; &lt;regFile_1132&gt; &lt;regFile_1134&gt; &lt;regFile_1136&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_210&gt; &lt;regFile_212&gt; &lt;regFile_214&gt; &lt;regFile_216&gt; &lt;regFile_218&gt; &lt;regFile_220&gt; &lt;regFile_227&gt; &lt;regFile_229&gt; &lt;regFile_230&gt; &lt;regFile_240&gt; &lt;regFile_250&gt; &lt;regFile_260&gt; &lt;regFile_270&gt; &lt;regFile_280&gt; &lt;regFile_290&gt; &lt;regFile_2100&gt; &lt;regFile_2101&gt; &lt;regFile_2102&gt; &lt;regFile_2103&gt; &lt;regFile_2104&gt; &lt;regFile_2105&gt; &lt;regFile_2106&gt; &lt;regFile_2107&gt; &lt;regFile_2108&gt; &lt;regFile_2109&gt; &lt;regFile_2130&gt; &lt;regFile_2132&gt; &lt;regFile_2134&gt; &lt;regFile_2136&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_32&gt; &lt;regFile_33&gt; &lt;regFile_34&gt; &lt;regFile_35&gt; &lt;regFile_36&gt; &lt;regFile_37&gt; &lt;regFile_38&gt; &lt;regFile_39&gt; &lt;regFile_310&gt; &lt;regFile_320&gt; &lt;regFile_321&gt; &lt;regFile_322&gt; &lt;regFile_323&gt; &lt;regFile_324&gt; &lt;regFile_325&gt; &lt;regFile_326&gt; &lt;regFile_327&gt; &lt;regFile_328&gt; &lt;regFile_329&gt; &lt;regFile_330&gt; &lt;regFile_331&gt; &lt;regFile_332&gt; &lt;regFile_333&gt; &lt;regFile_334&gt; &lt;regFile_335&gt; &lt;regFile_336&gt; &lt;regFile_337&gt; &lt;regFile_338&gt; &lt;regFile_339&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_41&gt; &lt;regFile_42&gt; &lt;regFile_43&gt; &lt;regFile_44&gt; &lt;regFile_45&gt; &lt;regFile_46&gt; &lt;regFile_47&gt; &lt;regFile_48&gt; &lt;regFile_49&gt; &lt;regFile_410&gt; &lt;regFile_411&gt; &lt;regFile_412&gt; &lt;regFile_413&gt; &lt;regFile_414&gt; &lt;regFile_415&gt; &lt;regFile_416&gt; &lt;regFile_417&gt; &lt;regFile_418&gt; &lt;regFile_419&gt; &lt;regFile_420&gt; &lt;regFile_421&gt; &lt;regFile_422&gt; &lt;regFile_423&gt; &lt;regFile_424&gt; &lt;regFile_425&gt; &lt;regFile_426&gt; &lt;regFile_427&gt; &lt;regFile_428&gt; &lt;regFile_429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_51&gt; &lt;regFile_52&gt; &lt;regFile_53&gt; &lt;regFile_54&gt; &lt;regFile_55&gt; &lt;regFile_56&gt; &lt;regFile_57&gt; &lt;regFile_58&gt; &lt;regFile_59&gt; &lt;regFile_510&gt; &lt;regFile_511&gt; &lt;regFile_512&gt; &lt;regFile_513&gt; &lt;regFile_514&gt; &lt;regFile_515&gt; &lt;regFile_516&gt; &lt;regFile_517&gt; &lt;regFile_518&gt; &lt;regFile_519&gt; &lt;regFile_520&gt; &lt;regFile_521&gt; &lt;regFile_522&gt; &lt;regFile_523&gt; &lt;regFile_524&gt; &lt;regFile_525&gt; &lt;regFile_526&gt; &lt;regFile_527&gt; &lt;regFile_528&gt; &lt;regFile_529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_61&gt; &lt;regFile_62&gt; &lt;regFile_63&gt; &lt;regFile_64&gt; &lt;regFile_65&gt; &lt;regFile_66&gt; &lt;regFile_67&gt; &lt;regFile_68&gt; &lt;regFile_69&gt; &lt;regFile_610&gt; &lt;regFile_611&gt; &lt;regFile_612&gt; &lt;regFile_613&gt; &lt;regFile_614&gt; &lt;regFile_615&gt; &lt;regFile_616&gt; &lt;regFile_617&gt; &lt;regFile_618&gt; &lt;regFile_619&gt; &lt;regFile_620&gt; &lt;regFile_621&gt; &lt;regFile_622&gt; &lt;regFile_623&gt; &lt;regFile_624&gt; &lt;regFile_625&gt; &lt;regFile_626&gt; &lt;regFile_627&gt; &lt;regFile_628&gt; &lt;regFile_629&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_71&gt; &lt;regFile_72&gt; &lt;regFile_73&gt; &lt;regFile_74&gt; &lt;regFile_75&gt; &lt;regFile_76&gt; &lt;regFile_77&gt; &lt;regFile_78&gt; &lt;regFile_79&gt; &lt;regFile_710&gt; &lt;regFile_711&gt; &lt;regFile_712&gt; &lt;regFile_713&gt; &lt;regFile_714&gt; &lt;regFile_715&gt; &lt;regFile_716&gt; &lt;regFile_717&gt; &lt;regFile_718&gt; &lt;regFile_719&gt; &lt;regFile_720&gt; &lt;regFile_721&gt; &lt;regFile_722&gt; &lt;regFile_723&gt; &lt;regFile_724&gt; &lt;regFile_725&gt; &lt;regFile_726&gt; &lt;regFile_727&gt; &lt;regFile_728&gt; &lt;regFile_729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_101&gt; &lt;regFile_102&gt; &lt;regFile_103&gt; &lt;regFile_104&gt; &lt;regFile_105&gt; &lt;regFile_106&gt; &lt;regFile_107&gt; &lt;regFile_108&gt; &lt;regFile_109&gt; &lt;regFile_1010&gt; &lt;regFile_1011&gt; &lt;regFile_1012&gt; &lt;regFile_1013&gt; &lt;regFile_1014&gt; &lt;regFile_1015&gt; &lt;regFile_1016&gt; &lt;regFile_1017&gt; &lt;regFile_1018&gt; &lt;regFile_1019&gt; &lt;regFile_1020&gt; &lt;regFile_1021&gt; &lt;regFile_1022&gt; &lt;regFile_1023&gt; &lt;regFile_1024&gt; &lt;regFile_1025&gt; &lt;regFile_1026&gt; &lt;regFile_1027&gt; &lt;regFile_1028&gt; &lt;regFile_1029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_81&gt; &lt;regFile_82&gt; &lt;regFile_83&gt; &lt;regFile_84&gt; &lt;regFile_85&gt; &lt;regFile_86&gt; &lt;regFile_87&gt; &lt;regFile_88&gt; &lt;regFile_89&gt; &lt;regFile_810&gt; &lt;regFile_811&gt; &lt;regFile_812&gt; &lt;regFile_813&gt; &lt;regFile_814&gt; &lt;regFile_815&gt; &lt;regFile_816&gt; &lt;regFile_817&gt; &lt;regFile_818&gt; &lt;regFile_819&gt; &lt;regFile_820&gt; &lt;regFile_821&gt; &lt;regFile_822&gt; &lt;regFile_823&gt; &lt;regFile_824&gt; &lt;regFile_825&gt; &lt;regFile_826&gt; &lt;regFile_827&gt; &lt;regFile_828&gt; &lt;regFile_829&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_111&gt; &lt;regFile_113&gt; &lt;regFile_115&gt; &lt;regFile_117&gt; &lt;regFile_119&gt; &lt;regFile_1110&gt; &lt;regFile_1111&gt; &lt;regFile_1112&gt; &lt;regFile_1113&gt; &lt;regFile_1114&gt; &lt;regFile_1115&gt; &lt;regFile_1116&gt; &lt;regFile_1117&gt; &lt;regFile_1118&gt; &lt;regFile_1119&gt; &lt;regFile_1120&gt; &lt;regFile_1121&gt; &lt;regFile_1122&gt; &lt;regFile_1123&gt; &lt;regFile_1124&gt; &lt;regFile_1125&gt; &lt;regFile_1126&gt; &lt;regFile_1127&gt; &lt;regFile_1128&gt; &lt;regFile_1129&gt; &lt;regFile_1131&gt; &lt;regFile_1133&gt; &lt;regFile_1135&gt; &lt;regFile_1137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_91&gt; &lt;regFile_92&gt; &lt;regFile_93&gt; &lt;regFile_94&gt; &lt;regFile_95&gt; &lt;regFile_96&gt; &lt;regFile_97&gt; &lt;regFile_98&gt; &lt;regFile_99&gt; &lt;regFile_910&gt; &lt;regFile_911&gt; &lt;regFile_912&gt; &lt;regFile_913&gt; &lt;regFile_914&gt; &lt;regFile_915&gt; &lt;regFile_916&gt; &lt;regFile_917&gt; &lt;regFile_918&gt; &lt;regFile_919&gt; &lt;regFile_920&gt; &lt;regFile_921&gt; &lt;regFile_922&gt; &lt;regFile_923&gt; &lt;regFile_924&gt; &lt;regFile_925&gt; &lt;regFile_926&gt; &lt;regFile_927&gt; &lt;regFile_928&gt; &lt;regFile_929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_121&gt; &lt;regFile_122&gt; &lt;regFile_123&gt; &lt;regFile_124&gt; &lt;regFile_125&gt; &lt;regFile_126&gt; &lt;regFile_128&gt; &lt;regFile_1210&gt; &lt;regFile_1211&gt; &lt;regFile_1212&gt; &lt;regFile_1213&gt; &lt;regFile_1214&gt; &lt;regFile_1215&gt; &lt;regFile_1216&gt; &lt;regFile_1217&gt; &lt;regFile_1218&gt; &lt;regFile_1219&gt; &lt;regFile_1220&gt; &lt;regFile_1221&gt; &lt;regFile_1222&gt; &lt;regFile_1223&gt; &lt;regFile_1224&gt; &lt;regFile_1225&gt; &lt;regFile_1226&gt; &lt;regFile_1227&gt; &lt;regFile_1228&gt; &lt;regFile_1229&gt; &lt;regFile_1230&gt; &lt;regFile_1231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_131&gt; &lt;regFile_132&gt; &lt;regFile_133&gt; &lt;regFile_134&gt; &lt;regFile_135&gt; &lt;regFile_136&gt; &lt;regFile_137&gt; &lt;regFile_138&gt; &lt;regFile_139&gt; &lt;regFile_1310&gt; &lt;regFile_1311&gt; &lt;regFile_1312&gt; &lt;regFile_1313&gt; &lt;regFile_1314&gt; &lt;regFile_1315&gt; &lt;regFile_1316&gt; &lt;regFile_1317&gt; &lt;regFile_1318&gt; &lt;regFile_1319&gt; &lt;regFile_1320&gt; &lt;regFile_1321&gt; &lt;regFile_1322&gt; &lt;regFile_1323&gt; &lt;regFile_1324&gt; &lt;regFile_1325&gt; &lt;regFile_1326&gt; &lt;regFile_1327&gt; &lt;regFile_1328&gt; &lt;regFile_1329&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_141&gt; &lt;regFile_142&gt; &lt;regFile_143&gt; &lt;regFile_144&gt; &lt;regFile_145&gt; &lt;regFile_146&gt; &lt;regFile_147&gt; &lt;regFile_148&gt; &lt;regFile_149&gt; &lt;regFile_1410&gt; &lt;regFile_1411&gt; &lt;regFile_1412&gt; &lt;regFile_1413&gt; &lt;regFile_1414&gt; &lt;regFile_1415&gt; &lt;regFile_1416&gt; &lt;regFile_1417&gt; &lt;regFile_1418&gt; &lt;regFile_1419&gt; &lt;regFile_1420&gt; &lt;regFile_1421&gt; &lt;regFile_1422&gt; &lt;regFile_1423&gt; &lt;regFile_1424&gt; &lt;regFile_1425&gt; &lt;regFile_1426&gt; &lt;regFile_1427&gt; &lt;regFile_1428&gt; &lt;regFile_1429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_151&gt; &lt;regFile_152&gt; &lt;regFile_153&gt; &lt;regFile_154&gt; &lt;regFile_155&gt; &lt;regFile_156&gt; &lt;regFile_157&gt; &lt;regFile_158&gt; &lt;regFile_159&gt; &lt;regFile_1510&gt; &lt;regFile_1511&gt; &lt;regFile_1512&gt; &lt;regFile_1513&gt; &lt;regFile_1514&gt; &lt;regFile_1515&gt; &lt;regFile_1516&gt; &lt;regFile_1517&gt; &lt;regFile_1518&gt; &lt;regFile_1519&gt; &lt;regFile_1520&gt; &lt;regFile_1521&gt; &lt;regFile_1522&gt; &lt;regFile_1523&gt; &lt;regFile_1524&gt; &lt;regFile_1525&gt; &lt;regFile_1526&gt; &lt;regFile_1527&gt; &lt;regFile_1528&gt; &lt;regFile_1529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_201&gt; &lt;regFile_202&gt; &lt;regFile_203&gt; &lt;regFile_204&gt; &lt;regFile_205&gt; &lt;regFile_206&gt; &lt;regFile_207&gt; &lt;regFile_208&gt; &lt;regFile_209&gt; &lt;regFile_2010&gt; &lt;regFile_2011&gt; &lt;regFile_2012&gt; &lt;regFile_2013&gt; &lt;regFile_2014&gt; &lt;regFile_2015&gt; &lt;regFile_2016&gt; &lt;regFile_2017&gt; &lt;regFile_2018&gt; &lt;regFile_2019&gt; &lt;regFile_2020&gt; &lt;regFile_2021&gt; &lt;regFile_2022&gt; &lt;regFile_2023&gt; &lt;regFile_2024&gt; &lt;regFile_2025&gt; &lt;regFile_2026&gt; &lt;regFile_2027&gt; &lt;regFile_2028&gt; &lt;regFile_2029&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_161&gt; &lt;regFile_162&gt; &lt;regFile_163&gt; &lt;regFile_164&gt; &lt;regFile_165&gt; &lt;regFile_166&gt; &lt;regFile_167&gt; &lt;regFile_168&gt; &lt;regFile_169&gt; &lt;regFile_1610&gt; &lt;regFile_1611&gt; &lt;regFile_1612&gt; &lt;regFile_1613&gt; &lt;regFile_1614&gt; &lt;regFile_1615&gt; &lt;regFile_1616&gt; &lt;regFile_1617&gt; &lt;regFile_1618&gt; &lt;regFile_1619&gt; &lt;regFile_1620&gt; &lt;regFile_1621&gt; &lt;regFile_1622&gt; &lt;regFile_1623&gt; &lt;regFile_1624&gt; &lt;regFile_1625&gt; &lt;regFile_1626&gt; &lt;regFile_1627&gt; &lt;regFile_1628&gt; &lt;regFile_1629&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_211&gt; &lt;regFile_213&gt; &lt;regFile_215&gt; &lt;regFile_217&gt; &lt;regFile_219&gt; &lt;regFile_2110&gt; &lt;regFile_2111&gt; &lt;regFile_2112&gt; &lt;regFile_2113&gt; &lt;regFile_2114&gt; &lt;regFile_2115&gt; &lt;regFile_2116&gt; &lt;regFile_2117&gt; &lt;regFile_2118&gt; &lt;regFile_2119&gt; &lt;regFile_2120&gt; &lt;regFile_2121&gt; &lt;regFile_2122&gt; &lt;regFile_2123&gt; &lt;regFile_2124&gt; &lt;regFile_2125&gt; &lt;regFile_2126&gt; &lt;regFile_2127&gt; &lt;regFile_2128&gt; &lt;regFile_2129&gt; &lt;regFile_2131&gt; &lt;regFile_2133&gt; &lt;regFile_2135&gt; &lt;regFile_2137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_171&gt; &lt;regFile_172&gt; &lt;regFile_173&gt; &lt;regFile_174&gt; &lt;regFile_175&gt; &lt;regFile_176&gt; &lt;regFile_177&gt; &lt;regFile_178&gt; &lt;regFile_179&gt; &lt;regFile_1710&gt; &lt;regFile_1711&gt; &lt;regFile_1712&gt; &lt;regFile_1713&gt; &lt;regFile_1714&gt; &lt;regFile_1715&gt; &lt;regFile_1716&gt; &lt;regFile_1717&gt; &lt;regFile_1718&gt; &lt;regFile_1719&gt; &lt;regFile_1720&gt; &lt;regFile_1721&gt; &lt;regFile_1722&gt; &lt;regFile_1723&gt; &lt;regFile_1724&gt; &lt;regFile_1725&gt; &lt;regFile_1726&gt; &lt;regFile_1727&gt; &lt;regFile_1728&gt; &lt;regFile_1729&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_221&gt; &lt;regFile_222&gt; &lt;regFile_223&gt; &lt;regFile_224&gt; &lt;regFile_225&gt; &lt;regFile_226&gt; &lt;regFile_228&gt; &lt;regFile_2210&gt; &lt;regFile_2211&gt; &lt;regFile_2212&gt; &lt;regFile_2213&gt; &lt;regFile_2214&gt; &lt;regFile_2215&gt; &lt;regFile_2216&gt; &lt;regFile_2217&gt; &lt;regFile_2218&gt; &lt;regFile_2219&gt; &lt;regFile_2220&gt; &lt;regFile_2221&gt; &lt;regFile_2222&gt; &lt;regFile_2223&gt; &lt;regFile_2224&gt; &lt;regFile_2225&gt; &lt;regFile_2226&gt; &lt;regFile_2227&gt; &lt;regFile_2228&gt; &lt;regFile_2229&gt; &lt;regFile_2230&gt; &lt;regFile_2231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_181&gt; &lt;regFile_182&gt; &lt;regFile_183&gt; &lt;regFile_184&gt; &lt;regFile_185&gt; &lt;regFile_186&gt; &lt;regFile_187&gt; &lt;regFile_188&gt; &lt;regFile_189&gt; &lt;regFile_1810&gt; &lt;regFile_1811&gt; &lt;regFile_1812&gt; &lt;regFile_1813&gt; &lt;regFile_1814&gt; &lt;regFile_1815&gt; &lt;regFile_1816&gt; &lt;regFile_1817&gt; &lt;regFile_1818&gt; &lt;regFile_1819&gt; &lt;regFile_1820&gt; &lt;regFile_1821&gt; &lt;regFile_1822&gt; &lt;regFile_1823&gt; &lt;regFile_1824&gt; &lt;regFile_1825&gt; &lt;regFile_1826&gt; &lt;regFile_1827&gt; &lt;regFile_1828&gt; &lt;regFile_1829&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_231&gt; &lt;regFile_232&gt; &lt;regFile_233&gt; &lt;regFile_234&gt; &lt;regFile_235&gt; &lt;regFile_236&gt; &lt;regFile_237&gt; &lt;regFile_238&gt; &lt;regFile_239&gt; &lt;regFile_2310&gt; &lt;regFile_2311&gt; &lt;regFile_2312&gt; &lt;regFile_2313&gt; &lt;regFile_2314&gt; &lt;regFile_2315&gt; &lt;regFile_2316&gt; &lt;regFile_2317&gt; &lt;regFile_2318&gt; &lt;regFile_2319&gt; &lt;regFile_2320&gt; &lt;regFile_2321&gt; &lt;regFile_2322&gt; &lt;regFile_2323&gt; &lt;regFile_2324&gt; &lt;regFile_2325&gt; &lt;regFile_2326&gt; &lt;regFile_2327&gt; &lt;regFile_2328&gt; &lt;regFile_2329&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_191&gt; &lt;regFile_192&gt; &lt;regFile_193&gt; &lt;regFile_194&gt; &lt;regFile_195&gt; &lt;regFile_196&gt; &lt;regFile_197&gt; &lt;regFile_198&gt; &lt;regFile_199&gt; &lt;regFile_1910&gt; &lt;regFile_1911&gt; &lt;regFile_1912&gt; &lt;regFile_1913&gt; &lt;regFile_1914&gt; &lt;regFile_1915&gt; &lt;regFile_1916&gt; &lt;regFile_1917&gt; &lt;regFile_1918&gt; &lt;regFile_1919&gt; &lt;regFile_1920&gt; &lt;regFile_1921&gt; &lt;regFile_1922&gt; &lt;regFile_1923&gt; &lt;regFile_1924&gt; &lt;regFile_1925&gt; &lt;regFile_1926&gt; &lt;regFile_1927&gt; &lt;regFile_1928&gt; &lt;regFile_1929&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_241&gt; &lt;regFile_242&gt; &lt;regFile_243&gt; &lt;regFile_244&gt; &lt;regFile_245&gt; &lt;regFile_246&gt; &lt;regFile_247&gt; &lt;regFile_248&gt; &lt;regFile_249&gt; &lt;regFile_2410&gt; &lt;regFile_2411&gt; &lt;regFile_2412&gt; &lt;regFile_2413&gt; &lt;regFile_2414&gt; &lt;regFile_2415&gt; &lt;regFile_2416&gt; &lt;regFile_2417&gt; &lt;regFile_2418&gt; &lt;regFile_2419&gt; &lt;regFile_2420&gt; &lt;regFile_2421&gt; &lt;regFile_2422&gt; &lt;regFile_2423&gt; &lt;regFile_2424&gt; &lt;regFile_2425&gt; &lt;regFile_2426&gt; &lt;regFile_2427&gt; &lt;regFile_2428&gt; &lt;regFile_2429&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_251&gt; &lt;regFile_252&gt; &lt;regFile_253&gt; &lt;regFile_254&gt; &lt;regFile_255&gt; &lt;regFile_256&gt; &lt;regFile_257&gt; &lt;regFile_258&gt; &lt;regFile_259&gt; &lt;regFile_2510&gt; &lt;regFile_2511&gt; &lt;regFile_2512&gt; &lt;regFile_2513&gt; &lt;regFile_2514&gt; &lt;regFile_2515&gt; &lt;regFile_2516&gt; &lt;regFile_2517&gt; &lt;regFile_2518&gt; &lt;regFile_2519&gt; &lt;regFile_2520&gt; &lt;regFile_2521&gt; &lt;regFile_2522&gt; &lt;regFile_2523&gt; &lt;regFile_2524&gt; &lt;regFile_2525&gt; &lt;regFile_2526&gt; &lt;regFile_2527&gt; &lt;regFile_2528&gt; &lt;regFile_2529&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">regFile_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_file</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;regFile_301&gt; &lt;regFile_302&gt; &lt;regFile_303&gt; &lt;regFile_304&gt; &lt;regFile_305&gt; &lt;regFile_306&gt; &lt;regFile_307&gt; &lt;regFile_308&gt; &lt;regFile_309&gt; &lt;regFile_3010&gt; &lt;regFile_3011&gt; &lt;regFile_3012&gt; &lt;regFile_3013&gt; &lt;regFile_3014&gt; &lt;regFile_3015&gt; &lt;regFile_3016&gt; &lt;regFile_3017&gt; &lt;regFile_3018&gt; &lt;regFile_3019&gt; &lt;regFile_3020&gt; &lt;regFile_3021&gt; &lt;regFile_3022&gt; &lt;regFile_3023&gt; &lt;regFile_3024&gt; &lt;regFile_3025&gt; &lt;regFile_3026&gt; &lt;regFile_3027&gt; &lt;regFile_3028&gt; &lt;regFile_3029&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">regFile_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">regFile_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_file</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">CLOCK/buff_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">CLOCK/buff_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
@@ -216,196 +593,100 @@ Xilinx highly recommends one of the following:
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">alu_control_unit/op_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/read_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">datamem/Mram_mem32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">alu_unit/out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.

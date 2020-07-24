@@ -3,14 +3,23 @@
 module mips(input clk, output [31:0] pc_out, alu_result);
 
 // address e feli program counter :
-reg [31:0] pc_current;
 
-initial
+
+always @(posedge clk)
 begin
-	pc_current = 32'b00000000000000000000000000000000;
+
+	$display("pc current : %d", pc_current);
+	$display("instruction : %d", instr);
+
 end
+
+wire [31:0] pc_current;
+
+
+PC CLOCK(clk, pc_current, pc_out);
+
 // meghdar e baddi pc :
-wire signed[31:0] pc_next,pc2;
+//wire signed[31:0] pc_next,pc2;
 //check kon bbin in chie
 //instruction 32 bit :
 wire [31:0] instr;
@@ -43,7 +52,6 @@ wire [31:0] alu_out;
 // signal e zero e alu :
 wire zero_flag;
 
-
 wire signed[31:0] im_shift_1, PC_j, PC_beq, PC_4beq,PC_4beqj,PC_jr;
 wire beq_control;
 // in ziri ro badan check kon
@@ -57,16 +65,18 @@ wire sign_or_zero;
 wire branch_controler;
 
 
-always @(posedge clk)
+//always @(posedge clk)
 // inja condition jump ro bezar :
-begin
-	pc_current <= pc_next;
-end
+
+// inja instruction memory :
+instruction_memory instr_mem(.addr(pc_out),.instruction(instr));
+
+
 
 // address pc ro 4 byte (32 bit ya 1 word) ezafe mikonim :
-assign pc2 = pc_current + 32'd4;
-// inja instruction memory :
-instruction_memory instr_mem(.addr(pc_current),.instruction(instr));
+wire [31:0] pc_next;
+address_alu first_address_alu(pc_out, 4, pc_next);
+
 
 // az bit e 31 ta 26 e instructioni ke fetch kardim midim be cotrol unit :
 // inja signal haye :
@@ -141,16 +151,16 @@ assign reg_write_data = (mem_to_reg == 1'b0) ? alu_out : mem_read_data;
 // ezafe kardim raft . hala age branch dashte bashim 
 // address e pc counter ba oon meghdar e constant e
 // sign extend shode jam mishe va oon dar pc gharar migire :
-assign branch_controller = branch & zero_flag;
+assign branch_controller = branch && zero_flag;
 
+//wire address_alu_zero;
 wire [31:0] address_alu_out;
-wire address_alu_zero;
-address_alu ADDRESS_ALU(current_pc, sign_extend, address_alu_out);
+address_alu ADDRESS_ALU(pc_out, sign_extend, address_alu_out);
 
-assign pc_next = (branch_controller) ? address_alu_out : pc2;
+assign pc_current = (branch_controller == 1) ? address_alu_out : pc_next;
 
 // output
-assign pc_out = pc_current;
+//assign pc_out = pc_current;
 assign alu_result = alu_out;
 
 endmodule 

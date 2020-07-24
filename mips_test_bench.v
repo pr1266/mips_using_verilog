@@ -78,9 +78,6 @@ module mips_test_bench;
 		clk = 1;
 		#5
 		clk = 0;
-		
-        
-		// Add stimulus here
 
 	end
       
