@@ -3,7 +3,7 @@ module alu32bit(input [31:0] first,
 					input [31:0] second, 
 					input [3:0] select, 
 					output reg [31:0] out, 
-					output zero);
+					output reg zero);
 
 // chon madar combinational darim hame parametr ha 
 always @(*)
@@ -22,9 +22,12 @@ begin
 	// nor
 	//4'b1100 : out = first ~| second;
 	endcase
+	
+	if (first - second == 0) zero = 1'b1;
+	else zero = 1'b0;
 end
 
 
-assign zero = (first == second) ? 1'b1: 1'b0;
+//assign zero = (first == second) ? 1'b1: 1'b0;
 
 endmodule

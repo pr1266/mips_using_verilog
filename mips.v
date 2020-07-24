@@ -12,9 +12,10 @@ begin
 	$display("instruction : %b", instr);
 	$display("alu result : %d", alu_result);
 	$display("pc next : %d", pc_next);
-	
-	$display("first input alu : %b", reg_read_data_1);
-	$display("second input alu : %b", read_data2);
+	$display("zero flag : %b", zero_flag);
+	//$display("first input alu : %b", reg_read_data_1);
+	//$display("second input alu : %b", read_data2);
+	$display("branch signal : %b", branch_controller);
 	
 end
 
@@ -80,8 +81,7 @@ instruction_memory instr_mem(.addr(pc_out),.instruction(instr));
 
 // address pc ro 4 byte (32 bit ya 1 word) ezafe mikonim :
 wire [31:0] pc_next;
-address_alu first_address_alu(pc_out, 4, pc_next);
-
+address_alu first_address_alu(pc_out, 1, pc_next);
 
 // az bit e 31 ta 26 e instructioni ke fetch kardim midim be cotrol unit :
 // inja signal haye :
@@ -107,8 +107,6 @@ assign reg_write_dest = (reg_dst == 1'b1) ? instr[15:11] : instr[20:16];
 assign reg_read_addr_1 = instr[25:21];  
 assign reg_read_addr_2 = instr[20:16];
 
-
-
 register_file reg_file(.clk(clk) ,.RegWrite(reg_write),  
  .write_addr(reg_write_dest),  
  .write_data(reg_write_data),  
@@ -122,9 +120,8 @@ register_file reg_file(.clk(clk) ,.RegWrite(reg_write),
 // 16 bit aval e instruction ro midim be sign extend
 // meghdar e khoroojish ro mirizim too sign_ext_im
 sign_extend SignExtend(instr[15:0], sign_ext_im);
- 
-assign zero_ext_im = {{16{1'b0}}, instr[15:0]};
-assign imm_ext = (sign_or_zero == 1'b1) ? sign_ext_im : zero_ext_im;
+//assign zero_ext_im = {{16{1'b0}}, instr[15:0]};
+//assign imm_ext = (sign_or_zero == 1'b1) ? sign_ext_im : zero_ext_im;
 
 
 // JR control  
@@ -156,13 +153,13 @@ assign reg_write_data = (mem_to_reg == 1'b0) ? alu_out : mem_read_data;
 // ezafe kardim raft . hala age branch dashte bashim 
 // address e pc counter ba oon meghdar e constant e
 // sign extend shode jam mishe va oon dar pc gharar migire :
-assign branch_controller = branch && zero_flag;
+assign branch_controller = branch & zero_flag;
 
 //wire address_alu_zero;
 wire [31:0] address_alu_out;
 address_alu ADDRESS_ALU(pc_out, sign_extend, address_alu_out);
 
-assign pc_current = (branch_controller == 1) ? address_alu_out : pc_next;
+assign pc_current = (branch_controller == 1'b1) ? address_alu_out : pc_next;
 
 // output
 //assign pc_out = pc_current;

@@ -131,11 +131,13 @@ Parsing module <mips>.
 =========================================================================
 
 Elaborating module <mips>.
-"C:\Users\pr1266\finalproject\mips.v" Line 11. $display pc current : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 12. $display pc out : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 13. $display instruction : 32'b................................
-"C:\Users\pr1266\finalproject\mips.v" Line 14. $display alu out : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 15. $display pc next : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 10. $display pc current : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 11. $display pc out : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 12. $display instruction : 32'b................................
+"C:\Users\pr1266\finalproject\mips.v" Line 13. $display alu result : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 14. $display pc next : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 15. $display zero flag : 1'b.
+"C:\Users\pr1266\finalproject\mips.v" Line 18. $display branch signal : 1'b.
 
 Elaborating module <PC>.
 
@@ -144,22 +146,21 @@ Elaborating module <instruction_memory>.
 Elaborating module <address_alu>.
 
 Elaborating module <Control>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 96: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 101: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 98: Size mismatch in connection of port <RegDst>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 103: Result of 5-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <register_file>.
 WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 111: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
 
 Elaborating module <sign_extend>.
-WARNING:HDLCompiler:1127 - "C:\Users\pr1266\finalproject\mips.v" Line 125: Assignment to imm_ext ignored, since the identifier is never used
 
 Elaborating module <ALU_control>.
 
 Elaborating module <alu32bit>.
 
 Elaborating module <data_memory>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 161: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 161: Net <sign_extend> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 160: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 160: Net <sign_extend> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -210,1035 +211,9 @@ Unit <Control> synthesized.
 
 Synthesizing Unit <register_file>.
     Related source file is "C:\Users\pr1266\finalproject\register_file.v".
-    Found 1-bit register for signal <regFile<31><30>>.
-    Found 1-bit register for signal <regFile<31><29>>.
-    Found 1-bit register for signal <regFile<31><28>>.
-    Found 1-bit register for signal <regFile<31><27>>.
-    Found 1-bit register for signal <regFile<31><26>>.
-    Found 1-bit register for signal <regFile<31><25>>.
-    Found 1-bit register for signal <regFile<31><24>>.
-    Found 1-bit register for signal <regFile<31><23>>.
-    Found 1-bit register for signal <regFile<31><22>>.
-    Found 1-bit register for signal <regFile<31><21>>.
-    Found 1-bit register for signal <regFile<31><20>>.
-    Found 1-bit register for signal <regFile<31><19>>.
-    Found 1-bit register for signal <regFile<31><18>>.
-    Found 1-bit register for signal <regFile<31><17>>.
-    Found 1-bit register for signal <regFile<31><16>>.
-    Found 1-bit register for signal <regFile<31><15>>.
-    Found 1-bit register for signal <regFile<31><14>>.
-    Found 1-bit register for signal <regFile<31><13>>.
-    Found 1-bit register for signal <regFile<31><12>>.
-    Found 1-bit register for signal <regFile<31><11>>.
-    Found 1-bit register for signal <regFile<31><10>>.
-    Found 1-bit register for signal <regFile<31><9>>.
-    Found 1-bit register for signal <regFile<31><8>>.
-    Found 1-bit register for signal <regFile<31><7>>.
-    Found 1-bit register for signal <regFile<31><6>>.
-    Found 1-bit register for signal <regFile<31><5>>.
-    Found 1-bit register for signal <regFile<31><4>>.
-    Found 1-bit register for signal <regFile<31><3>>.
-    Found 1-bit register for signal <regFile<31><2>>.
-    Found 1-bit register for signal <regFile<31><1>>.
-    Found 1-bit register for signal <regFile<31><0>>.
-    Found 1-bit register for signal <regFile<30><31>>.
-    Found 1-bit register for signal <regFile<30><30>>.
-    Found 1-bit register for signal <regFile<30><29>>.
-    Found 1-bit register for signal <regFile<30><28>>.
-    Found 1-bit register for signal <regFile<30><27>>.
-    Found 1-bit register for signal <regFile<30><26>>.
-    Found 1-bit register for signal <regFile<30><25>>.
-    Found 1-bit register for signal <regFile<30><24>>.
-    Found 1-bit register for signal <regFile<30><23>>.
-    Found 1-bit register for signal <regFile<30><22>>.
-    Found 1-bit register for signal <regFile<30><21>>.
-    Found 1-bit register for signal <regFile<30><20>>.
-    Found 1-bit register for signal <regFile<30><19>>.
-    Found 1-bit register for signal <regFile<30><18>>.
-    Found 1-bit register for signal <regFile<30><17>>.
-    Found 1-bit register for signal <regFile<30><16>>.
-    Found 1-bit register for signal <regFile<30><15>>.
-    Found 1-bit register for signal <regFile<30><14>>.
-    Found 1-bit register for signal <regFile<30><13>>.
-    Found 1-bit register for signal <regFile<30><12>>.
-    Found 1-bit register for signal <regFile<30><11>>.
-    Found 1-bit register for signal <regFile<30><10>>.
-    Found 1-bit register for signal <regFile<30><9>>.
-    Found 1-bit register for signal <regFile<30><8>>.
-    Found 1-bit register for signal <regFile<30><7>>.
-    Found 1-bit register for signal <regFile<30><6>>.
-    Found 1-bit register for signal <regFile<30><5>>.
-    Found 1-bit register for signal <regFile<30><4>>.
-    Found 1-bit register for signal <regFile<30><3>>.
-    Found 1-bit register for signal <regFile<30><2>>.
-    Found 1-bit register for signal <regFile<30><1>>.
-    Found 1-bit register for signal <regFile<30><0>>.
-    Found 1-bit register for signal <regFile<29><31>>.
-    Found 1-bit register for signal <regFile<29><30>>.
-    Found 1-bit register for signal <regFile<29><29>>.
-    Found 1-bit register for signal <regFile<29><28>>.
-    Found 1-bit register for signal <regFile<29><27>>.
-    Found 1-bit register for signal <regFile<29><26>>.
-    Found 1-bit register for signal <regFile<29><25>>.
-    Found 1-bit register for signal <regFile<29><24>>.
-    Found 1-bit register for signal <regFile<29><23>>.
-    Found 1-bit register for signal <regFile<29><22>>.
-    Found 1-bit register for signal <regFile<29><21>>.
-    Found 1-bit register for signal <regFile<29><20>>.
-    Found 1-bit register for signal <regFile<29><19>>.
-    Found 1-bit register for signal <regFile<29><18>>.
-    Found 1-bit register for signal <regFile<29><17>>.
-    Found 1-bit register for signal <regFile<29><16>>.
-    Found 1-bit register for signal <regFile<29><15>>.
-    Found 1-bit register for signal <regFile<29><14>>.
-    Found 1-bit register for signal <regFile<29><13>>.
-    Found 1-bit register for signal <regFile<29><12>>.
-    Found 1-bit register for signal <regFile<29><11>>.
-    Found 1-bit register for signal <regFile<29><10>>.
-    Found 1-bit register for signal <regFile<29><9>>.
-    Found 1-bit register for signal <regFile<29><8>>.
-    Found 1-bit register for signal <regFile<29><7>>.
-    Found 1-bit register for signal <regFile<29><6>>.
-    Found 1-bit register for signal <regFile<29><5>>.
-    Found 1-bit register for signal <regFile<29><4>>.
-    Found 1-bit register for signal <regFile<29><3>>.
-    Found 1-bit register for signal <regFile<29><2>>.
-    Found 1-bit register for signal <regFile<29><1>>.
-    Found 1-bit register for signal <regFile<29><0>>.
-    Found 1-bit register for signal <regFile<28><31>>.
-    Found 1-bit register for signal <regFile<28><30>>.
-    Found 1-bit register for signal <regFile<28><29>>.
-    Found 1-bit register for signal <regFile<28><28>>.
-    Found 1-bit register for signal <regFile<28><27>>.
-    Found 1-bit register for signal <regFile<28><26>>.
-    Found 1-bit register for signal <regFile<28><25>>.
-    Found 1-bit register for signal <regFile<28><24>>.
-    Found 1-bit register for signal <regFile<28><23>>.
-    Found 1-bit register for signal <regFile<28><22>>.
-    Found 1-bit register for signal <regFile<28><21>>.
-    Found 1-bit register for signal <regFile<28><20>>.
-    Found 1-bit register for signal <regFile<28><19>>.
-    Found 1-bit register for signal <regFile<28><18>>.
-    Found 1-bit register for signal <regFile<28><17>>.
-    Found 1-bit register for signal <regFile<28><16>>.
-    Found 1-bit register for signal <regFile<28><15>>.
-    Found 1-bit register for signal <regFile<28><14>>.
-    Found 1-bit register for signal <regFile<28><13>>.
-    Found 1-bit register for signal <regFile<28><12>>.
-    Found 1-bit register for signal <regFile<28><11>>.
-    Found 1-bit register for signal <regFile<28><10>>.
-    Found 1-bit register for signal <regFile<28><9>>.
-    Found 1-bit register for signal <regFile<28><8>>.
-    Found 1-bit register for signal <regFile<28><7>>.
-    Found 1-bit register for signal <regFile<28><6>>.
-    Found 1-bit register for signal <regFile<28><5>>.
-    Found 1-bit register for signal <regFile<28><4>>.
-    Found 1-bit register for signal <regFile<28><3>>.
-    Found 1-bit register for signal <regFile<28><2>>.
-    Found 1-bit register for signal <regFile<28><1>>.
-    Found 1-bit register for signal <regFile<28><0>>.
-    Found 1-bit register for signal <regFile<27><31>>.
-    Found 1-bit register for signal <regFile<27><30>>.
-    Found 1-bit register for signal <regFile<27><29>>.
-    Found 1-bit register for signal <regFile<27><28>>.
-    Found 1-bit register for signal <regFile<27><27>>.
-    Found 1-bit register for signal <regFile<27><26>>.
-    Found 1-bit register for signal <regFile<27><25>>.
-    Found 1-bit register for signal <regFile<27><24>>.
-    Found 1-bit register for signal <regFile<27><23>>.
-    Found 1-bit register for signal <regFile<27><22>>.
-    Found 1-bit register for signal <regFile<27><21>>.
-    Found 1-bit register for signal <regFile<27><20>>.
-    Found 1-bit register for signal <regFile<27><19>>.
-    Found 1-bit register for signal <regFile<27><18>>.
-    Found 1-bit register for signal <regFile<27><17>>.
-    Found 1-bit register for signal <regFile<27><16>>.
-    Found 1-bit register for signal <regFile<27><15>>.
-    Found 1-bit register for signal <regFile<27><14>>.
-    Found 1-bit register for signal <regFile<27><13>>.
-    Found 1-bit register for signal <regFile<27><12>>.
-    Found 1-bit register for signal <regFile<27><11>>.
-    Found 1-bit register for signal <regFile<27><10>>.
-    Found 1-bit register for signal <regFile<27><9>>.
-    Found 1-bit register for signal <regFile<27><8>>.
-    Found 1-bit register for signal <regFile<27><7>>.
-    Found 1-bit register for signal <regFile<27><6>>.
-    Found 1-bit register for signal <regFile<27><5>>.
-    Found 1-bit register for signal <regFile<27><4>>.
-    Found 1-bit register for signal <regFile<27><3>>.
-    Found 1-bit register for signal <regFile<27><2>>.
-    Found 1-bit register for signal <regFile<27><1>>.
-    Found 1-bit register for signal <regFile<27><0>>.
-    Found 1-bit register for signal <regFile<26><31>>.
-    Found 1-bit register for signal <regFile<26><30>>.
-    Found 1-bit register for signal <regFile<26><29>>.
-    Found 1-bit register for signal <regFile<26><28>>.
-    Found 1-bit register for signal <regFile<26><27>>.
-    Found 1-bit register for signal <regFile<26><26>>.
-    Found 1-bit register for signal <regFile<26><25>>.
-    Found 1-bit register for signal <regFile<26><24>>.
-    Found 1-bit register for signal <regFile<26><23>>.
-    Found 1-bit register for signal <regFile<26><22>>.
-    Found 1-bit register for signal <regFile<26><21>>.
-    Found 1-bit register for signal <regFile<26><20>>.
-    Found 1-bit register for signal <regFile<26><19>>.
-    Found 1-bit register for signal <regFile<26><18>>.
-    Found 1-bit register for signal <regFile<26><17>>.
-    Found 1-bit register for signal <regFile<26><16>>.
-    Found 1-bit register for signal <regFile<26><15>>.
-    Found 1-bit register for signal <regFile<26><14>>.
-    Found 1-bit register for signal <regFile<26><13>>.
-    Found 1-bit register for signal <regFile<26><12>>.
-    Found 1-bit register for signal <regFile<26><11>>.
-    Found 1-bit register for signal <regFile<26><10>>.
-    Found 1-bit register for signal <regFile<26><9>>.
-    Found 1-bit register for signal <regFile<26><8>>.
-    Found 1-bit register for signal <regFile<26><7>>.
-    Found 1-bit register for signal <regFile<26><6>>.
-    Found 1-bit register for signal <regFile<26><5>>.
-    Found 1-bit register for signal <regFile<26><4>>.
-    Found 1-bit register for signal <regFile<26><3>>.
-    Found 1-bit register for signal <regFile<26><2>>.
-    Found 1-bit register for signal <regFile<26><1>>.
-    Found 1-bit register for signal <regFile<26><0>>.
-    Found 1-bit register for signal <regFile<25><31>>.
-    Found 1-bit register for signal <regFile<25><30>>.
-    Found 1-bit register for signal <regFile<25><29>>.
-    Found 1-bit register for signal <regFile<25><28>>.
-    Found 1-bit register for signal <regFile<25><27>>.
-    Found 1-bit register for signal <regFile<25><26>>.
-    Found 1-bit register for signal <regFile<25><25>>.
-    Found 1-bit register for signal <regFile<25><24>>.
-    Found 1-bit register for signal <regFile<25><23>>.
-    Found 1-bit register for signal <regFile<25><22>>.
-    Found 1-bit register for signal <regFile<25><21>>.
-    Found 1-bit register for signal <regFile<25><20>>.
-    Found 1-bit register for signal <regFile<25><19>>.
-    Found 1-bit register for signal <regFile<25><18>>.
-    Found 1-bit register for signal <regFile<25><17>>.
-    Found 1-bit register for signal <regFile<25><16>>.
-    Found 1-bit register for signal <regFile<25><15>>.
-    Found 1-bit register for signal <regFile<25><14>>.
-    Found 1-bit register for signal <regFile<25><13>>.
-    Found 1-bit register for signal <regFile<25><12>>.
-    Found 1-bit register for signal <regFile<25><11>>.
-    Found 1-bit register for signal <regFile<25><10>>.
-    Found 1-bit register for signal <regFile<25><9>>.
-    Found 1-bit register for signal <regFile<25><8>>.
-    Found 1-bit register for signal <regFile<25><7>>.
-    Found 1-bit register for signal <regFile<25><6>>.
-    Found 1-bit register for signal <regFile<25><5>>.
-    Found 1-bit register for signal <regFile<25><4>>.
-    Found 1-bit register for signal <regFile<25><3>>.
-    Found 1-bit register for signal <regFile<25><2>>.
-    Found 1-bit register for signal <regFile<25><1>>.
-    Found 1-bit register for signal <regFile<25><0>>.
-    Found 1-bit register for signal <regFile<24><31>>.
-    Found 1-bit register for signal <regFile<24><30>>.
-    Found 1-bit register for signal <regFile<24><29>>.
-    Found 1-bit register for signal <regFile<24><28>>.
-    Found 1-bit register for signal <regFile<24><27>>.
-    Found 1-bit register for signal <regFile<24><26>>.
-    Found 1-bit register for signal <regFile<24><25>>.
-    Found 1-bit register for signal <regFile<24><24>>.
-    Found 1-bit register for signal <regFile<24><23>>.
-    Found 1-bit register for signal <regFile<24><22>>.
-    Found 1-bit register for signal <regFile<24><21>>.
-    Found 1-bit register for signal <regFile<24><20>>.
-    Found 1-bit register for signal <regFile<24><19>>.
-    Found 1-bit register for signal <regFile<24><18>>.
-    Found 1-bit register for signal <regFile<24><17>>.
-    Found 1-bit register for signal <regFile<24><16>>.
-    Found 1-bit register for signal <regFile<24><15>>.
-    Found 1-bit register for signal <regFile<24><14>>.
-    Found 1-bit register for signal <regFile<24><13>>.
-    Found 1-bit register for signal <regFile<24><12>>.
-    Found 1-bit register for signal <regFile<24><11>>.
-    Found 1-bit register for signal <regFile<24><10>>.
-    Found 1-bit register for signal <regFile<24><9>>.
-    Found 1-bit register for signal <regFile<24><8>>.
-    Found 1-bit register for signal <regFile<24><7>>.
-    Found 1-bit register for signal <regFile<24><6>>.
-    Found 1-bit register for signal <regFile<24><5>>.
-    Found 1-bit register for signal <regFile<24><4>>.
-    Found 1-bit register for signal <regFile<24><3>>.
-    Found 1-bit register for signal <regFile<24><2>>.
-    Found 1-bit register for signal <regFile<24><1>>.
-    Found 1-bit register for signal <regFile<24><0>>.
-    Found 1-bit register for signal <regFile<23><31>>.
-    Found 1-bit register for signal <regFile<23><30>>.
-    Found 1-bit register for signal <regFile<23><29>>.
-    Found 1-bit register for signal <regFile<23><28>>.
-    Found 1-bit register for signal <regFile<23><27>>.
-    Found 1-bit register for signal <regFile<23><26>>.
-    Found 1-bit register for signal <regFile<23><25>>.
-    Found 1-bit register for signal <regFile<23><24>>.
-    Found 1-bit register for signal <regFile<23><23>>.
-    Found 1-bit register for signal <regFile<23><22>>.
-    Found 1-bit register for signal <regFile<23><21>>.
-    Found 1-bit register for signal <regFile<23><20>>.
-    Found 1-bit register for signal <regFile<23><19>>.
-    Found 1-bit register for signal <regFile<23><18>>.
-    Found 1-bit register for signal <regFile<23><17>>.
-    Found 1-bit register for signal <regFile<23><16>>.
-    Found 1-bit register for signal <regFile<23><15>>.
-    Found 1-bit register for signal <regFile<23><14>>.
-    Found 1-bit register for signal <regFile<23><13>>.
-    Found 1-bit register for signal <regFile<23><12>>.
-    Found 1-bit register for signal <regFile<23><11>>.
-    Found 1-bit register for signal <regFile<23><10>>.
-    Found 1-bit register for signal <regFile<23><9>>.
-    Found 1-bit register for signal <regFile<23><8>>.
-    Found 1-bit register for signal <regFile<23><7>>.
-    Found 1-bit register for signal <regFile<23><6>>.
-    Found 1-bit register for signal <regFile<23><5>>.
-    Found 1-bit register for signal <regFile<23><4>>.
-    Found 1-bit register for signal <regFile<23><3>>.
-    Found 1-bit register for signal <regFile<23><2>>.
-    Found 1-bit register for signal <regFile<23><1>>.
-    Found 1-bit register for signal <regFile<23><0>>.
-    Found 1-bit register for signal <regFile<22><31>>.
-    Found 1-bit register for signal <regFile<22><30>>.
-    Found 1-bit register for signal <regFile<22><29>>.
-    Found 1-bit register for signal <regFile<22><28>>.
-    Found 1-bit register for signal <regFile<22><27>>.
-    Found 1-bit register for signal <regFile<22><26>>.
-    Found 1-bit register for signal <regFile<22><25>>.
-    Found 1-bit register for signal <regFile<22><24>>.
-    Found 1-bit register for signal <regFile<22><23>>.
-    Found 1-bit register for signal <regFile<22><22>>.
-    Found 1-bit register for signal <regFile<22><21>>.
-    Found 1-bit register for signal <regFile<22><20>>.
-    Found 1-bit register for signal <regFile<22><19>>.
-    Found 1-bit register for signal <regFile<22><18>>.
-    Found 1-bit register for signal <regFile<22><17>>.
-    Found 1-bit register for signal <regFile<22><16>>.
-    Found 1-bit register for signal <regFile<22><15>>.
-    Found 1-bit register for signal <regFile<22><14>>.
-    Found 1-bit register for signal <regFile<22><13>>.
-    Found 1-bit register for signal <regFile<22><12>>.
-    Found 1-bit register for signal <regFile<22><11>>.
-    Found 1-bit register for signal <regFile<22><10>>.
-    Found 1-bit register for signal <regFile<22><9>>.
-    Found 1-bit register for signal <regFile<22><8>>.
-    Found 1-bit register for signal <regFile<22><7>>.
-    Found 1-bit register for signal <regFile<22><6>>.
-    Found 1-bit register for signal <regFile<22><5>>.
-    Found 1-bit register for signal <regFile<22><4>>.
-    Found 1-bit register for signal <regFile<22><3>>.
-    Found 1-bit register for signal <regFile<22><2>>.
-    Found 1-bit register for signal <regFile<22><1>>.
-    Found 1-bit register for signal <regFile<22><0>>.
-    Found 1-bit register for signal <regFile<21><31>>.
-    Found 1-bit register for signal <regFile<21><30>>.
-    Found 1-bit register for signal <regFile<21><29>>.
-    Found 1-bit register for signal <regFile<21><28>>.
-    Found 1-bit register for signal <regFile<21><27>>.
-    Found 1-bit register for signal <regFile<21><26>>.
-    Found 1-bit register for signal <regFile<21><25>>.
-    Found 1-bit register for signal <regFile<21><24>>.
-    Found 1-bit register for signal <regFile<21><23>>.
-    Found 1-bit register for signal <regFile<21><22>>.
-    Found 1-bit register for signal <regFile<21><21>>.
-    Found 1-bit register for signal <regFile<21><20>>.
-    Found 1-bit register for signal <regFile<21><19>>.
-    Found 1-bit register for signal <regFile<21><18>>.
-    Found 1-bit register for signal <regFile<21><17>>.
-    Found 1-bit register for signal <regFile<21><16>>.
-    Found 1-bit register for signal <regFile<21><15>>.
-    Found 1-bit register for signal <regFile<21><14>>.
-    Found 1-bit register for signal <regFile<21><13>>.
-    Found 1-bit register for signal <regFile<21><12>>.
-    Found 1-bit register for signal <regFile<21><11>>.
-    Found 1-bit register for signal <regFile<21><10>>.
-    Found 1-bit register for signal <regFile<21><9>>.
-    Found 1-bit register for signal <regFile<21><8>>.
-    Found 1-bit register for signal <regFile<21><7>>.
-    Found 1-bit register for signal <regFile<21><6>>.
-    Found 1-bit register for signal <regFile<21><5>>.
-    Found 1-bit register for signal <regFile<21><4>>.
-    Found 1-bit register for signal <regFile<21><3>>.
-    Found 1-bit register for signal <regFile<21><2>>.
-    Found 1-bit register for signal <regFile<21><1>>.
-    Found 1-bit register for signal <regFile<21><0>>.
-    Found 1-bit register for signal <regFile<20><31>>.
-    Found 1-bit register for signal <regFile<20><30>>.
-    Found 1-bit register for signal <regFile<20><29>>.
-    Found 1-bit register for signal <regFile<20><28>>.
-    Found 1-bit register for signal <regFile<20><27>>.
-    Found 1-bit register for signal <regFile<20><26>>.
-    Found 1-bit register for signal <regFile<20><25>>.
-    Found 1-bit register for signal <regFile<20><24>>.
-    Found 1-bit register for signal <regFile<20><23>>.
-    Found 1-bit register for signal <regFile<20><22>>.
-    Found 1-bit register for signal <regFile<20><21>>.
-    Found 1-bit register for signal <regFile<20><20>>.
-    Found 1-bit register for signal <regFile<20><19>>.
-    Found 1-bit register for signal <regFile<20><18>>.
-    Found 1-bit register for signal <regFile<20><17>>.
-    Found 1-bit register for signal <regFile<20><16>>.
-    Found 1-bit register for signal <regFile<20><15>>.
-    Found 1-bit register for signal <regFile<20><14>>.
-    Found 1-bit register for signal <regFile<20><13>>.
-    Found 1-bit register for signal <regFile<20><12>>.
-    Found 1-bit register for signal <regFile<20><11>>.
-    Found 1-bit register for signal <regFile<20><10>>.
-    Found 1-bit register for signal <regFile<20><9>>.
-    Found 1-bit register for signal <regFile<20><8>>.
-    Found 1-bit register for signal <regFile<20><7>>.
-    Found 1-bit register for signal <regFile<20><6>>.
-    Found 1-bit register for signal <regFile<20><5>>.
-    Found 1-bit register for signal <regFile<20><4>>.
-    Found 1-bit register for signal <regFile<20><3>>.
-    Found 1-bit register for signal <regFile<20><2>>.
-    Found 1-bit register for signal <regFile<20><1>>.
-    Found 1-bit register for signal <regFile<20><0>>.
-    Found 1-bit register for signal <regFile<19><31>>.
-    Found 1-bit register for signal <regFile<19><30>>.
-    Found 1-bit register for signal <regFile<19><29>>.
-    Found 1-bit register for signal <regFile<19><28>>.
-    Found 1-bit register for signal <regFile<19><27>>.
-    Found 1-bit register for signal <regFile<19><26>>.
-    Found 1-bit register for signal <regFile<19><25>>.
-    Found 1-bit register for signal <regFile<19><24>>.
-    Found 1-bit register for signal <regFile<19><23>>.
-    Found 1-bit register for signal <regFile<19><22>>.
-    Found 1-bit register for signal <regFile<19><21>>.
-    Found 1-bit register for signal <regFile<19><20>>.
-    Found 1-bit register for signal <regFile<19><19>>.
-    Found 1-bit register for signal <regFile<19><18>>.
-    Found 1-bit register for signal <regFile<19><17>>.
-    Found 1-bit register for signal <regFile<19><16>>.
-    Found 1-bit register for signal <regFile<19><15>>.
-    Found 1-bit register for signal <regFile<19><14>>.
-    Found 1-bit register for signal <regFile<19><13>>.
-    Found 1-bit register for signal <regFile<19><12>>.
-    Found 1-bit register for signal <regFile<19><11>>.
-    Found 1-bit register for signal <regFile<19><10>>.
-    Found 1-bit register for signal <regFile<19><9>>.
-    Found 1-bit register for signal <regFile<19><8>>.
-    Found 1-bit register for signal <regFile<19><7>>.
-    Found 1-bit register for signal <regFile<19><6>>.
-    Found 1-bit register for signal <regFile<19><5>>.
-    Found 1-bit register for signal <regFile<19><4>>.
-    Found 1-bit register for signal <regFile<19><3>>.
-    Found 1-bit register for signal <regFile<19><2>>.
-    Found 1-bit register for signal <regFile<19><1>>.
-    Found 1-bit register for signal <regFile<19><0>>.
-    Found 1-bit register for signal <regFile<18><31>>.
-    Found 1-bit register for signal <regFile<18><30>>.
-    Found 1-bit register for signal <regFile<18><29>>.
-    Found 1-bit register for signal <regFile<18><28>>.
-    Found 1-bit register for signal <regFile<18><27>>.
-    Found 1-bit register for signal <regFile<18><26>>.
-    Found 1-bit register for signal <regFile<18><25>>.
-    Found 1-bit register for signal <regFile<18><24>>.
-    Found 1-bit register for signal <regFile<18><23>>.
-    Found 1-bit register for signal <regFile<18><22>>.
-    Found 1-bit register for signal <regFile<18><21>>.
-    Found 1-bit register for signal <regFile<18><20>>.
-    Found 1-bit register for signal <regFile<18><19>>.
-    Found 1-bit register for signal <regFile<18><18>>.
-    Found 1-bit register for signal <regFile<18><17>>.
-    Found 1-bit register for signal <regFile<18><16>>.
-    Found 1-bit register for signal <regFile<18><15>>.
-    Found 1-bit register for signal <regFile<18><14>>.
-    Found 1-bit register for signal <regFile<18><13>>.
-    Found 1-bit register for signal <regFile<18><12>>.
-    Found 1-bit register for signal <regFile<18><11>>.
-    Found 1-bit register for signal <regFile<18><10>>.
-    Found 1-bit register for signal <regFile<18><9>>.
-    Found 1-bit register for signal <regFile<18><8>>.
-    Found 1-bit register for signal <regFile<18><7>>.
-    Found 1-bit register for signal <regFile<18><6>>.
-    Found 1-bit register for signal <regFile<18><5>>.
-    Found 1-bit register for signal <regFile<18><4>>.
-    Found 1-bit register for signal <regFile<18><3>>.
-    Found 1-bit register for signal <regFile<18><2>>.
-    Found 1-bit register for signal <regFile<18><1>>.
-    Found 1-bit register for signal <regFile<18><0>>.
-    Found 1-bit register for signal <regFile<17><31>>.
-    Found 1-bit register for signal <regFile<17><30>>.
-    Found 1-bit register for signal <regFile<17><29>>.
-    Found 1-bit register for signal <regFile<17><28>>.
-    Found 1-bit register for signal <regFile<17><27>>.
-    Found 1-bit register for signal <regFile<17><26>>.
-    Found 1-bit register for signal <regFile<17><25>>.
-    Found 1-bit register for signal <regFile<17><24>>.
-    Found 1-bit register for signal <regFile<17><23>>.
-    Found 1-bit register for signal <regFile<17><22>>.
-    Found 1-bit register for signal <regFile<17><21>>.
-    Found 1-bit register for signal <regFile<17><20>>.
-    Found 1-bit register for signal <regFile<17><19>>.
-    Found 1-bit register for signal <regFile<17><18>>.
-    Found 1-bit register for signal <regFile<17><17>>.
-    Found 1-bit register for signal <regFile<17><16>>.
-    Found 1-bit register for signal <regFile<17><15>>.
-    Found 1-bit register for signal <regFile<17><14>>.
-    Found 1-bit register for signal <regFile<17><13>>.
-    Found 1-bit register for signal <regFile<17><12>>.
-    Found 1-bit register for signal <regFile<17><11>>.
-    Found 1-bit register for signal <regFile<17><10>>.
-    Found 1-bit register for signal <regFile<17><9>>.
-    Found 1-bit register for signal <regFile<17><8>>.
-    Found 1-bit register for signal <regFile<17><7>>.
-    Found 1-bit register for signal <regFile<17><6>>.
-    Found 1-bit register for signal <regFile<17><5>>.
-    Found 1-bit register for signal <regFile<17><4>>.
-    Found 1-bit register for signal <regFile<17><3>>.
-    Found 1-bit register for signal <regFile<17><2>>.
-    Found 1-bit register for signal <regFile<17><1>>.
-    Found 1-bit register for signal <regFile<17><0>>.
-    Found 1-bit register for signal <regFile<16><31>>.
-    Found 1-bit register for signal <regFile<16><30>>.
-    Found 1-bit register for signal <regFile<16><29>>.
-    Found 1-bit register for signal <regFile<16><28>>.
-    Found 1-bit register for signal <regFile<16><27>>.
-    Found 1-bit register for signal <regFile<16><26>>.
-    Found 1-bit register for signal <regFile<16><25>>.
-    Found 1-bit register for signal <regFile<16><24>>.
-    Found 1-bit register for signal <regFile<16><23>>.
-    Found 1-bit register for signal <regFile<16><22>>.
-    Found 1-bit register for signal <regFile<16><21>>.
-    Found 1-bit register for signal <regFile<16><20>>.
-    Found 1-bit register for signal <regFile<16><19>>.
-    Found 1-bit register for signal <regFile<16><18>>.
-    Found 1-bit register for signal <regFile<16><17>>.
-    Found 1-bit register for signal <regFile<16><16>>.
-    Found 1-bit register for signal <regFile<16><15>>.
-    Found 1-bit register for signal <regFile<16><14>>.
-    Found 1-bit register for signal <regFile<16><13>>.
-    Found 1-bit register for signal <regFile<16><12>>.
-    Found 1-bit register for signal <regFile<16><11>>.
-    Found 1-bit register for signal <regFile<16><10>>.
-    Found 1-bit register for signal <regFile<16><9>>.
-    Found 1-bit register for signal <regFile<16><8>>.
-    Found 1-bit register for signal <regFile<16><7>>.
-    Found 1-bit register for signal <regFile<16><6>>.
-    Found 1-bit register for signal <regFile<16><5>>.
-    Found 1-bit register for signal <regFile<16><4>>.
-    Found 1-bit register for signal <regFile<16><3>>.
-    Found 1-bit register for signal <regFile<16><2>>.
-    Found 1-bit register for signal <regFile<16><1>>.
-    Found 1-bit register for signal <regFile<16><0>>.
-    Found 1-bit register for signal <regFile<15><31>>.
-    Found 1-bit register for signal <regFile<15><30>>.
-    Found 1-bit register for signal <regFile<15><29>>.
-    Found 1-bit register for signal <regFile<15><28>>.
-    Found 1-bit register for signal <regFile<15><27>>.
-    Found 1-bit register for signal <regFile<15><26>>.
-    Found 1-bit register for signal <regFile<15><25>>.
-    Found 1-bit register for signal <regFile<15><24>>.
-    Found 1-bit register for signal <regFile<15><23>>.
-    Found 1-bit register for signal <regFile<15><22>>.
-    Found 1-bit register for signal <regFile<15><21>>.
-    Found 1-bit register for signal <regFile<15><20>>.
-    Found 1-bit register for signal <regFile<15><19>>.
-    Found 1-bit register for signal <regFile<15><18>>.
-    Found 1-bit register for signal <regFile<15><17>>.
-    Found 1-bit register for signal <regFile<15><16>>.
-    Found 1-bit register for signal <regFile<15><15>>.
-    Found 1-bit register for signal <regFile<15><14>>.
-    Found 1-bit register for signal <regFile<15><13>>.
-    Found 1-bit register for signal <regFile<15><12>>.
-    Found 1-bit register for signal <regFile<15><11>>.
-    Found 1-bit register for signal <regFile<15><10>>.
-    Found 1-bit register for signal <regFile<15><9>>.
-    Found 1-bit register for signal <regFile<15><8>>.
-    Found 1-bit register for signal <regFile<15><7>>.
-    Found 1-bit register for signal <regFile<15><6>>.
-    Found 1-bit register for signal <regFile<15><5>>.
-    Found 1-bit register for signal <regFile<15><4>>.
-    Found 1-bit register for signal <regFile<15><3>>.
-    Found 1-bit register for signal <regFile<15><2>>.
-    Found 1-bit register for signal <regFile<15><1>>.
-    Found 1-bit register for signal <regFile<15><0>>.
-    Found 1-bit register for signal <regFile<14><31>>.
-    Found 1-bit register for signal <regFile<14><30>>.
-    Found 1-bit register for signal <regFile<14><29>>.
-    Found 1-bit register for signal <regFile<14><28>>.
-    Found 1-bit register for signal <regFile<14><27>>.
-    Found 1-bit register for signal <regFile<14><26>>.
-    Found 1-bit register for signal <regFile<14><25>>.
-    Found 1-bit register for signal <regFile<14><24>>.
-    Found 1-bit register for signal <regFile<14><23>>.
-    Found 1-bit register for signal <regFile<14><22>>.
-    Found 1-bit register for signal <regFile<14><21>>.
-    Found 1-bit register for signal <regFile<14><20>>.
-    Found 1-bit register for signal <regFile<14><19>>.
-    Found 1-bit register for signal <regFile<14><18>>.
-    Found 1-bit register for signal <regFile<14><17>>.
-    Found 1-bit register for signal <regFile<14><16>>.
-    Found 1-bit register for signal <regFile<14><15>>.
-    Found 1-bit register for signal <regFile<14><14>>.
-    Found 1-bit register for signal <regFile<14><13>>.
-    Found 1-bit register for signal <regFile<14><12>>.
-    Found 1-bit register for signal <regFile<14><11>>.
-    Found 1-bit register for signal <regFile<14><10>>.
-    Found 1-bit register for signal <regFile<14><9>>.
-    Found 1-bit register for signal <regFile<14><8>>.
-    Found 1-bit register for signal <regFile<14><7>>.
-    Found 1-bit register for signal <regFile<14><6>>.
-    Found 1-bit register for signal <regFile<14><5>>.
-    Found 1-bit register for signal <regFile<14><4>>.
-    Found 1-bit register for signal <regFile<14><3>>.
-    Found 1-bit register for signal <regFile<14><2>>.
-    Found 1-bit register for signal <regFile<14><1>>.
-    Found 1-bit register for signal <regFile<14><0>>.
-    Found 1-bit register for signal <regFile<13><31>>.
-    Found 1-bit register for signal <regFile<13><30>>.
-    Found 1-bit register for signal <regFile<13><29>>.
-    Found 1-bit register for signal <regFile<13><28>>.
-    Found 1-bit register for signal <regFile<13><27>>.
-    Found 1-bit register for signal <regFile<13><26>>.
-    Found 1-bit register for signal <regFile<13><25>>.
-    Found 1-bit register for signal <regFile<13><24>>.
-    Found 1-bit register for signal <regFile<13><23>>.
-    Found 1-bit register for signal <regFile<13><22>>.
-    Found 1-bit register for signal <regFile<13><21>>.
-    Found 1-bit register for signal <regFile<13><20>>.
-    Found 1-bit register for signal <regFile<13><19>>.
-    Found 1-bit register for signal <regFile<13><18>>.
-    Found 1-bit register for signal <regFile<13><17>>.
-    Found 1-bit register for signal <regFile<13><16>>.
-    Found 1-bit register for signal <regFile<13><15>>.
-    Found 1-bit register for signal <regFile<13><14>>.
-    Found 1-bit register for signal <regFile<13><13>>.
-    Found 1-bit register for signal <regFile<13><12>>.
-    Found 1-bit register for signal <regFile<13><11>>.
-    Found 1-bit register for signal <regFile<13><10>>.
-    Found 1-bit register for signal <regFile<13><9>>.
-    Found 1-bit register for signal <regFile<13><8>>.
-    Found 1-bit register for signal <regFile<13><7>>.
-    Found 1-bit register for signal <regFile<13><6>>.
-    Found 1-bit register for signal <regFile<13><5>>.
-    Found 1-bit register for signal <regFile<13><4>>.
-    Found 1-bit register for signal <regFile<13><3>>.
-    Found 1-bit register for signal <regFile<13><2>>.
-    Found 1-bit register for signal <regFile<13><1>>.
-    Found 1-bit register for signal <regFile<13><0>>.
-    Found 1-bit register for signal <regFile<12><31>>.
-    Found 1-bit register for signal <regFile<12><30>>.
-    Found 1-bit register for signal <regFile<12><29>>.
-    Found 1-bit register for signal <regFile<12><28>>.
-    Found 1-bit register for signal <regFile<12><27>>.
-    Found 1-bit register for signal <regFile<12><26>>.
-    Found 1-bit register for signal <regFile<12><25>>.
-    Found 1-bit register for signal <regFile<12><24>>.
-    Found 1-bit register for signal <regFile<12><23>>.
-    Found 1-bit register for signal <regFile<12><22>>.
-    Found 1-bit register for signal <regFile<12><21>>.
-    Found 1-bit register for signal <regFile<12><20>>.
-    Found 1-bit register for signal <regFile<12><19>>.
-    Found 1-bit register for signal <regFile<12><18>>.
-    Found 1-bit register for signal <regFile<12><17>>.
-    Found 1-bit register for signal <regFile<12><16>>.
-    Found 1-bit register for signal <regFile<12><15>>.
-    Found 1-bit register for signal <regFile<12><14>>.
-    Found 1-bit register for signal <regFile<12><13>>.
-    Found 1-bit register for signal <regFile<12><12>>.
-    Found 1-bit register for signal <regFile<12><11>>.
-    Found 1-bit register for signal <regFile<12><10>>.
-    Found 1-bit register for signal <regFile<12><9>>.
-    Found 1-bit register for signal <regFile<12><8>>.
-    Found 1-bit register for signal <regFile<12><7>>.
-    Found 1-bit register for signal <regFile<12><6>>.
-    Found 1-bit register for signal <regFile<12><5>>.
-    Found 1-bit register for signal <regFile<12><4>>.
-    Found 1-bit register for signal <regFile<12><3>>.
-    Found 1-bit register for signal <regFile<12><2>>.
-    Found 1-bit register for signal <regFile<12><1>>.
-    Found 1-bit register for signal <regFile<12><0>>.
-    Found 1-bit register for signal <regFile<11><31>>.
-    Found 1-bit register for signal <regFile<11><30>>.
-    Found 1-bit register for signal <regFile<11><29>>.
-    Found 1-bit register for signal <regFile<11><28>>.
-    Found 1-bit register for signal <regFile<11><27>>.
-    Found 1-bit register for signal <regFile<11><26>>.
-    Found 1-bit register for signal <regFile<11><25>>.
-    Found 1-bit register for signal <regFile<11><24>>.
-    Found 1-bit register for signal <regFile<11><23>>.
-    Found 1-bit register for signal <regFile<11><22>>.
-    Found 1-bit register for signal <regFile<11><21>>.
-    Found 1-bit register for signal <regFile<11><20>>.
-    Found 1-bit register for signal <regFile<11><19>>.
-    Found 1-bit register for signal <regFile<11><18>>.
-    Found 1-bit register for signal <regFile<11><17>>.
-    Found 1-bit register for signal <regFile<11><16>>.
-    Found 1-bit register for signal <regFile<11><15>>.
-    Found 1-bit register for signal <regFile<11><14>>.
-    Found 1-bit register for signal <regFile<11><13>>.
-    Found 1-bit register for signal <regFile<11><12>>.
-    Found 1-bit register for signal <regFile<11><11>>.
-    Found 1-bit register for signal <regFile<11><10>>.
-    Found 1-bit register for signal <regFile<11><9>>.
-    Found 1-bit register for signal <regFile<11><8>>.
-    Found 1-bit register for signal <regFile<11><7>>.
-    Found 1-bit register for signal <regFile<11><6>>.
-    Found 1-bit register for signal <regFile<11><5>>.
-    Found 1-bit register for signal <regFile<11><4>>.
-    Found 1-bit register for signal <regFile<11><3>>.
-    Found 1-bit register for signal <regFile<11><2>>.
-    Found 1-bit register for signal <regFile<11><1>>.
-    Found 1-bit register for signal <regFile<11><0>>.
-    Found 1-bit register for signal <regFile<10><31>>.
-    Found 1-bit register for signal <regFile<10><30>>.
-    Found 1-bit register for signal <regFile<10><29>>.
-    Found 1-bit register for signal <regFile<10><28>>.
-    Found 1-bit register for signal <regFile<10><27>>.
-    Found 1-bit register for signal <regFile<10><26>>.
-    Found 1-bit register for signal <regFile<10><25>>.
-    Found 1-bit register for signal <regFile<10><24>>.
-    Found 1-bit register for signal <regFile<10><23>>.
-    Found 1-bit register for signal <regFile<10><22>>.
-    Found 1-bit register for signal <regFile<10><21>>.
-    Found 1-bit register for signal <regFile<10><20>>.
-    Found 1-bit register for signal <regFile<10><19>>.
-    Found 1-bit register for signal <regFile<10><18>>.
-    Found 1-bit register for signal <regFile<10><17>>.
-    Found 1-bit register for signal <regFile<10><16>>.
-    Found 1-bit register for signal <regFile<10><15>>.
-    Found 1-bit register for signal <regFile<10><14>>.
-    Found 1-bit register for signal <regFile<10><13>>.
-    Found 1-bit register for signal <regFile<10><12>>.
-    Found 1-bit register for signal <regFile<10><11>>.
-    Found 1-bit register for signal <regFile<10><10>>.
-    Found 1-bit register for signal <regFile<10><9>>.
-    Found 1-bit register for signal <regFile<10><8>>.
-    Found 1-bit register for signal <regFile<10><7>>.
-    Found 1-bit register for signal <regFile<10><6>>.
-    Found 1-bit register for signal <regFile<10><5>>.
-    Found 1-bit register for signal <regFile<10><4>>.
-    Found 1-bit register for signal <regFile<10><3>>.
-    Found 1-bit register for signal <regFile<10><2>>.
-    Found 1-bit register for signal <regFile<10><1>>.
-    Found 1-bit register for signal <regFile<10><0>>.
-    Found 1-bit register for signal <regFile<9><31>>.
-    Found 1-bit register for signal <regFile<9><30>>.
-    Found 1-bit register for signal <regFile<9><29>>.
-    Found 1-bit register for signal <regFile<9><28>>.
-    Found 1-bit register for signal <regFile<9><27>>.
-    Found 1-bit register for signal <regFile<9><26>>.
-    Found 1-bit register for signal <regFile<9><25>>.
-    Found 1-bit register for signal <regFile<9><24>>.
-    Found 1-bit register for signal <regFile<9><23>>.
-    Found 1-bit register for signal <regFile<9><22>>.
-    Found 1-bit register for signal <regFile<9><21>>.
-    Found 1-bit register for signal <regFile<9><20>>.
-    Found 1-bit register for signal <regFile<9><19>>.
-    Found 1-bit register for signal <regFile<9><18>>.
-    Found 1-bit register for signal <regFile<9><17>>.
-    Found 1-bit register for signal <regFile<9><16>>.
-    Found 1-bit register for signal <regFile<9><15>>.
-    Found 1-bit register for signal <regFile<9><14>>.
-    Found 1-bit register for signal <regFile<9><13>>.
-    Found 1-bit register for signal <regFile<9><12>>.
-    Found 1-bit register for signal <regFile<9><11>>.
-    Found 1-bit register for signal <regFile<9><10>>.
-    Found 1-bit register for signal <regFile<9><9>>.
-    Found 1-bit register for signal <regFile<9><8>>.
-    Found 1-bit register for signal <regFile<9><7>>.
-    Found 1-bit register for signal <regFile<9><6>>.
-    Found 1-bit register for signal <regFile<9><5>>.
-    Found 1-bit register for signal <regFile<9><4>>.
-    Found 1-bit register for signal <regFile<9><3>>.
-    Found 1-bit register for signal <regFile<9><2>>.
-    Found 1-bit register for signal <regFile<9><1>>.
-    Found 1-bit register for signal <regFile<9><0>>.
-    Found 1-bit register for signal <regFile<8><31>>.
-    Found 1-bit register for signal <regFile<8><30>>.
-    Found 1-bit register for signal <regFile<8><29>>.
-    Found 1-bit register for signal <regFile<8><28>>.
-    Found 1-bit register for signal <regFile<8><27>>.
-    Found 1-bit register for signal <regFile<8><26>>.
-    Found 1-bit register for signal <regFile<8><25>>.
-    Found 1-bit register for signal <regFile<8><24>>.
-    Found 1-bit register for signal <regFile<8><23>>.
-    Found 1-bit register for signal <regFile<8><22>>.
-    Found 1-bit register for signal <regFile<8><21>>.
-    Found 1-bit register for signal <regFile<8><20>>.
-    Found 1-bit register for signal <regFile<8><19>>.
-    Found 1-bit register for signal <regFile<8><18>>.
-    Found 1-bit register for signal <regFile<8><17>>.
-    Found 1-bit register for signal <regFile<8><16>>.
-    Found 1-bit register for signal <regFile<8><15>>.
-    Found 1-bit register for signal <regFile<8><14>>.
-    Found 1-bit register for signal <regFile<8><13>>.
-    Found 1-bit register for signal <regFile<8><12>>.
-    Found 1-bit register for signal <regFile<8><11>>.
-    Found 1-bit register for signal <regFile<8><10>>.
-    Found 1-bit register for signal <regFile<8><9>>.
-    Found 1-bit register for signal <regFile<8><8>>.
-    Found 1-bit register for signal <regFile<8><7>>.
-    Found 1-bit register for signal <regFile<8><6>>.
-    Found 1-bit register for signal <regFile<8><5>>.
-    Found 1-bit register for signal <regFile<8><4>>.
-    Found 1-bit register for signal <regFile<8><3>>.
-    Found 1-bit register for signal <regFile<8><2>>.
-    Found 1-bit register for signal <regFile<8><1>>.
-    Found 1-bit register for signal <regFile<8><0>>.
-    Found 1-bit register for signal <regFile<7><31>>.
-    Found 1-bit register for signal <regFile<7><30>>.
-    Found 1-bit register for signal <regFile<7><29>>.
-    Found 1-bit register for signal <regFile<7><28>>.
-    Found 1-bit register for signal <regFile<7><27>>.
-    Found 1-bit register for signal <regFile<7><26>>.
-    Found 1-bit register for signal <regFile<7><25>>.
-    Found 1-bit register for signal <regFile<7><24>>.
-    Found 1-bit register for signal <regFile<7><23>>.
-    Found 1-bit register for signal <regFile<7><22>>.
-    Found 1-bit register for signal <regFile<7><21>>.
-    Found 1-bit register for signal <regFile<7><20>>.
-    Found 1-bit register for signal <regFile<7><19>>.
-    Found 1-bit register for signal <regFile<7><18>>.
-    Found 1-bit register for signal <regFile<7><17>>.
-    Found 1-bit register for signal <regFile<7><16>>.
-    Found 1-bit register for signal <regFile<7><15>>.
-    Found 1-bit register for signal <regFile<7><14>>.
-    Found 1-bit register for signal <regFile<7><13>>.
-    Found 1-bit register for signal <regFile<7><12>>.
-    Found 1-bit register for signal <regFile<7><11>>.
-    Found 1-bit register for signal <regFile<7><10>>.
-    Found 1-bit register for signal <regFile<7><9>>.
-    Found 1-bit register for signal <regFile<7><8>>.
-    Found 1-bit register for signal <regFile<7><7>>.
-    Found 1-bit register for signal <regFile<7><6>>.
-    Found 1-bit register for signal <regFile<7><5>>.
-    Found 1-bit register for signal <regFile<7><4>>.
-    Found 1-bit register for signal <regFile<7><3>>.
-    Found 1-bit register for signal <regFile<7><2>>.
-    Found 1-bit register for signal <regFile<7><1>>.
-    Found 1-bit register for signal <regFile<7><0>>.
-    Found 1-bit register for signal <regFile<6><31>>.
-    Found 1-bit register for signal <regFile<6><30>>.
-    Found 1-bit register for signal <regFile<6><29>>.
-    Found 1-bit register for signal <regFile<6><28>>.
-    Found 1-bit register for signal <regFile<6><27>>.
-    Found 1-bit register for signal <regFile<6><26>>.
-    Found 1-bit register for signal <regFile<6><25>>.
-    Found 1-bit register for signal <regFile<6><24>>.
-    Found 1-bit register for signal <regFile<6><23>>.
-    Found 1-bit register for signal <regFile<6><22>>.
-    Found 1-bit register for signal <regFile<6><21>>.
-    Found 1-bit register for signal <regFile<6><20>>.
-    Found 1-bit register for signal <regFile<6><19>>.
-    Found 1-bit register for signal <regFile<6><18>>.
-    Found 1-bit register for signal <regFile<6><17>>.
-    Found 1-bit register for signal <regFile<6><16>>.
-    Found 1-bit register for signal <regFile<6><15>>.
-    Found 1-bit register for signal <regFile<6><14>>.
-    Found 1-bit register for signal <regFile<6><13>>.
-    Found 1-bit register for signal <regFile<6><12>>.
-    Found 1-bit register for signal <regFile<6><11>>.
-    Found 1-bit register for signal <regFile<6><10>>.
-    Found 1-bit register for signal <regFile<6><9>>.
-    Found 1-bit register for signal <regFile<6><8>>.
-    Found 1-bit register for signal <regFile<6><7>>.
-    Found 1-bit register for signal <regFile<6><6>>.
-    Found 1-bit register for signal <regFile<6><5>>.
-    Found 1-bit register for signal <regFile<6><4>>.
-    Found 1-bit register for signal <regFile<6><3>>.
-    Found 1-bit register for signal <regFile<6><2>>.
-    Found 1-bit register for signal <regFile<6><1>>.
-    Found 1-bit register for signal <regFile<6><0>>.
-    Found 1-bit register for signal <regFile<5><31>>.
-    Found 1-bit register for signal <regFile<5><30>>.
-    Found 1-bit register for signal <regFile<5><29>>.
-    Found 1-bit register for signal <regFile<5><28>>.
-    Found 1-bit register for signal <regFile<5><27>>.
-    Found 1-bit register for signal <regFile<5><26>>.
-    Found 1-bit register for signal <regFile<5><25>>.
-    Found 1-bit register for signal <regFile<5><24>>.
-    Found 1-bit register for signal <regFile<5><23>>.
-    Found 1-bit register for signal <regFile<5><22>>.
-    Found 1-bit register for signal <regFile<5><21>>.
-    Found 1-bit register for signal <regFile<5><20>>.
-    Found 1-bit register for signal <regFile<5><19>>.
-    Found 1-bit register for signal <regFile<5><18>>.
-    Found 1-bit register for signal <regFile<5><17>>.
-    Found 1-bit register for signal <regFile<5><16>>.
-    Found 1-bit register for signal <regFile<5><15>>.
-    Found 1-bit register for signal <regFile<5><14>>.
-    Found 1-bit register for signal <regFile<5><13>>.
-    Found 1-bit register for signal <regFile<5><12>>.
-    Found 1-bit register for signal <regFile<5><11>>.
-    Found 1-bit register for signal <regFile<5><10>>.
-    Found 1-bit register for signal <regFile<5><9>>.
-    Found 1-bit register for signal <regFile<5><8>>.
-    Found 1-bit register for signal <regFile<5><7>>.
-    Found 1-bit register for signal <regFile<5><6>>.
-    Found 1-bit register for signal <regFile<5><5>>.
-    Found 1-bit register for signal <regFile<5><4>>.
-    Found 1-bit register for signal <regFile<5><3>>.
-    Found 1-bit register for signal <regFile<5><2>>.
-    Found 1-bit register for signal <regFile<5><1>>.
-    Found 1-bit register for signal <regFile<5><0>>.
-    Found 1-bit register for signal <regFile<4><31>>.
-    Found 1-bit register for signal <regFile<4><30>>.
-    Found 1-bit register for signal <regFile<4><29>>.
-    Found 1-bit register for signal <regFile<4><28>>.
-    Found 1-bit register for signal <regFile<4><27>>.
-    Found 1-bit register for signal <regFile<4><26>>.
-    Found 1-bit register for signal <regFile<4><25>>.
-    Found 1-bit register for signal <regFile<4><24>>.
-    Found 1-bit register for signal <regFile<4><23>>.
-    Found 1-bit register for signal <regFile<4><22>>.
-    Found 1-bit register for signal <regFile<4><21>>.
-    Found 1-bit register for signal <regFile<4><20>>.
-    Found 1-bit register for signal <regFile<4><19>>.
-    Found 1-bit register for signal <regFile<4><18>>.
-    Found 1-bit register for signal <regFile<4><17>>.
-    Found 1-bit register for signal <regFile<4><16>>.
-    Found 1-bit register for signal <regFile<4><15>>.
-    Found 1-bit register for signal <regFile<4><14>>.
-    Found 1-bit register for signal <regFile<4><13>>.
-    Found 1-bit register for signal <regFile<4><12>>.
-    Found 1-bit register for signal <regFile<4><11>>.
-    Found 1-bit register for signal <regFile<4><10>>.
-    Found 1-bit register for signal <regFile<4><9>>.
-    Found 1-bit register for signal <regFile<4><8>>.
-    Found 1-bit register for signal <regFile<4><7>>.
-    Found 1-bit register for signal <regFile<4><6>>.
-    Found 1-bit register for signal <regFile<4><5>>.
-    Found 1-bit register for signal <regFile<4><4>>.
-    Found 1-bit register for signal <regFile<4><3>>.
-    Found 1-bit register for signal <regFile<4><2>>.
-    Found 1-bit register for signal <regFile<4><1>>.
-    Found 1-bit register for signal <regFile<4><0>>.
-    Found 1-bit register for signal <regFile<3><31>>.
-    Found 1-bit register for signal <regFile<3><30>>.
-    Found 1-bit register for signal <regFile<3><29>>.
-    Found 1-bit register for signal <regFile<3><28>>.
-    Found 1-bit register for signal <regFile<3><27>>.
-    Found 1-bit register for signal <regFile<3><26>>.
-    Found 1-bit register for signal <regFile<3><25>>.
-    Found 1-bit register for signal <regFile<3><24>>.
-    Found 1-bit register for signal <regFile<3><23>>.
-    Found 1-bit register for signal <regFile<3><22>>.
-    Found 1-bit register for signal <regFile<3><21>>.
-    Found 1-bit register for signal <regFile<3><20>>.
-    Found 1-bit register for signal <regFile<3><19>>.
-    Found 1-bit register for signal <regFile<3><18>>.
-    Found 1-bit register for signal <regFile<3><17>>.
-    Found 1-bit register for signal <regFile<3><16>>.
-    Found 1-bit register for signal <regFile<3><15>>.
-    Found 1-bit register for signal <regFile<3><14>>.
-    Found 1-bit register for signal <regFile<3><13>>.
-    Found 1-bit register for signal <regFile<3><12>>.
-    Found 1-bit register for signal <regFile<3><11>>.
-    Found 1-bit register for signal <regFile<3><10>>.
-    Found 1-bit register for signal <regFile<3><9>>.
-    Found 1-bit register for signal <regFile<3><8>>.
-    Found 1-bit register for signal <regFile<3><7>>.
-    Found 1-bit register for signal <regFile<3><6>>.
-    Found 1-bit register for signal <regFile<3><5>>.
-    Found 1-bit register for signal <regFile<3><4>>.
-    Found 1-bit register for signal <regFile<3><3>>.
-    Found 1-bit register for signal <regFile<3><2>>.
-    Found 1-bit register for signal <regFile<3><1>>.
-    Found 1-bit register for signal <regFile<3><0>>.
-    Found 1-bit register for signal <regFile<2><31>>.
-    Found 1-bit register for signal <regFile<2><30>>.
-    Found 1-bit register for signal <regFile<2><29>>.
-    Found 1-bit register for signal <regFile<2><28>>.
-    Found 1-bit register for signal <regFile<2><27>>.
-    Found 1-bit register for signal <regFile<2><26>>.
-    Found 1-bit register for signal <regFile<2><25>>.
-    Found 1-bit register for signal <regFile<2><24>>.
-    Found 1-bit register for signal <regFile<2><23>>.
-    Found 1-bit register for signal <regFile<2><22>>.
-    Found 1-bit register for signal <regFile<2><21>>.
-    Found 1-bit register for signal <regFile<2><20>>.
-    Found 1-bit register for signal <regFile<2><19>>.
-    Found 1-bit register for signal <regFile<2><18>>.
-    Found 1-bit register for signal <regFile<2><17>>.
-    Found 1-bit register for signal <regFile<2><16>>.
-    Found 1-bit register for signal <regFile<2><15>>.
-    Found 1-bit register for signal <regFile<2><14>>.
-    Found 1-bit register for signal <regFile<2><13>>.
-    Found 1-bit register for signal <regFile<2><12>>.
-    Found 1-bit register for signal <regFile<2><11>>.
-    Found 1-bit register for signal <regFile<2><10>>.
-    Found 1-bit register for signal <regFile<2><9>>.
-    Found 1-bit register for signal <regFile<2><8>>.
-    Found 1-bit register for signal <regFile<2><7>>.
-    Found 1-bit register for signal <regFile<2><6>>.
-    Found 1-bit register for signal <regFile<2><5>>.
-    Found 1-bit register for signal <regFile<2><4>>.
-    Found 1-bit register for signal <regFile<2><3>>.
-    Found 1-bit register for signal <regFile<2><2>>.
-    Found 1-bit register for signal <regFile<2><1>>.
-    Found 1-bit register for signal <regFile<2><0>>.
-    Found 1-bit register for signal <regFile<1><31>>.
-    Found 1-bit register for signal <regFile<1><30>>.
-    Found 1-bit register for signal <regFile<1><29>>.
-    Found 1-bit register for signal <regFile<1><28>>.
-    Found 1-bit register for signal <regFile<1><27>>.
-    Found 1-bit register for signal <regFile<1><26>>.
-    Found 1-bit register for signal <regFile<1><25>>.
-    Found 1-bit register for signal <regFile<1><24>>.
-    Found 1-bit register for signal <regFile<1><23>>.
-    Found 1-bit register for signal <regFile<1><22>>.
-    Found 1-bit register for signal <regFile<1><21>>.
-    Found 1-bit register for signal <regFile<1><20>>.
-    Found 1-bit register for signal <regFile<1><19>>.
-    Found 1-bit register for signal <regFile<1><18>>.
-    Found 1-bit register for signal <regFile<1><17>>.
-    Found 1-bit register for signal <regFile<1><16>>.
-    Found 1-bit register for signal <regFile<1><15>>.
-    Found 1-bit register for signal <regFile<1><14>>.
-    Found 1-bit register for signal <regFile<1><13>>.
-    Found 1-bit register for signal <regFile<1><12>>.
-    Found 1-bit register for signal <regFile<1><11>>.
-    Found 1-bit register for signal <regFile<1><10>>.
-    Found 1-bit register for signal <regFile<1><9>>.
-    Found 1-bit register for signal <regFile<1><8>>.
-    Found 1-bit register for signal <regFile<1><7>>.
-    Found 1-bit register for signal <regFile<1><6>>.
-    Found 1-bit register for signal <regFile<1><5>>.
-    Found 1-bit register for signal <regFile<1><4>>.
-    Found 1-bit register for signal <regFile<1><3>>.
-    Found 1-bit register for signal <regFile<1><2>>.
-    Found 1-bit register for signal <regFile<1><1>>.
-    Found 1-bit register for signal <regFile<1><0>>.
-    Found 1-bit register for signal <regFile<0><31>>.
-    Found 1-bit register for signal <regFile<0><30>>.
-    Found 1-bit register for signal <regFile<0><29>>.
-    Found 1-bit register for signal <regFile<0><28>>.
-    Found 1-bit register for signal <regFile<0><27>>.
-    Found 1-bit register for signal <regFile<0><26>>.
-    Found 1-bit register for signal <regFile<0><25>>.
-    Found 1-bit register for signal <regFile<0><24>>.
-    Found 1-bit register for signal <regFile<0><23>>.
-    Found 1-bit register for signal <regFile<0><22>>.
-    Found 1-bit register for signal <regFile<0><21>>.
-    Found 1-bit register for signal <regFile<0><20>>.
-    Found 1-bit register for signal <regFile<0><19>>.
-    Found 1-bit register for signal <regFile<0><18>>.
-    Found 1-bit register for signal <regFile<0><17>>.
-    Found 1-bit register for signal <regFile<0><16>>.
-    Found 1-bit register for signal <regFile<0><15>>.
-    Found 1-bit register for signal <regFile<0><14>>.
-    Found 1-bit register for signal <regFile<0><13>>.
-    Found 1-bit register for signal <regFile<0><12>>.
-    Found 1-bit register for signal <regFile<0><11>>.
-    Found 1-bit register for signal <regFile<0><10>>.
-    Found 1-bit register for signal <regFile<0><9>>.
-    Found 1-bit register for signal <regFile<0><8>>.
-    Found 1-bit register for signal <regFile<0><7>>.
-    Found 1-bit register for signal <regFile<0><6>>.
-    Found 1-bit register for signal <regFile<0><5>>.
-    Found 1-bit register for signal <regFile<0><4>>.
-    Found 1-bit register for signal <regFile<0><3>>.
-    Found 1-bit register for signal <regFile<0><2>>.
-    Found 1-bit register for signal <regFile<0><1>>.
-    Found 1-bit register for signal <regFile<0><0>>.
-    Found 1-bit register for signal <regFile<31><31>>.
-    Found 32-bit 32-to-1 multiplexer for signal <data_out_1> created at line 22.
-    Found 32-bit 32-to-1 multiplexer for signal <data_out_2> created at line 24.
+    Found 32x32-bit dual-port RAM <Mram_regFile> for signal <regFile>.
     Summary:
-	inferred 1024 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
+	inferred   2 RAM(s).
 Unit <register_file> synthesized.
 
 Synthesizing Unit <sign_extend>.
@@ -1260,8 +235,39 @@ Unit <ALU_control> synthesized.
 
 Synthesizing Unit <alu32bit>.
     Related source file is "C:\Users\pr1266\finalproject\alu32bit.v".
-    Found 32-bit subtractor for signal <first[31]_second[31]_sub_6_OUT> created at line 19.
-    Found 32-bit adder for signal <first[31]_second[31]_add_4_OUT> created at line 17.
+    Found 32-bit subtractor for signal <first[31]_second[31]_sub_4_OUT> created at line 19.
+    Found 32-bit adder for signal <first[31]_second[31]_add_2_OUT> created at line 17.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0101> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0113> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0124> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0135> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0146> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0157> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0168> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0179> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0190> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0201> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0212> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0223> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0234> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0245> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0256> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0267> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0278> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0289> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0300> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0311> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0322> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0333> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0344> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0355> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0366> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0377> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0388> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0399> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0410> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0421> created at line 11.
+    Found 1-bit 5-to-1 multiplexer for signal <_n0432> created at line 11.
     Found 1-bit 5-to-1 multiplexer for signal <_n0443> created at line 11.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1295,13 +301,12 @@ WARNING:Xst:737 - Found 1-bit latch for signal <out<2>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <first[31]_second[31]_LessThan_7_o> created at line 21
-    Found 32-bit comparator equal for signal <zero> created at line 28
+    Found 32-bit comparator greater for signal <first[31]_second[31]_LessThan_5_o> created at line 21
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  32 Latch(s).
-	inferred   2 Comparator(s).
-	inferred 157 Multiplexer(s).
+	inferred   1 Comparator(s).
+	inferred  33 Multiplexer(s).
 Unit <alu32bit> synthesized.
 
 Synthesizing Unit <data_memory>.
@@ -1317,24 +322,23 @@ Unit <data_memory> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 4
  128x32-bit single-port RAM                            : 1
+ 32x32-bit dual-port RAM                               : 2
  32x32-bit single-port Read Only RAM                   : 1
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 3
  32-bit subtractor                                     : 1
-# Registers                                            : 33
- 32-bit register                                       : 33
+# Registers                                            : 1
+ 32-bit register                                       : 1
 # Latches                                              : 42
  1-bit latch                                           : 42
-# Comparators                                          : 2
- 32-bit comparator equal                               : 1
+# Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 189
- 1-bit 2-to-1 multiplexer                              : 180
- 1-bit 5-to-1 multiplexer                              : 1
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 25
+ 1-bit 5-to-1 multiplexer                              : 32
  32-bit 2-to-1 multiplexer                             : 5
- 32-bit 32-to-1 multiplexer                            : 2
  5-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -1343,71 +347,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <regFile_9> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_91> <regFile_92> <regFile_93> <regFile_94> <regFile_95> <regFile_96> <regFile_97> <regFile_98> <regFile_99> <regFile_910> <regFile_911> <regFile_912> <regFile_913> <regFile_914> <regFile_915> <regFile_916> <regFile_917> <regFile_918> <regFile_919> <regFile_920> <regFile_921> <regFile_922> <regFile_923> <regFile_924> <regFile_925> <regFile_926> <regFile_927> <regFile_928> <regFile_929> 
-INFO:Xst:2261 - The FF/Latch <regFile_10> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_101> <regFile_102> <regFile_103> <regFile_104> <regFile_105> <regFile_106> <regFile_107> <regFile_108> <regFile_109> <regFile_1010> <regFile_1011> <regFile_1012> <regFile_1013> <regFile_1014> <regFile_1015> <regFile_1016> <regFile_1017> <regFile_1018> <regFile_1019> <regFile_1020> <regFile_1021> <regFile_1022> <regFile_1023> <regFile_1024> <regFile_1025> <regFile_1026> <regFile_1027> <regFile_1028> <regFile_1029> 
-INFO:Xst:2261 - The FF/Latch <regFile_11> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_111> <regFile_113> <regFile_115> <regFile_117> <regFile_119> <regFile_1110> <regFile_1111> <regFile_1112> <regFile_1113> <regFile_1114> <regFile_1115> <regFile_1116> <regFile_1117> <regFile_1118> <regFile_1119> <regFile_1120> <regFile_1121> <regFile_1122> <regFile_1123> <regFile_1124> <regFile_1125> <regFile_1126> <regFile_1127> <regFile_1128> <regFile_1129> <regFile_1131> <regFile_1133> <regFile_1135> <regFile_1137> 
-INFO:Xst:2261 - The FF/Latch <regFile_12> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_121> <regFile_122> <regFile_123> <regFile_124> <regFile_125> <regFile_126> <regFile_128> <regFile_1210> <regFile_1211> <regFile_1212> <regFile_1213> <regFile_1214> <regFile_1215> <regFile_1216> <regFile_1217> <regFile_1218> <regFile_1219> <regFile_1220> <regFile_1221> <regFile_1222> <regFile_1223> <regFile_1224> <regFile_1225> <regFile_1226> <regFile_1227> <regFile_1228> <regFile_1229> <regFile_1230> <regFile_1231> 
-INFO:Xst:2261 - The FF/Latch <regFile_13> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_131> <regFile_132> <regFile_133> <regFile_134> <regFile_135> <regFile_136> <regFile_137> <regFile_138> <regFile_139> <regFile_1310> <regFile_1311> <regFile_1312> <regFile_1313> <regFile_1314> <regFile_1315> <regFile_1316> <regFile_1317> <regFile_1318> <regFile_1319> <regFile_1320> <regFile_1321> <regFile_1322> <regFile_1323> <regFile_1324> <regFile_1325> <regFile_1326> <regFile_1327> <regFile_1328> <regFile_1329> 
-INFO:Xst:2261 - The FF/Latch <regFile_14> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_141> <regFile_142> <regFile_143> <regFile_144> <regFile_145> <regFile_146> <regFile_147> <regFile_148> <regFile_149> <regFile_1410> <regFile_1411> <regFile_1412> <regFile_1413> <regFile_1414> <regFile_1415> <regFile_1416> <regFile_1417> <regFile_1418> <regFile_1419> <regFile_1420> <regFile_1421> <regFile_1422> <regFile_1423> <regFile_1424> <regFile_1425> <regFile_1426> <regFile_1427> <regFile_1428> <regFile_1429> 
-INFO:Xst:2261 - The FF/Latch <regFile_15> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_151> <regFile_152> <regFile_153> <regFile_154> <regFile_155> <regFile_156> <regFile_157> <regFile_158> <regFile_159> <regFile_1510> <regFile_1511> <regFile_1512> <regFile_1513> <regFile_1514> <regFile_1515> <regFile_1516> <regFile_1517> <regFile_1518> <regFile_1519> <regFile_1520> <regFile_1521> <regFile_1522> <regFile_1523> <regFile_1524> <regFile_1525> <regFile_1526> <regFile_1527> <regFile_1528> <regFile_1529> 
-INFO:Xst:2261 - The FF/Latch <regFile_20> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_201> <regFile_202> <regFile_203> <regFile_204> <regFile_205> <regFile_206> <regFile_207> <regFile_208> <regFile_209> <regFile_2010> <regFile_2011> <regFile_2012> <regFile_2013> <regFile_2014> <regFile_2015> <regFile_2016> <regFile_2017> <regFile_2018> <regFile_2019> <regFile_2020> <regFile_2021> <regFile_2022> <regFile_2023> <regFile_2024> <regFile_2025> <regFile_2026> <regFile_2027> <regFile_2028> <regFile_2029> 
-INFO:Xst:2261 - The FF/Latch <regFile_16> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_161> <regFile_162> <regFile_163> <regFile_164> <regFile_165> <regFile_166> <regFile_167> <regFile_168> <regFile_169> <regFile_1610> <regFile_1611> <regFile_1612> <regFile_1613> <regFile_1614> <regFile_1615> <regFile_1616> <regFile_1617> <regFile_1618> <regFile_1619> <regFile_1620> <regFile_1621> <regFile_1622> <regFile_1623> <regFile_1624> <regFile_1625> <regFile_1626> <regFile_1627> <regFile_1628> <regFile_1629> 
-INFO:Xst:2261 - The FF/Latch <regFile_21> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_211> <regFile_213> <regFile_215> <regFile_217> <regFile_219> <regFile_2110> <regFile_2111> <regFile_2112> <regFile_2113> <regFile_2114> <regFile_2115> <regFile_2116> <regFile_2117> <regFile_2118> <regFile_2119> <regFile_2120> <regFile_2121> <regFile_2122> <regFile_2123> <regFile_2124> <regFile_2125> <regFile_2126> <regFile_2127> <regFile_2128> <regFile_2129> <regFile_2131> <regFile_2133> <regFile_2135> <regFile_2137> 
-INFO:Xst:2261 - The FF/Latch <regFile_17> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_171> <regFile_172> <regFile_173> <regFile_174> <regFile_175> <regFile_176> <regFile_177> <regFile_178> <regFile_179> <regFile_1710> <regFile_1711> <regFile_1712> <regFile_1713> <regFile_1714> <regFile_1715> <regFile_1716> <regFile_1717> <regFile_1718> <regFile_1719> <regFile_1720> <regFile_1721> <regFile_1722> <regFile_1723> <regFile_1724> <regFile_1725> <regFile_1726> <regFile_1727> <regFile_1728> <regFile_1729> 
-INFO:Xst:2261 - The FF/Latch <regFile_22> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_221> <regFile_222> <regFile_223> <regFile_224> <regFile_225> <regFile_226> <regFile_228> <regFile_2210> <regFile_2211> <regFile_2212> <regFile_2213> <regFile_2214> <regFile_2215> <regFile_2216> <regFile_2217> <regFile_2218> <regFile_2219> <regFile_2220> <regFile_2221> <regFile_2222> <regFile_2223> <regFile_2224> <regFile_2225> <regFile_2226> <regFile_2227> <regFile_2228> <regFile_2229> <regFile_2230> <regFile_2231> 
-INFO:Xst:2261 - The FF/Latch <regFile_18> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_181> <regFile_182> <regFile_183> <regFile_184> <regFile_185> <regFile_186> <regFile_187> <regFile_188> <regFile_189> <regFile_1810> <regFile_1811> <regFile_1812> <regFile_1813> <regFile_1814> <regFile_1815> <regFile_1816> <regFile_1817> <regFile_1818> <regFile_1819> <regFile_1820> <regFile_1821> <regFile_1822> <regFile_1823> <regFile_1824> <regFile_1825> <regFile_1826> <regFile_1827> <regFile_1828> <regFile_1829> 
-INFO:Xst:2261 - The FF/Latch <regFile_23> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_231> <regFile_232> <regFile_233> <regFile_234> <regFile_235> <regFile_236> <regFile_237> <regFile_238> <regFile_239> <regFile_2310> <regFile_2311> <regFile_2312> <regFile_2313> <regFile_2314> <regFile_2315> <regFile_2316> <regFile_2317> <regFile_2318> <regFile_2319> <regFile_2320> <regFile_2321> <regFile_2322> <regFile_2323> <regFile_2324> <regFile_2325> <regFile_2326> <regFile_2327> <regFile_2328> <regFile_2329> 
-INFO:Xst:2261 - The FF/Latch <regFile_19> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_191> <regFile_192> <regFile_193> <regFile_194> <regFile_195> <regFile_196> <regFile_197> <regFile_198> <regFile_199> <regFile_1910> <regFile_1911> <regFile_1912> <regFile_1913> <regFile_1914> <regFile_1915> <regFile_1916> <regFile_1917> <regFile_1918> <regFile_1919> <regFile_1920> <regFile_1921> <regFile_1922> <regFile_1923> <regFile_1924> <regFile_1925> <regFile_1926> <regFile_1927> <regFile_1928> <regFile_1929> 
-INFO:Xst:2261 - The FF/Latch <regFile_24> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_241> <regFile_242> <regFile_243> <regFile_244> <regFile_245> <regFile_246> <regFile_247> <regFile_248> <regFile_249> <regFile_2410> <regFile_2411> <regFile_2412> <regFile_2413> <regFile_2414> <regFile_2415> <regFile_2416> <regFile_2417> <regFile_2418> <regFile_2419> <regFile_2420> <regFile_2421> <regFile_2422> <regFile_2423> <regFile_2424> <regFile_2425> <regFile_2426> <regFile_2427> <regFile_2428> <regFile_2429> 
-INFO:Xst:2261 - The FF/Latch <regFile_25> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_251> <regFile_252> <regFile_253> <regFile_254> <regFile_255> <regFile_256> <regFile_257> <regFile_258> <regFile_259> <regFile_2510> <regFile_2511> <regFile_2512> <regFile_2513> <regFile_2514> <regFile_2515> <regFile_2516> <regFile_2517> <regFile_2518> <regFile_2519> <regFile_2520> <regFile_2521> <regFile_2522> <regFile_2523> <regFile_2524> <regFile_2525> <regFile_2526> <regFile_2527> <regFile_2528> <regFile_2529> 
-INFO:Xst:2261 - The FF/Latch <regFile_30> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_301> <regFile_302> <regFile_303> <regFile_304> <regFile_305> <regFile_306> <regFile_307> <regFile_308> <regFile_309> <regFile_3010> <regFile_3011> <regFile_3012> <regFile_3013> <regFile_3014> <regFile_3015> <regFile_3016> <regFile_3017> <regFile_3018> <regFile_3019> <regFile_3020> <regFile_3021> <regFile_3022> <regFile_3023> <regFile_3024> <regFile_3025> <regFile_3026> <regFile_3027> <regFile_3028> <regFile_3029> 
-INFO:Xst:2261 - The FF/Latch <regFile_26> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_261> <regFile_262> <regFile_263> <regFile_264> <regFile_265> <regFile_266> <regFile_267> <regFile_268> <regFile_269> <regFile_2610> <regFile_2611> <regFile_2612> <regFile_2613> <regFile_2614> <regFile_2615> <regFile_2616> <regFile_2617> <regFile_2618> <regFile_2619> <regFile_2620> <regFile_2621> <regFile_2622> <regFile_2623> <regFile_2624> <regFile_2625> <regFile_2626> <regFile_2627> <regFile_2628> <regFile_2629> 
-INFO:Xst:2261 - The FF/Latch <regFile_31> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_311> <regFile_312> <regFile_313> <regFile_314> <regFile_315> <regFile_316> <regFile_317> <regFile_318> <regFile_319> <regFile_3110> <regFile_3111> <regFile_3112> <regFile_3113> <regFile_3114> <regFile_3115> <regFile_3116> <regFile_3117> <regFile_3118> <regFile_3119> <regFile_3120> <regFile_3121> <regFile_3122> <regFile_3123> <regFile_3124> <regFile_3125> <regFile_3126> <regFile_3127> <regFile_3128> <regFile_3129> 
-INFO:Xst:2261 - The FF/Latch <regFile_27> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_271> <regFile_272> <regFile_273> <regFile_274> <regFile_275> <regFile_276> <regFile_277> <regFile_278> <regFile_279> <regFile_2710> <regFile_2711> <regFile_2712> <regFile_2713> <regFile_2714> <regFile_2715> <regFile_2716> <regFile_2717> <regFile_2718> <regFile_2719> <regFile_2720> <regFile_2721> <regFile_2722> <regFile_2723> <regFile_2724> <regFile_2725> <regFile_2726> <regFile_2727> <regFile_2728> <regFile_2729> 
-INFO:Xst:2261 - The FF/Latch <regFile_28> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_281> <regFile_282> <regFile_283> <regFile_284> <regFile_285> <regFile_286> <regFile_287> <regFile_288> <regFile_289> <regFile_2810> <regFile_2811> <regFile_2812> <regFile_2813> <regFile_2814> <regFile_2815> <regFile_2816> <regFile_2817> <regFile_2818> <regFile_2819> <regFile_2820> <regFile_2821> <regFile_2822> <regFile_2823> <regFile_2824> <regFile_2825> <regFile_2826> <regFile_2827> <regFile_2828> <regFile_2829> 
-INFO:Xst:2261 - The FF/Latch <regFile_29> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_291> <regFile_292> <regFile_293> <regFile_294> <regFile_295> <regFile_296> <regFile_297> <regFile_298> <regFile_299> <regFile_2910> <regFile_2911> <regFile_2912> <regFile_2913> <regFile_2914> <regFile_2915> <regFile_2916> <regFile_2917> <regFile_2918> <regFile_2919> <regFile_2920> <regFile_2921> <regFile_2922> <regFile_2923> <regFile_2924> <regFile_2925> <regFile_2926> <regFile_2927> <regFile_2928> <regFile_2929> 
-INFO:Xst:2261 - The FF/Latch <regFile_0> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_01> <regFile_02> <regFile_03> <regFile_04> <regFile_05> <regFile_06> <regFile_07> <regFile_08> <regFile_09> <regFile_010> <regFile_011> <regFile_012> <regFile_013> <regFile_014> <regFile_015> <regFile_016> <regFile_017> <regFile_018> <regFile_019> <regFile_020> <regFile_021> <regFile_022> <regFile_023> <regFile_024> <regFile_025> <regFile_026> <regFile_027> <regFile_028> <regFile_029> 
-INFO:Xst:2261 - The FF/Latch <regFile_1> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_110> <regFile_112> <regFile_114> <regFile_116> <regFile_118> <regFile_120> <regFile_127> <regFile_129> <regFile_130> <regFile_140> <regFile_150> <regFile_160> <regFile_170> <regFile_180> <regFile_190> <regFile_1100> <regFile_1101> <regFile_1102> <regFile_1103> <regFile_1104> <regFile_1105> <regFile_1106> <regFile_1107> <regFile_1108> <regFile_1109> <regFile_1130> <regFile_1132> <regFile_1134> <regFile_1136> 
-INFO:Xst:2261 - The FF/Latch <regFile_2> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_210> <regFile_212> <regFile_214> <regFile_216> <regFile_218> <regFile_220> <regFile_227> <regFile_229> <regFile_230> <regFile_240> <regFile_250> <regFile_260> <regFile_270> <regFile_280> <regFile_290> <regFile_2100> <regFile_2101> <regFile_2102> <regFile_2103> <regFile_2104> <regFile_2105> <regFile_2106> <regFile_2107> <regFile_2108> <regFile_2109> <regFile_2130> <regFile_2132> <regFile_2134> <regFile_2136> 
-INFO:Xst:2261 - The FF/Latch <regFile_3> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_32> <regFile_33> <regFile_34> <regFile_35> <regFile_36> <regFile_37> <regFile_38> <regFile_39> <regFile_310> <regFile_320> <regFile_321> <regFile_322> <regFile_323> <regFile_324> <regFile_325> <regFile_326> <regFile_327> <regFile_328> <regFile_329> <regFile_330> <regFile_331> <regFile_332> <regFile_333> <regFile_334> <regFile_335> <regFile_336> <regFile_337> <regFile_338> <regFile_339> 
-INFO:Xst:2261 - The FF/Latch <regFile_4> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_41> <regFile_42> <regFile_43> <regFile_44> <regFile_45> <regFile_46> <regFile_47> <regFile_48> <regFile_49> <regFile_410> <regFile_411> <regFile_412> <regFile_413> <regFile_414> <regFile_415> <regFile_416> <regFile_417> <regFile_418> <regFile_419> <regFile_420> <regFile_421> <regFile_422> <regFile_423> <regFile_424> <regFile_425> <regFile_426> <regFile_427> <regFile_428> <regFile_429> 
-INFO:Xst:2261 - The FF/Latch <regFile_5> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_51> <regFile_52> <regFile_53> <regFile_54> <regFile_55> <regFile_56> <regFile_57> <regFile_58> <regFile_59> <regFile_510> <regFile_511> <regFile_512> <regFile_513> <regFile_514> <regFile_515> <regFile_516> <regFile_517> <regFile_518> <regFile_519> <regFile_520> <regFile_521> <regFile_522> <regFile_523> <regFile_524> <regFile_525> <regFile_526> <regFile_527> <regFile_528> <regFile_529> 
-INFO:Xst:2261 - The FF/Latch <regFile_6> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_61> <regFile_62> <regFile_63> <regFile_64> <regFile_65> <regFile_66> <regFile_67> <regFile_68> <regFile_69> <regFile_610> <regFile_611> <regFile_612> <regFile_613> <regFile_614> <regFile_615> <regFile_616> <regFile_617> <regFile_618> <regFile_619> <regFile_620> <regFile_621> <regFile_622> <regFile_623> <regFile_624> <regFile_625> <regFile_626> <regFile_627> <regFile_628> <regFile_629> 
-INFO:Xst:2261 - The FF/Latch <regFile_7> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_71> <regFile_72> <regFile_73> <regFile_74> <regFile_75> <regFile_76> <regFile_77> <regFile_78> <regFile_79> <regFile_710> <regFile_711> <regFile_712> <regFile_713> <regFile_714> <regFile_715> <regFile_716> <regFile_717> <regFile_718> <regFile_719> <regFile_720> <regFile_721> <regFile_722> <regFile_723> <regFile_724> <regFile_725> <regFile_726> <regFile_727> <regFile_728> <regFile_729> 
-INFO:Xst:2261 - The FF/Latch <regFile_8> in Unit <reg_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_81> <regFile_82> <regFile_83> <regFile_84> <regFile_85> <regFile_86> <regFile_87> <regFile_88> <regFile_89> <regFile_810> <regFile_811> <regFile_812> <regFile_813> <regFile_814> <regFile_815> <regFile_816> <regFile_817> <regFile_818> <regFile_819> <regFile_820> <regFile_821> <regFile_822> <regFile_823> <regFile_824> <regFile_825> <regFile_826> <regFile_827> <regFile_828> <regFile_829> 
 WARNING:Xst:1710 - FF/Latch <op_3> (without init value) has a constant value of 0 in block <alu_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_31> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_30> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_29> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_28> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_27> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_26> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_25> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_24> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_23> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_22> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_21> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_20> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_19> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_18> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_17> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_0> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_1> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_2> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_3> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_4> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_5> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_6> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_7> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_8> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_9> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_10> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_11> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_12> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_13> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_14> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_15> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <regFile_16> (without init value) has a constant value of 0 in block <reg_file>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <data_memory>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -1425,7 +365,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs eit
 Unit <data_memory> synthesized (advanced).
 
 Synthesizing (advanced) Unit <instruction_memory>.
-INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1438,25 +378,59 @@ INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to
     -----------------------------------------------------------------------
 Unit <instruction_memory> synthesized (advanced).
 
+Synthesizing (advanced) Unit <register_file>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regFile> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_addr>    |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_addr_1>   |          |
+    |     doB            | connected to signal <data_out_1>    |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regFile1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_addr>    |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_addr_2>   |          |
+    |     doB            | connected to signal <data_out_2>    |          |
+    -----------------------------------------------------------------------
+Unit <register_file> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 4
  128x32-bit single-port distributed RAM                : 1
+ 32x32-bit dual-port distributed RAM                   : 2
  32x32-bit single-port distributed Read Only RAM       : 1
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 3
  32-bit subtractor                                     : 1
-# Registers                                            : 1056
- Flip-Flops                                            : 1056
-# Comparators                                          : 2
- 32-bit comparator equal                               : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 251
- 1-bit 2-to-1 multiplexer                              : 180
- 1-bit 32-to-1 multiplexer                             : 64
- 1-bit 5-to-1 multiplexer                              : 1
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 25
+ 1-bit 5-to-1 multiplexer                              : 32
  32-bit 2-to-1 multiplexer                             : 5
  5-bit 2-to-1 multiplexer                              : 1
 
@@ -1466,70 +440,6 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <op_3> (without init value) has a constant value of 0 in block <ALU_control>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <regFile_26> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_261> <regFile_262> <regFile_263> <regFile_264> <regFile_265> <regFile_266> <regFile_267> <regFile_268> <regFile_269> <regFile_2610> <regFile_2611> <regFile_2612> <regFile_2613> <regFile_2614> <regFile_2615> <regFile_2616> <regFile_2617> <regFile_2618> <regFile_2619> <regFile_2620> <regFile_2621> <regFile_2622> <regFile_2623> <regFile_2624> <regFile_2625> <regFile_2626> <regFile_2627> <regFile_2628> <regFile_2629> 
-INFO:Xst:2261 - The FF/Latch <regFile_31> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_311> <regFile_312> <regFile_313> <regFile_314> <regFile_315> <regFile_316> <regFile_317> <regFile_318> <regFile_319> <regFile_3110> <regFile_3111> <regFile_3112> <regFile_3113> <regFile_3114> <regFile_3115> <regFile_3116> <regFile_3117> <regFile_3118> <regFile_3119> <regFile_3120> <regFile_3121> <regFile_3122> <regFile_3123> <regFile_3124> <regFile_3125> <regFile_3126> <regFile_3127> <regFile_3128> <regFile_3129> 
-INFO:Xst:2261 - The FF/Latch <regFile_27> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_271> <regFile_272> <regFile_273> <regFile_274> <regFile_275> <regFile_276> <regFile_277> <regFile_278> <regFile_279> <regFile_2710> <regFile_2711> <regFile_2712> <regFile_2713> <regFile_2714> <regFile_2715> <regFile_2716> <regFile_2717> <regFile_2718> <regFile_2719> <regFile_2720> <regFile_2721> <regFile_2722> <regFile_2723> <regFile_2724> <regFile_2725> <regFile_2726> <regFile_2727> <regFile_2728> <regFile_2729> 
-INFO:Xst:2261 - The FF/Latch <regFile_28> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_281> <regFile_282> <regFile_283> <regFile_284> <regFile_285> <regFile_286> <regFile_287> <regFile_288> <regFile_289> <regFile_2810> <regFile_2811> <regFile_2812> <regFile_2813> <regFile_2814> <regFile_2815> <regFile_2816> <regFile_2817> <regFile_2818> <regFile_2819> <regFile_2820> <regFile_2821> <regFile_2822> <regFile_2823> <regFile_2824> <regFile_2825> <regFile_2826> <regFile_2827> <regFile_2828> <regFile_2829> 
-INFO:Xst:2261 - The FF/Latch <regFile_29> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_291> <regFile_292> <regFile_293> <regFile_294> <regFile_295> <regFile_296> <regFile_297> <regFile_298> <regFile_299> <regFile_2910> <regFile_2911> <regFile_2912> <regFile_2913> <regFile_2914> <regFile_2915> <regFile_2916> <regFile_2917> <regFile_2918> <regFile_2919> <regFile_2920> <regFile_2921> <regFile_2922> <regFile_2923> <regFile_2924> <regFile_2925> <regFile_2926> <regFile_2927> <regFile_2928> <regFile_2929> 
-INFO:Xst:2261 - The FF/Latch <regFile_0> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_01> <regFile_02> <regFile_03> <regFile_04> <regFile_05> <regFile_06> <regFile_07> <regFile_08> <regFile_09> <regFile_010> <regFile_011> <regFile_012> <regFile_013> <regFile_014> <regFile_015> <regFile_016> <regFile_017> <regFile_018> <regFile_019> <regFile_020> <regFile_021> <regFile_022> <regFile_023> <regFile_024> <regFile_025> <regFile_026> <regFile_027> <regFile_028> <regFile_029> 
-INFO:Xst:2261 - The FF/Latch <regFile_1> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_110> <regFile_112> <regFile_114> <regFile_116> <regFile_118> <regFile_120> <regFile_127> <regFile_129> <regFile_130> <regFile_140> <regFile_150> <regFile_160> <regFile_170> <regFile_180> <regFile_190> <regFile_1100> <regFile_1101> <regFile_1102> <regFile_1103> <regFile_1104> <regFile_1105> <regFile_1106> <regFile_1107> <regFile_1108> <regFile_1109> <regFile_1130> <regFile_1132> <regFile_1134> <regFile_1136> 
-INFO:Xst:2261 - The FF/Latch <regFile_2> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_210> <regFile_212> <regFile_214> <regFile_216> <regFile_218> <regFile_220> <regFile_227> <regFile_229> <regFile_230> <regFile_240> <regFile_250> <regFile_260> <regFile_270> <regFile_280> <regFile_290> <regFile_2100> <regFile_2101> <regFile_2102> <regFile_2103> <regFile_2104> <regFile_2105> <regFile_2106> <regFile_2107> <regFile_2108> <regFile_2109> <regFile_2130> <regFile_2132> <regFile_2134> <regFile_2136> 
-INFO:Xst:2261 - The FF/Latch <regFile_3> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_32> <regFile_33> <regFile_34> <regFile_35> <regFile_36> <regFile_37> <regFile_38> <regFile_39> <regFile_310> <regFile_320> <regFile_321> <regFile_322> <regFile_323> <regFile_324> <regFile_325> <regFile_326> <regFile_327> <regFile_328> <regFile_329> <regFile_330> <regFile_331> <regFile_332> <regFile_333> <regFile_334> <regFile_335> <regFile_336> <regFile_337> <regFile_338> <regFile_339> 
-INFO:Xst:2261 - The FF/Latch <regFile_4> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_41> <regFile_42> <regFile_43> <regFile_44> <regFile_45> <regFile_46> <regFile_47> <regFile_48> <regFile_49> <regFile_410> <regFile_411> <regFile_412> <regFile_413> <regFile_414> <regFile_415> <regFile_416> <regFile_417> <regFile_418> <regFile_419> <regFile_420> <regFile_421> <regFile_422> <regFile_423> <regFile_424> <regFile_425> <regFile_426> <regFile_427> <regFile_428> <regFile_429> 
-INFO:Xst:2261 - The FF/Latch <regFile_5> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_51> <regFile_52> <regFile_53> <regFile_54> <regFile_55> <regFile_56> <regFile_57> <regFile_58> <regFile_59> <regFile_510> <regFile_511> <regFile_512> <regFile_513> <regFile_514> <regFile_515> <regFile_516> <regFile_517> <regFile_518> <regFile_519> <regFile_520> <regFile_521> <regFile_522> <regFile_523> <regFile_524> <regFile_525> <regFile_526> <regFile_527> <regFile_528> <regFile_529> 
-INFO:Xst:2261 - The FF/Latch <regFile_6> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_61> <regFile_62> <regFile_63> <regFile_64> <regFile_65> <regFile_66> <regFile_67> <regFile_68> <regFile_69> <regFile_610> <regFile_611> <regFile_612> <regFile_613> <regFile_614> <regFile_615> <regFile_616> <regFile_617> <regFile_618> <regFile_619> <regFile_620> <regFile_621> <regFile_622> <regFile_623> <regFile_624> <regFile_625> <regFile_626> <regFile_627> <regFile_628> <regFile_629> 
-INFO:Xst:2261 - The FF/Latch <regFile_7> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_71> <regFile_72> <regFile_73> <regFile_74> <regFile_75> <regFile_76> <regFile_77> <regFile_78> <regFile_79> <regFile_710> <regFile_711> <regFile_712> <regFile_713> <regFile_714> <regFile_715> <regFile_716> <regFile_717> <regFile_718> <regFile_719> <regFile_720> <regFile_721> <regFile_722> <regFile_723> <regFile_724> <regFile_725> <regFile_726> <regFile_727> <regFile_728> <regFile_729> 
-INFO:Xst:2261 - The FF/Latch <regFile_10> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_101> <regFile_102> <regFile_103> <regFile_104> <regFile_105> <regFile_106> <regFile_107> <regFile_108> <regFile_109> <regFile_1010> <regFile_1011> <regFile_1012> <regFile_1013> <regFile_1014> <regFile_1015> <regFile_1016> <regFile_1017> <regFile_1018> <regFile_1019> <regFile_1020> <regFile_1021> <regFile_1022> <regFile_1023> <regFile_1024> <regFile_1025> <regFile_1026> <regFile_1027> <regFile_1028> <regFile_1029> 
-INFO:Xst:2261 - The FF/Latch <regFile_8> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_81> <regFile_82> <regFile_83> <regFile_84> <regFile_85> <regFile_86> <regFile_87> <regFile_88> <regFile_89> <regFile_810> <regFile_811> <regFile_812> <regFile_813> <regFile_814> <regFile_815> <regFile_816> <regFile_817> <regFile_818> <regFile_819> <regFile_820> <regFile_821> <regFile_822> <regFile_823> <regFile_824> <regFile_825> <regFile_826> <regFile_827> <regFile_828> <regFile_829> 
-INFO:Xst:2261 - The FF/Latch <regFile_11> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_111> <regFile_113> <regFile_115> <regFile_117> <regFile_119> <regFile_1110> <regFile_1111> <regFile_1112> <regFile_1113> <regFile_1114> <regFile_1115> <regFile_1116> <regFile_1117> <regFile_1118> <regFile_1119> <regFile_1120> <regFile_1121> <regFile_1122> <regFile_1123> <regFile_1124> <regFile_1125> <regFile_1126> <regFile_1127> <regFile_1128> <regFile_1129> <regFile_1131> <regFile_1133> <regFile_1135> <regFile_1137> 
-INFO:Xst:2261 - The FF/Latch <regFile_9> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_91> <regFile_92> <regFile_93> <regFile_94> <regFile_95> <regFile_96> <regFile_97> <regFile_98> <regFile_99> <regFile_910> <regFile_911> <regFile_912> <regFile_913> <regFile_914> <regFile_915> <regFile_916> <regFile_917> <regFile_918> <regFile_919> <regFile_920> <regFile_921> <regFile_922> <regFile_923> <regFile_924> <regFile_925> <regFile_926> <regFile_927> <regFile_928> <regFile_929> 
-INFO:Xst:2261 - The FF/Latch <regFile_12> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_121> <regFile_122> <regFile_123> <regFile_124> <regFile_125> <regFile_126> <regFile_128> <regFile_1210> <regFile_1211> <regFile_1212> <regFile_1213> <regFile_1214> <regFile_1215> <regFile_1216> <regFile_1217> <regFile_1218> <regFile_1219> <regFile_1220> <regFile_1221> <regFile_1222> <regFile_1223> <regFile_1224> <regFile_1225> <regFile_1226> <regFile_1227> <regFile_1228> <regFile_1229> <regFile_1230> <regFile_1231> 
-INFO:Xst:2261 - The FF/Latch <regFile_13> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_131> <regFile_132> <regFile_133> <regFile_134> <regFile_135> <regFile_136> <regFile_137> <regFile_138> <regFile_139> <regFile_1310> <regFile_1311> <regFile_1312> <regFile_1313> <regFile_1314> <regFile_1315> <regFile_1316> <regFile_1317> <regFile_1318> <regFile_1319> <regFile_1320> <regFile_1321> <regFile_1322> <regFile_1323> <regFile_1324> <regFile_1325> <regFile_1326> <regFile_1327> <regFile_1328> <regFile_1329> 
-INFO:Xst:2261 - The FF/Latch <regFile_14> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_141> <regFile_142> <regFile_143> <regFile_144> <regFile_145> <regFile_146> <regFile_147> <regFile_148> <regFile_149> <regFile_1410> <regFile_1411> <regFile_1412> <regFile_1413> <regFile_1414> <regFile_1415> <regFile_1416> <regFile_1417> <regFile_1418> <regFile_1419> <regFile_1420> <regFile_1421> <regFile_1422> <regFile_1423> <regFile_1424> <regFile_1425> <regFile_1426> <regFile_1427> <regFile_1428> <regFile_1429> 
-INFO:Xst:2261 - The FF/Latch <regFile_15> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_151> <regFile_152> <regFile_153> <regFile_154> <regFile_155> <regFile_156> <regFile_157> <regFile_158> <regFile_159> <regFile_1510> <regFile_1511> <regFile_1512> <regFile_1513> <regFile_1514> <regFile_1515> <regFile_1516> <regFile_1517> <regFile_1518> <regFile_1519> <regFile_1520> <regFile_1521> <regFile_1522> <regFile_1523> <regFile_1524> <regFile_1525> <regFile_1526> <regFile_1527> <regFile_1528> <regFile_1529> 
-INFO:Xst:2261 - The FF/Latch <regFile_20> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_201> <regFile_202> <regFile_203> <regFile_204> <regFile_205> <regFile_206> <regFile_207> <regFile_208> <regFile_209> <regFile_2010> <regFile_2011> <regFile_2012> <regFile_2013> <regFile_2014> <regFile_2015> <regFile_2016> <regFile_2017> <regFile_2018> <regFile_2019> <regFile_2020> <regFile_2021> <regFile_2022> <regFile_2023> <regFile_2024> <regFile_2025> <regFile_2026> <regFile_2027> <regFile_2028> <regFile_2029> 
-INFO:Xst:2261 - The FF/Latch <regFile_16> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_161> <regFile_162> <regFile_163> <regFile_164> <regFile_165> <regFile_166> <regFile_167> <regFile_168> <regFile_169> <regFile_1610> <regFile_1611> <regFile_1612> <regFile_1613> <regFile_1614> <regFile_1615> <regFile_1616> <regFile_1617> <regFile_1618> <regFile_1619> <regFile_1620> <regFile_1621> <regFile_1622> <regFile_1623> <regFile_1624> <regFile_1625> <regFile_1626> <regFile_1627> <regFile_1628> <regFile_1629> 
-INFO:Xst:2261 - The FF/Latch <regFile_21> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_211> <regFile_213> <regFile_215> <regFile_217> <regFile_219> <regFile_2110> <regFile_2111> <regFile_2112> <regFile_2113> <regFile_2114> <regFile_2115> <regFile_2116> <regFile_2117> <regFile_2118> <regFile_2119> <regFile_2120> <regFile_2121> <regFile_2122> <regFile_2123> <regFile_2124> <regFile_2125> <regFile_2126> <regFile_2127> <regFile_2128> <regFile_2129> <regFile_2131> <regFile_2133> <regFile_2135> <regFile_2137> 
-INFO:Xst:2261 - The FF/Latch <regFile_17> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_171> <regFile_172> <regFile_173> <regFile_174> <regFile_175> <regFile_176> <regFile_177> <regFile_178> <regFile_179> <regFile_1710> <regFile_1711> <regFile_1712> <regFile_1713> <regFile_1714> <regFile_1715> <regFile_1716> <regFile_1717> <regFile_1718> <regFile_1719> <regFile_1720> <regFile_1721> <regFile_1722> <regFile_1723> <regFile_1724> <regFile_1725> <regFile_1726> <regFile_1727> <regFile_1728> <regFile_1729> 
-INFO:Xst:2261 - The FF/Latch <regFile_22> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_221> <regFile_222> <regFile_223> <regFile_224> <regFile_225> <regFile_226> <regFile_228> <regFile_2210> <regFile_2211> <regFile_2212> <regFile_2213> <regFile_2214> <regFile_2215> <regFile_2216> <regFile_2217> <regFile_2218> <regFile_2219> <regFile_2220> <regFile_2221> <regFile_2222> <regFile_2223> <regFile_2224> <regFile_2225> <regFile_2226> <regFile_2227> <regFile_2228> <regFile_2229> <regFile_2230> <regFile_2231> 
-INFO:Xst:2261 - The FF/Latch <regFile_18> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_181> <regFile_182> <regFile_183> <regFile_184> <regFile_185> <regFile_186> <regFile_187> <regFile_188> <regFile_189> <regFile_1810> <regFile_1811> <regFile_1812> <regFile_1813> <regFile_1814> <regFile_1815> <regFile_1816> <regFile_1817> <regFile_1818> <regFile_1819> <regFile_1820> <regFile_1821> <regFile_1822> <regFile_1823> <regFile_1824> <regFile_1825> <regFile_1826> <regFile_1827> <regFile_1828> <regFile_1829> 
-INFO:Xst:2261 - The FF/Latch <regFile_23> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_231> <regFile_232> <regFile_233> <regFile_234> <regFile_235> <regFile_236> <regFile_237> <regFile_238> <regFile_239> <regFile_2310> <regFile_2311> <regFile_2312> <regFile_2313> <regFile_2314> <regFile_2315> <regFile_2316> <regFile_2317> <regFile_2318> <regFile_2319> <regFile_2320> <regFile_2321> <regFile_2322> <regFile_2323> <regFile_2324> <regFile_2325> <regFile_2326> <regFile_2327> <regFile_2328> <regFile_2329> 
-INFO:Xst:2261 - The FF/Latch <regFile_19> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_191> <regFile_192> <regFile_193> <regFile_194> <regFile_195> <regFile_196> <regFile_197> <regFile_198> <regFile_199> <regFile_1910> <regFile_1911> <regFile_1912> <regFile_1913> <regFile_1914> <regFile_1915> <regFile_1916> <regFile_1917> <regFile_1918> <regFile_1919> <regFile_1920> <regFile_1921> <regFile_1922> <regFile_1923> <regFile_1924> <regFile_1925> <regFile_1926> <regFile_1927> <regFile_1928> <regFile_1929> 
-INFO:Xst:2261 - The FF/Latch <regFile_24> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_241> <regFile_242> <regFile_243> <regFile_244> <regFile_245> <regFile_246> <regFile_247> <regFile_248> <regFile_249> <regFile_2410> <regFile_2411> <regFile_2412> <regFile_2413> <regFile_2414> <regFile_2415> <regFile_2416> <regFile_2417> <regFile_2418> <regFile_2419> <regFile_2420> <regFile_2421> <regFile_2422> <regFile_2423> <regFile_2424> <regFile_2425> <regFile_2426> <regFile_2427> <regFile_2428> <regFile_2429> 
-INFO:Xst:2261 - The FF/Latch <regFile_25> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_251> <regFile_252> <regFile_253> <regFile_254> <regFile_255> <regFile_256> <regFile_257> <regFile_258> <regFile_259> <regFile_2510> <regFile_2511> <regFile_2512> <regFile_2513> <regFile_2514> <regFile_2515> <regFile_2516> <regFile_2517> <regFile_2518> <regFile_2519> <regFile_2520> <regFile_2521> <regFile_2522> <regFile_2523> <regFile_2524> <regFile_2525> <regFile_2526> <regFile_2527> <regFile_2528> <regFile_2529> 
-INFO:Xst:2261 - The FF/Latch <regFile_30> in Unit <register_file> is equivalent to the following 29 FFs/Latches, which will be removed : <regFile_301> <regFile_302> <regFile_303> <regFile_304> <regFile_305> <regFile_306> <regFile_307> <regFile_308> <regFile_309> <regFile_3010> <regFile_3011> <regFile_3012> <regFile_3013> <regFile_3014> <regFile_3015> <regFile_3016> <regFile_3017> <regFile_3018> <regFile_3019> <regFile_3020> <regFile_3021> <regFile_3022> <regFile_3023> <regFile_3024> <regFile_3025> <regFile_3026> <regFile_3027> <regFile_3028> <regFile_3029> 
-WARNING:Xst:1710 - FF/Latch <regFile_31> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_30> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_29> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_28> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_27> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_26> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_25> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_24> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_23> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_22> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_21> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_20> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_19> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_18> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_17> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_16> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_15> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_14> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_13> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_12> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_11> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_10> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_9> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_8> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_7> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_6> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_5> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_4> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_3> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_2> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_1> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <regFile_0> (without init value) has a constant value of 0 in block <register_file>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <CLOCK/buff_0> has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CLOCK/buff_1> has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
@@ -1566,8 +476,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 Optimizing unit <mips> ...
 
-Optimizing unit <register_file> ...
-
 Optimizing unit <alu32bit> ...
 
 Optimizing unit <Control> ...
@@ -1576,26 +484,26 @@ Optimizing unit <ALU_control> ...
 WARNING:Xst:1710 - FF/Latch <control_unit/MemtoReg> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <alu_control_unit/op_1> (without init value) has a constant value of 1 in block <mips>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <alu_control_unit/op_0> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <datamem/Mram_mem3> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem1> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem2> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem6> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem4> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem5> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem9> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem7> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem3> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem4> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem8> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem10> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem6> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem7> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem11> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem14> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem9> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem10> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem12> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem13> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem17> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem14> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem15> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem16> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem20> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem18> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem16> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem17> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem19> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem20> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem21> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem22> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem25> of sequential type is unconnected in block <mips>.
@@ -1603,50 +511,47 @@ WARNING:Xst:2677 - Node <datamem/Mram_mem23> of sequential type is unconnected i
 WARNING:Xst:2677 - Node <datamem/Mram_mem24> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem26> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem27> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem30> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem28> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem29> of sequential type is unconnected in block <mips>.
-WARNING:Xst:2677 - Node <datamem/Mram_mem31> of sequential type is unconnected in block <mips>.
 WARNING:Xst:2677 - Node <datamem/Mram_mem32> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem30> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem31> of sequential type is unconnected in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_0> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_1> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_2> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_3> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_1> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_4> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_5> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_6> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_4> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_7> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_8> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_9> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_7> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_10> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_11> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_12> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_10> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_14> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_15> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_13> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_15> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_16> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_14> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_17> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_18> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_16> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_19> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_20> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_21> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_19> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_22> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_23> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_24> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_22> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_25> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_26> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_27> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_25> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <alu_unit/out_28> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_29> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_30> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_28> is equivalent to a wire in block <mips>.
 WARNING:Xst:1294 - Latch <alu_unit/out_31> is equivalent to a wire in block <mips>.
-WARNING:Xst:1294 - Latch <alu_unit/out_0> is equivalent to a wire in block <mips>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 5.
-FlipFlop CLOCK/buff_2 has been replicated 5 time(s)
-FlipFlop CLOCK/buff_3 has been replicated 5 time(s)
-FlipFlop CLOCK/buff_4 has been replicated 5 time(s)
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 4.
 
 Final Macro Processing ...
 
@@ -1654,8 +559,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 109
- Flip-Flops                                            : 109
+# Registers                                            : 30
+ Flip-Flops                                            : 30
 
 =========================================================================
 
@@ -1678,23 +583,24 @@ Top Level Output File Name         : mips.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 437
+# BELS                             : 391
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 29
-#      LUT2                        : 2
-#      LUT3                        : 35
-#      LUT4                        : 31
-#      LUT5                        : 34
-#      LUT6                        : 106
-#      MUXCY                       : 102
+#      LUT2                        : 71
+#      LUT3                        : 94
+#      LUT4                        : 2
+#      LUT5                        : 1
+#      LUT6                        : 5
+#      MUXCY                       : 91
 #      VCC                         : 1
 #      XORCY                       : 94
-# FlipFlops/Latches                : 115
-#      FD                          : 45
-#      FDE                         : 32
-#      FDR                         : 32
+# FlipFlops/Latches                : 36
+#      FD                          : 30
 #      LD                          : 6
+# RAMS                             : 14
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 64
@@ -1707,16 +613,18 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             115  out of  11440     1%  
- Number of Slice LUTs:                  239  out of   5720     4%  
-    Number used as Logic:               239  out of   5720     4%  
+ Number of Slice Registers:              36  out of  11440     0%  
+ Number of Slice LUTs:                  252  out of   5720     4%  
+    Number used as Logic:               204  out of   5720     3%  
+    Number used as Memory:               48  out of   1440     3%  
+       Number used as RAM:               48
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    253
-   Number with an unused Flip Flop:     138  out of    253    54%  
-   Number with an unused LUT:            14  out of    253     5%  
-   Number of fully used LUT-FF pairs:   101  out of    253    39%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    255
+   Number with an unused Flip Flop:     219  out of    255    85%  
+   Number with an unused LUT:             3  out of    255     1%  
+   Number of fully used LUT-FF pairs:    33  out of    255    12%  
+   Number of unique control sets:         4
 
 IO Utilization: 
  Number of IOs:                          65
@@ -1743,14 +651,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------+-----------------------------+-------+
-Clock Signal                                  | Clock buffer(FF name)       | Load  |
-----------------------------------------------+-----------------------------+-------+
-clk                                           | BUFGP                       | 109   |
-N0                                            | NONE(control_unit/ALUop_1)  | 4     |
-control_unit/RegDst_G(control_unit/RegDst_G:O)| NONE(*)(control_unit/RegDst)| 1     |
-control_unit/ALUop_1                          | NONE(alu_control_unit/op_2) | 1     |
-----------------------------------------------+-----------------------------+-------+
+------------------------------------------------+-----------------------------+-------+
+Clock Signal                                    | Clock buffer(FF name)       | Load  |
+------------------------------------------------+-----------------------------+-------+
+clk                                             | BUFGP                       | 44    |
+N0                                              | NONE(control_unit/ALUop_1)  | 4     |
+control_unit/RegDst_G(control_unit/RegWrite_D:O)| NONE(*)(control_unit/RegDst)| 1     |
+control_unit/ALUop_1                            | NONE(alu_control_unit/op_2) | 1     |
+------------------------------------------------+-----------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -1764,9 +672,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.067ns (Maximum Frequency: 197.353MHz)
+   Minimum period: 16.594ns (Maximum Frequency: 60.264MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 7.610ns
+   Maximum output required time after clock: 19.134ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1775,91 +683,132 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.067ns (frequency: 197.353MHz)
-  Total number of paths / destination ports: 35612 / 173
+  Clock period: 16.594ns (frequency: 60.264MHz)
+  Total number of paths / destination ports: 15710 / 113
 -------------------------------------------------------------------------
-Delay:               5.067ns (Levels of Logic = 14)
-  Source:            CLOCK/buff_2_3 (FF)
-  Destination:       CLOCK/buff_2 (FF)
+Delay:               16.594ns (Levels of Logic = 41)
+  Source:            CLOCK/buff_2 (FF)
+  Destination:       reg_file/Mram_regFile15 (RAM)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: CLOCK/buff_2_3 to CLOCK/buff_2
+  Data Path: CLOCK/buff_2 to reg_file/Mram_regFile15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              13   0.447   1.161  CLOCK/buff_2_3 (CLOCK/buff_2_3)
-     LUT6:I3->O            1   0.205   0.924  Mmux_read_data2121 (read_data2<1>)
-     LUT6:I1->O            1   0.203   0.000  alu_unit/Mcompar_zero_lut<0> (alu_unit/Mcompar_zero_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  alu_unit/Mcompar_zero_cy<0> (alu_unit/Mcompar_zero_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<1> (alu_unit/Mcompar_zero_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<2> (alu_unit/Mcompar_zero_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<3> (alu_unit/Mcompar_zero_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<4> (alu_unit/Mcompar_zero_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<5> (alu_unit/Mcompar_zero_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<6> (alu_unit/Mcompar_zero_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<7> (alu_unit/Mcompar_zero_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<8> (alu_unit/Mcompar_zero_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Mcompar_zero_cy<9> (alu_unit/Mcompar_zero_cy<9>)
-     MUXCY:CI->O          30   0.213   1.264  alu_unit/Mcompar_zero_cy<10> (zero_flag)
-     LUT4:I3->O            1   0.205   0.000  Mmux_pc_current321 (pc_current<9>)
-     FD:D                      0.102          CLOCK/buff_9
+     FD:C->Q               3   0.447   0.650  CLOCK/buff_2 (CLOCK/buff_2)
+     INV:I->O              1   0.206   0.000  first_address_alu/Madd_out_lut<2>_INV_0 (first_address_alu/Madd_out_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  first_address_alu/Madd_out_cy<2> (first_address_alu/Madd_out_cy<2>)
+     XORCY:CI->O           1   0.180   0.684  first_address_alu/Madd_out_xor<3> (pc_next<3>)
+     LUT3:I1->O            3   0.203   0.755  Mmux_pc_current261 (pc_current<3>)
+     LUT3:I1->O           41   0.203   1.420  instr<17>1 (instr<17>)
+     LUT3:I2->O            2   0.205   0.617  Mmux_read_data2231 (read_data2<2>)
+     LUT2:I1->O            1   0.205   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<2> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<2>)
+     XORCY:LI->O           2   0.136   0.845  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_xor<2> (alu_unit/first[31]_second[31]_sub_4_OUT<2>)
+     LUT6:I3->O            1   0.205   0.580  branch_controller1 (branch_controller1)
+     LUT6:I5->O            1   0.205   0.944  branch_controller2 (branch_controller2)
+     LUT6:I0->O           30   0.203   1.492  branch_controller7 (branch_controller)
+     LUT3:I0->O            3   0.205   0.879  Mmux_pc_current231 (pc_current<2>)
+     LUT3:I0->O           25   0.205   1.193  instr<0>1 (instr<0>)
+     LUT3:I2->O            2   0.205   0.617  Mmux_read_data211 (read_data2<0>)
+     LUT2:I1->O            1   0.205   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_lut<0> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<0> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<1> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<2> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<3> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<4> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<5> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<6> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<7> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<8> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<9> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<10> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<11> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<12> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<13> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<14> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<15> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<16> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<17> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<18> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<19> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<20> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<21> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<22> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<23> (alu_unit/Madd_first[31]_second[31]_add_2_OUT_cy<23>)
+     XORCY:CI->O           1   0.180   0.580  alu_unit/Madd_first[31]_second[31]_add_2_OUT_xor<24> (alu_unit/first[31]_second[31]_add_2_OUT<24>)
+     LUT3:I2->O            3   0.205   0.650  alu_unit/Mmux__n0101171 (alu_result_24_OBUF)
+     RAM32M:DIA0               0.303          reg_file/Mram_regFile15
     ----------------------------------------
-    Total                      5.067ns (1.718ns logic, 3.349ns route)
-                                       (33.9% logic, 66.1% route)
+    Total                     16.594ns (4.687ns logic, 11.907ns route)
+                                       (28.2% logic, 71.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10270 / 62
+  Total number of paths / destination ports: 5664 / 62
 -------------------------------------------------------------------------
-Offset:              7.610ns (Levels of Logic = 35)
-  Source:            CLOCK/buff_3 (FF)
+Offset:              19.134ns (Levels of Logic = 49)
+  Source:            CLOCK/buff_2 (FF)
   Destination:       alu_result<31> (PAD)
   Source Clock:      clk rising
 
-  Data Path: CLOCK/buff_3 to alu_result<31>
+  Data Path: CLOCK/buff_2 to alu_result<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              73   0.447   1.928  CLOCK/buff_3 (CLOCK/buff_3)
-     LUT6:I3->O            1   0.205   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_lut<0> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<0> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<1> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<2> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<3> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<4> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<5> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<6> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<7> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<8> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<9> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<10> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<11> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<12> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<13> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<14> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<15> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<16> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<17> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<18> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<19> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<20> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<21> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<22> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<23> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<24> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<25> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<25>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<26> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<26>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<27> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<27>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<28> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<28>)
-     MUXCY:CI->O           1   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<29> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<29>)
-     MUXCY:CI->O           0   0.019   0.000  alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<30> (alu_unit/Madd_first[31]_second[31]_add_4_OUT_cy<30>)
-     XORCY:CI->O           1   0.180   0.684  alu_unit/Madd_first[31]_second[31]_add_4_OUT_xor<31> (alu_unit/first[31]_second[31]_add_4_OUT<31>)
-     LUT3:I1->O            3   0.203   0.650  alu_unit/Mmux__n01011361 (alu_result_31_OBUF)
+     FD:C->Q               3   0.447   0.650  CLOCK/buff_2 (CLOCK/buff_2)
+     INV:I->O              1   0.206   0.000  first_address_alu/Madd_out_lut<2>_INV_0 (first_address_alu/Madd_out_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  first_address_alu/Madd_out_cy<2> (first_address_alu/Madd_out_cy<2>)
+     XORCY:CI->O           1   0.180   0.684  first_address_alu/Madd_out_xor<3> (pc_next<3>)
+     LUT3:I1->O            3   0.203   0.755  Mmux_pc_current261 (pc_current<3>)
+     LUT3:I1->O           41   0.203   1.420  instr<17>1 (instr<17>)
+     LUT3:I2->O            2   0.205   0.617  Mmux_read_data2231 (read_data2<2>)
+     LUT2:I1->O            1   0.205   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<2> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<2>)
+     XORCY:LI->O           2   0.136   0.845  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_xor<2> (alu_unit/first[31]_second[31]_sub_4_OUT<2>)
+     LUT6:I3->O            1   0.205   0.580  branch_controller1 (branch_controller1)
+     LUT6:I5->O            1   0.205   0.944  branch_controller2 (branch_controller2)
+     LUT6:I0->O           30   0.203   1.492  branch_controller7 (branch_controller)
+     LUT3:I0->O            3   0.205   0.879  Mmux_pc_current231 (pc_current<2>)
+     LUT3:I0->O           25   0.205   1.193  instr<0>1 (instr<0>)
+     LUT3:I2->O            2   0.205   0.617  Mmux_read_data211 (read_data2<0>)
+     LUT2:I1->O            1   0.205   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<0> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<0> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<1> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<2> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<3> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<4> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<5> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<6> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<7> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<8> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<9> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<10> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<11> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<12> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<13> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<14> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<15> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<16> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<17> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<18> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<19> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<20> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<21> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<22> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<23> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<24> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<25> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<26> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<27> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<28> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<29> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<30> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<30>)
+     XORCY:CI->O           2   0.180   0.721  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_xor<31> (alu_unit/first[31]_second[31]_sub_4_OUT<31>)
+     LUT3:I1->O            3   0.203   0.650  alu_unit/Mmux__n01011351 (alu_result_31_OBUF)
      OBUF:I->O                 2.571          alu_result_31_OBUF (alu_result<31>)
     ----------------------------------------
-    Total                      7.610ns (4.348ns logic, 3.262ns route)
-                                       (57.1% logic, 42.9% route)
+    Total                     19.134ns (7.086ns logic, 12.048ns route)
+                                       (37.0% logic, 63.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'control_unit/ALUop_1'
@@ -1891,9 +840,9 @@ Clock to Setup on destination clock clk
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-clk                  |    5.067|         |         |         |
-control_unit/ALUop_1 |    2.325|         |         |         |
-control_unit/RegDst_G|         |    3.286|         |         |
+clk                  |   16.594|         |         |         |
+control_unit/ALUop_1 |    3.176|         |         |         |
+control_unit/RegDst_G|         |    2.676|         |         |
 ---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock control_unit/RegDst_G
@@ -1901,20 +850,20 @@ Clock to Setup on destination clock control_unit/RegDst_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    2.491|         |
+clk            |         |         |   13.383|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.11 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.20 secs
  
 --> 
 
-Total memory usage is 4519748 kilobytes
+Total memory usage is 4509380 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  188 (   0 filtered)
-Number of infos    :   67 (   0 filtered)
+Number of warnings :  123 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 
