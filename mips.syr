@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -131,23 +131,20 @@ Parsing module <mips>.
 =========================================================================
 
 Elaborating module <mips>.
-"C:\Users\pr1266\finalproject\mips.v" Line 10. $display pc current : 0
 "C:\Users\pr1266\finalproject\mips.v" Line 11. $display pc out : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 12. $display instruction : 32'b................................
 "C:\Users\pr1266\finalproject\mips.v" Line 13. $display alu result : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 14. $display pc next : 0
-"C:\Users\pr1266\finalproject\mips.v" Line 15. $display zero flag : 1'b.
 "C:\Users\pr1266\finalproject\mips.v" Line 16. $display first input alu : 32'b................................
 "C:\Users\pr1266\finalproject\mips.v" Line 17. $display second input alu : 32'b................................
-"C:\Users\pr1266\finalproject\mips.v" Line 18. $display branch signal : 1'b.
-"C:\Users\pr1266\finalproject\mips.v" Line 19. $display alu control : 4'b....
 "C:\Users\pr1266\finalproject\mips.v" Line 20. $display reg write : 1'b.
 "C:\Users\pr1266\finalproject\mips.v" Line 21. $display reg write data : 0
 "C:\Users\pr1266\finalproject\mips.v" Line 22. $display reg write destination : 0
 "C:\Users\pr1266\finalproject\mips.v" Line 23. $display mem to reg : 1'b.
-"C:\Users\pr1266\finalproject\mips.v" Line 24. $display 
-"C:\Users\pr1266\finalproject\mips.v" Line 25. $display 
-"C:\Users\pr1266\finalproject\mips.v" Line 26. $display 
+"C:\Users\pr1266\finalproject\mips.v" Line 24. $display reg_read_address_1 : 5'b.....
+"C:\Users\pr1266\finalproject\mips.v" Line 25. $display reg_read_address_2 : 5'b.....
+"C:\Users\pr1266\finalproject\mips.v" Line 26. $display reg_write_dst : 0
+"C:\Users\pr1266\finalproject\mips.v" Line 27. $display 
+"C:\Users\pr1266\finalproject\mips.v" Line 28. $display 
+"C:\Users\pr1266\finalproject\mips.v" Line 29. $display 
 
 Elaborating module <PC>.
 
@@ -156,10 +153,8 @@ Elaborating module <instruction_memory>.
 Elaborating module <address_alu>.
 
 Elaborating module <Control>.
-WARNING:HDLCompiler:413 - "C:\Users\pr1266\finalproject\mips.v" Line 111: Result of 5-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <register_file>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 120: Size mismatch in connection of port <write_addr>. Formal port size is 5-bit while actual signal size is 1-bit.
 
 Elaborating module <sign_extend>.
 
@@ -168,8 +163,8 @@ Elaborating module <ALU_control>.
 Elaborating module <alu32bit>.
 
 Elaborating module <data_memory>.
-WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 169: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 169: Net <sign_extend> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\pr1266\finalproject\mips.v" Line 170: Size mismatch in connection of port <second>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:634 - "C:\Users\pr1266\finalproject\mips.v" Line 170: Net <sign_extend> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -560,15 +555,15 @@ Top Level Output File Name         : mips.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 419
+# BELS                             : 418
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 31
-#      LUT2                        : 5
-#      LUT3                        : 77
-#      LUT4                        : 71
-#      LUT5                        : 18
-#      LUT6                        : 25
+#      LUT2                        : 2
+#      LUT3                        : 78
+#      LUT4                        : 73
+#      LUT5                        : 19
+#      LUT6                        : 23
 #      MUXCY                       : 93
 #      VCC                         : 1
 #      XORCY                       : 96
@@ -592,16 +587,16 @@ Selected Device : 6slx9tqg144-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              72  out of  11440     0%  
- Number of Slice LUTs:                  340  out of   5720     5%  
-    Number used as Logic:               228  out of   5720     3%  
+ Number of Slice LUTs:                  339  out of   5720     5%  
+    Number used as Logic:               227  out of   5720     3%  
     Number used as Memory:              112  out of   1440     7%  
        Number used as RAM:              112
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    340
-   Number with an unused Flip Flop:     268  out of    340    78%  
-   Number with an unused LUT:             0  out of    340     0%  
-   Number of fully used LUT-FF pairs:    72  out of    340    21%  
+ Number of LUT Flip Flop pairs used:    339
+   Number with an unused Flip Flop:     267  out of    339    78%  
+   Number with an unused LUT:             0  out of    339     0%  
+   Number of fully used LUT-FF pairs:    72  out of    339    21%  
    Number of unique control sets:         6
 
 IO Utilization: 
@@ -653,9 +648,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.565ns (Maximum Frequency: 132.183MHz)
+   Minimum period: 7.587ns (Maximum Frequency: 131.798MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.295ns
+   Maximum output required time after clock: 4.281ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -664,38 +659,38 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.565ns (frequency: 132.183MHz)
-  Total number of paths / destination ports: 83817 / 151
+  Clock period: 7.587ns (frequency: 131.798MHz)
+  Total number of paths / destination ports: 83887 / 165
 -------------------------------------------------------------------------
-Delay:               7.565ns (Levels of Logic = 8)
-  Source:            CLOCK/buff_3 (FF)
+Delay:               7.587ns (Levels of Logic = 8)
+  Source:            CLOCK/buff_4 (FF)
   Destination:       CLOCK/buff_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: CLOCK/buff_3 to CLOCK/buff_0
+  Data Path: CLOCK/buff_4 to CLOCK/buff_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              18   0.447   1.394  CLOCK/buff_3 (CLOCK/buff_3)
+     FD:C->Q              19   0.447   1.416  CLOCK/buff_4 (CLOCK/buff_4)
      LUT5:I0->O           17   0.203   1.027  instr_mem/Mram_mem171 (instr<17>)
      RAM32X1D:DPRA1->DPO    3   0.205   0.755  reg_file/Mram_regFile161 (reg_read_data_2<30>)
      LUT3:I1->O            1   0.203   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<30> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_lut<30>)
      MUXCY:S->O            0   0.172   0.000  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<30> (alu_unit/Msub_first[31]_second[31]_sub_4_OUT_cy<30>)
      XORCY:CI->O           2   0.180   0.617  alu_unit/Msub_first[31]_second[31]_sub_4_OUT_xor<31> (alu_unit/first[31]_second[31]_sub_4_OUT<31>)
-     LUT6:I5->O            2   0.205   0.617  alu_unit/zero<31>2_SW0 (N10)
+     LUT6:I5->O            2   0.205   0.617  alu_unit/zero<31>2_SW0 (N6)
      LUT6:I5->O           17   0.205   1.028  alu_unit/zero<31>7 (zero_flag)
      LUT4:I3->O            1   0.205   0.000  CLOCK/Mcount_buff_eqn_01 (CLOCK/Mcount_buff_eqn_0)
      FD:D                      0.102          CLOCK/buff_0
     ----------------------------------------
-    Total                      7.565ns (2.127ns logic, 5.438ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                      7.587ns (2.127ns logic, 5.460ns route)
+                                       (28.0% logic, 72.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              4.295ns (Levels of Logic = 1)
+Offset:              4.281ns (Levels of Logic = 1)
   Source:            CLOCK/buff_1 (FF)
   Destination:       pc_out<1> (PAD)
   Source Clock:      clk rising
@@ -704,11 +699,11 @@ Offset:              4.295ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              31   0.447   1.277  CLOCK/buff_1 (CLOCK/buff_1)
+     FD:C->Q              30   0.447   1.263  CLOCK/buff_1 (CLOCK/buff_1)
      OBUF:I->O                 2.571          pc_out_1_OBUF (pc_out<1>)
     ----------------------------------------
-    Total                      4.295ns (3.018ns logic, 1.277ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                      4.281ns (3.018ns logic, 1.263ns route)
+                                       (70.5% logic, 29.5% route)
 
 =========================================================================
 
@@ -728,10 +723,10 @@ Clock to Setup on destination clock clk
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-clk                    |    7.565|         |         |         |
+clk                    |    7.587|         |         |         |
 control_unit/Branch_G  |         |    2.371|         |         |
 control_unit/MemtoReg_G|         |    3.159|         |         |
-control_unit/RegDst_G  |         |    2.574|         |         |
+control_unit/RegDst_G  |         |    2.611|         |         |
 -----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock control_unit/Branch_G
@@ -739,7 +734,7 @@ Clock to Setup on destination clock control_unit/Branch_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.348|         |
+clk            |         |         |    3.365|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock control_unit/MemtoReg_G
@@ -747,7 +742,7 @@ Clock to Setup on destination clock control_unit/MemtoReg_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    1.989|         |
+clk            |         |         |    2.006|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock control_unit/RegDst_G
@@ -755,20 +750,20 @@ Clock to Setup on destination clock control_unit/RegDst_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.348|         |
+clk            |         |         |    3.365|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.17 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.45 secs
  
 --> 
 
-Total memory usage is 4508932 kilobytes
+Total memory usage is 4509316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   53 (   0 filtered)
+Number of warnings :   51 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

@@ -36,19 +36,19 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/MemtoReg_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/Branch_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">alu_control_unit/op_2_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/RegDst_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile3_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/Branch_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile5_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile11_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile1_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile12_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
@@ -57,22 +57,22 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile2_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile4_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile13_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile13_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile3_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile15_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile5_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile4_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile14_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile11_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">reg_file/Mram_regFile1_RAMD_D1_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

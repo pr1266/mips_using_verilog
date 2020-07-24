@@ -9,17 +9,17 @@ begin
 
 	//$display("pc current : %d", pc_current);
 	$display("pc out : %d", pc_out);
-	//$display("instruction : %b", instr);
+	$display("instruction : %b", instr);
 	$display("alu result : %d", alu_result);
 	//$display("pc next : %d", pc_next);
-	//$display("zero flag : %b", zero_flag);
+	$display("zero flag : %b", zero_flag);
 	$display("first input alu : %b", reg_read_data_1);
 	$display("second input alu : %b", read_data2);
-	//$display("branch signal : %b", branch_controller);
-	//$display("alu control : %b", alu_control);
+	$display("branch signal : %b", branch_controller);
+	$display("alu control : %b", alu_control);
 	$display("reg write : %b", reg_write);
 	$display("reg write data : %d", reg_write_data);
-	$display("reg write destination : %d", reg_write_dest);
+	$display("reg write destination : %d", reg_write_dst);
 	$display("mem to reg : %b", mem_to_reg);
 	$display("reg_read_address_1 : %b", reg_read_addr_1);
 	$display("reg_read_address_2 : %b", reg_read_addr_2);
@@ -69,11 +69,6 @@ wire [31:0] alu_out;
 // signal e zero e alu :
 wire zero_flag;
 
-wire signed[31:0] im_shift_1, PC_j, PC_beq, PC_4beq,PC_4beqj,PC_jr;
-wire beq_control;
-// in ziri ro badan check kon
-wire [14:0] jump_shift_1;
-
 // 32 bit baraye neveshtan dar memory :
 wire [31:0] mem_read_data;
 
@@ -120,9 +115,9 @@ assign reg_read_addr_2 = instr[20:16];
 
 
 register_file reg_file(.clk(clk) ,.RegWrite(reg_write),  
- .write_addr(reg_write_dest),  
+ .write_addr(reg_write_dst),  
  .write_data(reg_write_data),  
- .read_addr_1(reg_read_addr_1),  
+ .read_addr_1(reg_read_addr_1),
  .data_out_1(reg_read_data_1),  
  .read_addr_2(reg_read_addr_2),  
  .data_out_2(reg_read_data_2)); 

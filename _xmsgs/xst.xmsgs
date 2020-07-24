@@ -5,16 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 111: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 170: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">second</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 169: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">second</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 169: Net &lt;<arg fmt="%s" index="1">sign_extend</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\pr1266\finalproject\mips.v" Line 170: Net &lt;<arg fmt="%s" index="1">sign_extend</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">sign_extend</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
