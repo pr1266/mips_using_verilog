@@ -6,12 +6,13 @@ module mips(input clk, output [31:0] pc_out, alu_result);
 
 always @(posedge clk)
 begin
-
-	//$display("pc current : %d", pc_current);
+	
+	$display("sign_extend : %b", sign_ext_im);
+	$display("address_alu_out : %d", address_alu_out);
+	$display("mem_read_data : %d", mem_read_data);
 	$display("pc out : %d", pc_out);
 	$display("instruction : %b", instr);
 	$display("alu result : %d", alu_result);
-	//$display("pc next : %d", pc_next);
 	$display("zero flag : %b", zero_flag);
 	$display("first input alu : %b", reg_read_data_1);
 	$display("second input alu : %b", read_data2);
@@ -27,6 +28,7 @@ begin
 	$display("");
 	$display("");
 	$display("");
+	
 end
 
 wire [31:0] pc_current;
@@ -162,7 +164,7 @@ assign branch_controller = branch & zero_flag;
 
 //wire address_alu_zero;
 wire [31:0] address_alu_out;
-address_alu ADDRESS_ALU(pc_out, sign_extend, address_alu_out);
+address_alu ADDRESS_ALU(pc_out, sign_ext_im, address_alu_out);
 
 assign pc_current = (branch_controller == 1'b1) ? address_alu_out : pc_next;
 

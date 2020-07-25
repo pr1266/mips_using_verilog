@@ -17,13 +17,15 @@ initial begin
 	begin
 		mem[i] = 0;
 	end
+	
+	mem[13] = 32'b11;
 	// az ye file bekhoonim :
 	//$readmemh("memory.list", mem);
 end
 
 always @(posedge clk)
 begin
-
+	
 	// age memRead on bood :
 	
 	
