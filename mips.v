@@ -1,6 +1,30 @@
 `timescale 1ns / 1ps
 
-module mips(input clk, output [31:0] pc_out, alu_result);
+module mips(
+	input clk, 
+	output [31:0] pc_out, 
+	output [31:0] alu_result,
+	output [1:0] alu_op,
+	output mem_to_reg,
+	output reg_dst,
+	output [31:0] instr,
+	output jump, 
+	output branch, 
+	output mem_read, 
+	output mem_write, 
+	output alu_src, 
+	output reg_write,
+	output [4:0] reg_write_dst,
+	output [31:0] reg_write_data,
+	output [4:0] reg_read_addr_1,
+	output [4:0] reg_read_addr_2,
+	output [31:0] reg_read_data_1,
+	output [31:0] reg_read_data_2,
+	output [3:0] alu_control,
+	output [31:0] mem_read_data,
+	output zero_flag,
+	output branch_controler
+	);
 
 // address e feli program counter :
 
@@ -40,23 +64,23 @@ PC CLOCK(clk, pc_current, pc_out);
 //wire signed[31:0] pc_next,pc2;
 //check kon bbin in chie
 //instruction 32 bit :
-wire [31:0] instr;
-wire [1:0] alu_op;
-wire mem_to_reg, reg_dst;
-wire jump, branch, mem_read, mem_write, alu_src, reg_write;
+//wire [31:0] instr;
+//wire [1:0] alu_op;
+//wire mem_to_reg, reg_dst;
+//wire jump, branch, mem_read, mem_write, alu_src, reg_write;
 // 5 bit baraye RegDst :
-wire [4:0] reg_write_dst;
+//wire [4:0] reg_write_dst;
 
 // 32 bit data baraye neveshtan dar Register
 // hala ya natije mohasebat e alu e ya natije load word :
-wire [31:0] reg_write_data;
+//wire [31:0] reg_write_data;
 
 // 5 bit address baraye khoondan e register ha :
-wire [4:0] reg_read_addr_1;
-wire [4:0] reg_read_addr_2;
+//wire [4:0] reg_read_addr_1;
+//wire [4:0] reg_read_addr_2;
 // 32 bit data ke az khoondan e register ha rooye bus gharar migire :
-wire [31:0] reg_read_data_1;
-wire [31:0] reg_read_data_2;
+//wire [31:0] reg_read_data_1;
+//wire [31:0] reg_read_data_2;
 
 
 wire [31:0] sign_ext_im, read_data2, zero_ext_im, imm_ext;
@@ -72,7 +96,7 @@ wire [31:0] alu_out;
 wire zero_flag;
 
 // 32 bit baraye neveshtan dar memory :
-wire [31:0] mem_read_data;
+//wire [31:0] mem_read_data;
 
 wire [31:0] no_sign_ext;
 wire sign_or_zero;

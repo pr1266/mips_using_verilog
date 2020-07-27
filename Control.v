@@ -9,11 +9,13 @@ module Control(
     output reg [1:0] ALUop,
     output reg MemWrite,
     output reg ALUsrc,		
-    output reg RegWrite
+    output reg RegWrite,
+	 output reg Jump,
+	 output reg SignOrZero
     );
 always @(*)
 begin
-   if(inst_in == 6'b000000)//R_type
+   if(inst_in == 6'b000000) //R_type
 	begin
 	RegDst = 1;
 	ALUsrc = 0;
@@ -26,7 +28,7 @@ begin
 	ALUop[0] = 0;
 	end
 	
-	else if(inst_in == 6'b100011)//load
+	else if(inst_in == 6'b100011) //load
 	begin
 	RegDst = 0;
 	ALUsrc = 1;
@@ -39,7 +41,7 @@ begin
 	ALUop[0] = 0;
 	end
 	
-	else if(inst_in == 6'b001000)//addi
+	else if(inst_in == 6'b001000) //addi
 	begin
 	RegDst = 0;
 	ALUsrc = 1;
@@ -51,7 +53,7 @@ begin
 	ALUop[1] = 0;
 	ALUop[0] = 0;
 	end
-	else if(inst_in == 6'b001100)//andi
+	else if(inst_in == 6'b001100) //andi
 	begin
 	RegDst = 0;
 	ALUsrc = 1;
@@ -63,7 +65,7 @@ begin
 	ALUop[1] = 1;
 	ALUop[0] = 0;
 	end
-	else if(inst_in == 6'b001101)//ori
+	else if(inst_in == 6'b001101) //ori
 	begin
 	RegDst = 0;
 	ALUsrc = 1;
@@ -76,7 +78,7 @@ begin
 	ALUop[0] = 0;
 	end
 
-	else if(inst_in == 6'b000100)//branch
+	else if(inst_in == 6'b000100) //branch
 	begin
 	ALUsrc = 0;
 	RegWrite = 0;
@@ -86,6 +88,27 @@ begin
 	ALUop[1] = 0;
 	ALUop[0] = 1;
 	end
+	
+	else if(inst_in == 6'b000010) // j
+	begin
+		RegDst = 0;
+		MemtoReg = 0; 
+		ALUop[1] = 0;
+		ALUop[0] = 0;
+		Jump = 1;
+		Branch = 0;
+		MemRead = 0; 
+		MemWrite = 0;  
+		ALUsrc = 0;  
+		RegWrite = 0;  
+		SignOrZero = 1;
+	end
+	
+	else if(inst_in == 6'b001000) // jr
+	begin
+		
+	end
+	
 end
 
 endmodule

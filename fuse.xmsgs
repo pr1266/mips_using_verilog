@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 90: Redeclaration of ansi port <arg fmt="%s" index="1">alu_control</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 96: Redeclaration of ansi port <arg fmt="%s" index="1">zero_flag</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 103: Redeclaration of ansi port <arg fmt="%s" index="1">branch_controler</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/pr1266/finalproject/mips.v" Line 130: Port <arg fmt="%s" index="1">Jump</arg> is not connected to this instance
+</msg>
+
 </messages>
 
